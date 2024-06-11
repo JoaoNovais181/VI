@@ -1,0 +1,14 @@
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/CMakeFiles/edit_cache.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/CMakeFiles/rebuild_cache.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/CMakeFiles/list_install_components.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/CMakeFiles/install.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/CMakeFiles/install/local.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/CMakeFiles/install/strip.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/Scene/tinyobjloader/CMakeFiles/tinyobjloader.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/Scene/tinyobjloader/CMakeFiles/uninstall.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/Scene/tinyobjloader/CMakeFiles/edit_cache.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/Scene/tinyobjloader/CMakeFiles/rebuild_cache.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/Scene/tinyobjloader/CMakeFiles/list_install_components.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/Scene/tinyobjloader/CMakeFiles/install.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/Scene/tinyobjloader/CMakeFiles/install/local.dir
+/home/tbag/Universidade/4Ano/2Sem/VI/VI-RT/build/Scene/tinyobjloader/CMakeFiles/install/strip.dir

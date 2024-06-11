@@ -1,0 +1,5314 @@
+    1  ls
+    2  rm .zshrc
+    3  cp My-Configs/.zshrc .
+    4  ls
+    5  cd /usr/share/fonts
+    6  sudo mkdir "MesloLGS NF"
+    7  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    8  p10k configure
+    9  
+   10  p10k configure
+   11  clear
+   12  ls
+   13  alacritty
+   14  ls .config
+   15  mkdir .config/alacritty
+   16  cp My-Configs/alacritty.toml .config/alacritty
+   17  alacritty
+   18  clear
+   19  sudo apt-get install tmux
+   20  nvim
+   21  sudo apt install nvim
+   22  sudo apt install neovim
+   23  sudo apt install code
+   24  mv My-Configs/.tmux.conf ~
+   25  cp .tmux.conf My-Configs
+   26  clear
+   27  pkill tmux
+   28  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+   29  pkill tmux
+   30  tmux source ~/.tmux.conf
+   31  clear
+   32  nvidia-smi
+   33  nvim --version
+   34  sudo apt upgrade neovim
+   35  sudo apt install make
+   36  sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/alacritty 50
+   37  sudo update-alternatives --config x-terminal-emulator
+   38  clear
+   39  cler
+   40  clear
+   41  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+   42  pkill tmux
+   43  ls
+   44  clear
+   45  ls
+   46  open .
+   47  ls
+   48  unzip Universidade.zip
+   49  ls
+   50  cduni
+   51  ls
+   52  cd ..
+   53  ls
+   54  cd ..
+   55  sudo apt install python npm node ripreg
+   56  sudo apt install python3 npm node ripreg
+   57  sudo apt install python3 npm
+   58  curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+   59  sudo apt install nodejs
+   60  1sudo dpkg -i --force-overwrite /usr/include/node/common.gypi
+   61  sudo dpkg -i --force-overwrite /usr/include/node/common.gypi
+   62  sudo apt install nodejs
+   63  sudo dpkg --remove --force-remove-reinstreq libnode72:amd64
+   64  sudo dpkg --remove --force-remove-reinstreq libnode-dev
+   65  sudo apt install nodejs
+   66  sudo dpkg --remove --force-remove-reinstreq libnode72:amd64
+   67  sudo add-apt-repository universe\nsudo apt install libnode72 nodejs-doc
+   68  node --version
+   69  curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb\n sudo dpkg -i ripgrep_13.0.0_amd64.deb
+   70  ^[[200~sudo apt install python3-pip~
+   71  sudo apt install python3-pip
+   72  LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+   73  cduni
+   74  cd ~
+   75  nvim .zshrc
+   76  cduni
+   77  source ~/.zshrc
+   78  cduni
+   79  cd VTR
+   80  cd nau
+   81  çs
+   82  cd bin
+   83  ./composerImGui ../../Aula3/lighting.xml
+   84  sudo apt-get install libglfw
+   85  bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+   86  sudo apt remove --purge neovim
+   87  cd ~/Downloads
+   88  ls
+   89  chmod u+x nvim.appimage && ./nvim.appimage
+   90  nvim
+   91  cd /bin
+   92  ls
+   93  ln -s ~/Downloads/nvim.appimage nvim
+   94  sudo ln -s ~/Downloads/nvim.appimage nvim
+   95  nvim
+   96  cd ~
+   97  çs
+   98  ls
+   99  sudo dpkg -i ripgrep_13.0.0_amd64.deb
+  100  ls
+  101  rm ripgrep_13.0.0_amd64.deb
+  102  bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+  103  lvim
+  104  export PATH=/home/tbag/.local/bin:$PATH
+  105  lvim
+  106  clear
+  107  ls
+  108  cd ~/Downloads
+  109  ls
+  110  sudo dpkg -i opera-stable_107.0.5045.36_amd64.deb
+  111  ls
+  112  opera
+  113  sudo apt-get install albert
+  114  echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Raspbian_9.0/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+  115  curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/Raspbian_9.0/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null
+  116  sudo apt update
+  117  sudo apt install albert
+  118  echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian_9.0/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list\ncurl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/Debian_9.0/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null\nsudo apt update\nsudo apt install albert
+  119  echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian_12/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list\ncurl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/Debian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null\nsudo apt update\nsudo apt install albert
+  120  sudo apt install albert
+  121  sudo apt upgrade
+  122  sudo apt install albert
+  123  git clone --recursive https://github.com/albertlauncher/albert.git\ncmake -B build -S albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug\ncmake --build build\ncmake --install build\n
+  124  cmake -B build -S albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
+  125  ls
+  126  cd albert
+  127  cmake -B build -S albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
+  128  cd ..
+  129  cmake -B build -S albert -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug
+  130  cd ..
+  131  cd Downloads
+  132  ls
+  133  rm -rf albert build
+  134  echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+  135  curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r /xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null
+  136  sudo apt update
+  137  sudo nvim /etc/apt/sources.list
+  138  cd /etc/apt/trusted.gpg.d
+  139  ls
+  140  rm home_manuelschneid3r.gpg
+  141  sudo rm home_manuelschneid3r.gpg
+  142  sudo apt update
+  143  ls
+  144  cd ..
+  145  ls
+  146  cat sources.list
+  147  ls sources.list.d
+  148  cd sources.list.d
+  149  ls
+  150  rm home:manuelschneid3r.list
+  151  sudo apt update
+  152  sudo rm home:manuelschneid3r.list
+  153  sudo apt update
+  154  apt list --upgradable
+  155  apt upgrade
+  156  sudo apt autoremove
+  157  sudo apt-get install discord
+  158  wget https://dl.discordapp.net/apps/linux/0.0.41/discord-0.0.41.deb
+  159  sudo apt install ./discord-0.0.41.deb
+  160  discord
+  161  ls
+  162  sudo apt install ./discord-0.0.43.deb
+  163  curl -fSsL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg > /dev/null
+  164  echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
+  165  sudo apt update
+  166  ls
+  167  sudo apt install ./code_1.86.2-1707854558_amd64.deb
+  168  sudo apt-get install libdevil-dev
+  169  sudo apt-get install freeglut3-dev libglfw3 libglfw3-dev
+  170  cduni
+  171  ls
+  172  cd VTR
+  173  ls
+  174  exit
+  175  cd nau
+  176  cmake 
+  177  cmake-gui
+  178  sudo apt install cmake-gui
+  179  cd bin
+  180  ./composerImGui ../../Aula3/lighting.xml
+  181  sudo apt install miniconda
+  182  exit
+  183  cduni
+  184  cd ~/Downloads
+  185  ls
+  186  ./Miniconda3-latest-Linux-x86_64.sh
+  187  chmod +x Miniconda3-latest-Linux-x86_64.sh
+  188  ./Miniconda3-latest-Linux-x86_64.sh
+  189  pkill tmux
+  190  cduni
+  191  cd VCPI
+  192  ls
+  193  cd Aula2
+  194  code .
+  195  conda create --name VCPI opencv matplotlib numpy
+  196  exit
+  197  \tcduni
+  198  ls
+  199  cd VTR
+  200  nvidia-smi
+  201  ls
+  202  cd ~
+  203  cd .tmux
+  204  ls
+  205  cd plugins
+  206  ls
+  207  cd tmux/scripts
+  208  ls
+  209  cat gpu_usage.sh
+  210  nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{ sum += $0 } END { printf("%d%%\n", sum / NR) }'
+  211  nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits 
+  212  nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{ sum += $0 } END { printf("%d%%\n", sum) }'
+  213  lvim
+  214  nvim ~/.zshrc
+  215  source ~/.zshrc
+  216  lvim gpu_usage.sh
+  217  exit
+  218  clear
+  219  ls
+  220  code Aula3
+  221  cduni
+  222  cd VTR
+  223  cd nau
+  224  cd bin
+  225  ls
+  226  ./composerImGui ../../Aula3/lighting.xml
+  227  pkill tmux
+  228  cduni
+  229  ls
+  230  cd VTR/nau/bin
+  231  ./composerImGui ../../Aula3/lighting.xml
+  232  cduni
+  233  ls
+  234  cd VTR
+  235  ls
+  236  cd nau
+  237  cd bin
+  238  ./composerImGui ../../Aula3/lighting.xml
+  239  lsb_release -a
+  240  cat /etc/os-release
+  241  cd ~/Downloads
+  242  ls
+  243  sudo apt install ./albert_0.22.17-0+597.4_amd64.deb
+  244  sudo apt install libpython3.11
+  245  sudo apt install ./albert_0.22.17-0+597.4_amd64.deb
+  246  sudo apt install libpython3.11.2
+  247  sudo apt autoremove
+  248  sudo apt-get autoremove
+  249  sudo apt-get upgrade
+  250  sudo apt-get upgrade node
+  251  sudo apt-get upgrade nodejs
+  252  sudo dpkg -i --force-overwrite /var/cache/apt/archives/nodejs_18.19.1-1nodesource1_amd64.deb
+  253  sudo apt-get upgrade nodejs
+  254  sudo apt-get upgrade firmware-sof-signed
+  255  sudo apt-get upgrade
+  256  sudo apt autoremove
+  257  sudo apt install ./albert_0.22.17-0+597.4_amd64.deb
+  258  sudo apt-get install libqt6core6 
+  259  sudo apt install ./albert_0.22.17-0+597.4_amd64.deb
+  260  sudo apt-get install 6.2.4+dfsg-2ubuntu1.1
+  261  apt --fix-broken install
+  262  sudo apt install -yf ./albert_0.22.17-0+597.4_amd64.deb
+  263  sudo dpkg -i albert_0.22.17-0+597.4_amd64.deb
+  264  sudo apt install -yf ./albert_0.22.17-0+597.4_amd64.deb
+  265  sudo apt install ^[[200~libqalculate22 ~
+  266  sudo apt installlibqalculate22 
+  267  sudo apt install libqalculate22 
+  268  apt --fix-broken install
+  269  sudo apt install libqalculate22 
+  270  sudo apt install -yf ./albert_0.22.17-0+597.4_amd64.deb
+  271  sudo dpkg -i albert_0.22.17-0+597.4_amd64.deb
+  272  sudo gdebi ./albert_0.22.17-0+597.4_amd64.deb
+  273  sudo apt-get remove python3-dev
+  274  apt --fix-broken install
+  275  sudo apt-get remove python3-dev
+  276  sudo apt-get remove python3.11-venv
+  277  sudo dpkg -i albert_0.22.17-0+597.4_amd64.deb
+  278  albert
+  279  sudo apt-get remove python3.11-venv
+  280  apt --fix-broken install
+  281  sudo apt-get install python3
+  282  sudo apt autoremove
+  283  python3
+  284  sudo apt-get install albert
+  285  albert
+  286  sudo apt install ./albert_0.22.17-0+597.4_amd64.deb
+  287  sudo apt install albert
+  288  rm albert_0.22.17-0+597.4_amd64.deb
+  289  echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian_12/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+  290  ^[[200~curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/Debian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null~
+  291  curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/Debian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null
+  292  sudo apt update
+  293  sudo apt install albert
+  294  shutdown now
+  295  sudo apt install albert
+  296  sudo apt install libpython3.11=3.11.0
+  297  sudo apt install libpython3.11=3.11.0\~rc1-1\~22.04
+  298  pkill tmux
+  299  sudo apt install libpython3.11=3.11.0\~rc1-1\~22.04
+  300  sudo apt install albert
+  301  sudo apt install libpython3.10=3.10.12-1\~22.04.3
+  302  sudo apt install libpython3.10=3.10.12-1\~22.04.3 
+  303  sudo apt install libpython3.10=3.10.4-3
+  304  sudo apt remove --purge libpython3.11:amd64
+  305  sudo apt remove --purge libpython3.11
+  306  sudo apt install albert
+  307  sudo apt install libpython3.11
+  308  sudo apt install albert
+  309  sudo apt remove --purge libpython3.11
+  310  cd Downloads
+  311  ls
+  312  sudo dpkg --install albert_0.22.17-0+597.4_amd64.deb
+  313  sudo apt install qt6-wayland-dev
+  314  apt --fiix-broken install
+  315  apt --fix-broken install
+  316  sudo apt install qt6-wayland-dev
+  317  sudo dpkg --install albert_0.22.17-0+597.4_amd64.deb
+  318  sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
+  319  apt --fix-broken install
+  320  sudo add-apt-repository universe -y && sudo add-apt-repository ppa:agornostal/ulauncher -y && sudo apt update && sudo apt install ulauncher
+  321  ulauncher
+  322  pip install py-expression-eval==0.3.13
+  323  cduni
+  324  ls
+  325  cd VI
+  326  ls
+  327  ls VI-RT
+  328  cd VI-RT
+  329  open ../slides
+  330  ls
+  331  pull
+  332  ls
+  333  make
+  334  lvim Makefile
+  335  make
+  336  make clean
+  337  make
+  338  make clean
+  339  make
+  340  g++ --version
+  341  make
+  342  ls
+  343  cd build
+  344  ls
+  345  cd apps
+  346  ls
+  347  ./VI-RT
+  348  cd ..
+  349  make
+  350  ./build/apps/VI-RT
+  351  ls
+  352  cd ..
+  353  ls
+  354  exit
+  355  ls
+  356  cd VTR
+  357  ls
+  358  cd ..
+  359  ls
+  360  cd maelstrom
+  361  cd ..
+  362  cd maelstrom2
+  363  ls
+  364  ./maelstrom -w lock --path-to-bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --num-nodes 3 --concurrency 3n --rate 5
+  365  ./maelstrom test -w lock --path-to-bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --num-nodes 3 --concurrency 3n --rate 5
+  366  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --num-nodes 3 --concurrency 3n --rate 5
+  367  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-countº 3 --concurrency 3n --rate 5
+  368  ./maelstrom serve
+  369  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 5
+  370  sudo apt install openjdk-17-jdk
+  371  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 5
+  372  rm --rf store/current
+  373  rm -rf store/current
+  374  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 5
+  375  ./maelstrom serve
+  376  rm -rf store
+  377  ./maelstrom serve
+  378  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 5
+  379  cd ..
+  380  cd SDGE
+  381  ls
+  382  cd Ficha1
+  383  ls
+  384  lvim lock-my-impl.py
+  385  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 5
+  386  lvim lock-my-impl.py
+  387  rm __pycache__
+  388  lvim .
+  389  sudo apt install gnuplot
+  390  sudo apt install graphviz
+  391  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 5
+  392  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 50
+  393  ls
+  394  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 200
+  395  ulauncher --help
+  396  ulauncher --deb
+  397  ulauncher --dev
+  398  lvim .
+  399  cd ~
+  400  ls
+  401  cd .con
+  402  cd .config
+  403  ls
+  404  cd lvim
+  405  ls
+  406  lvim config.lua
+  407  cp ~/.local/share/lunarvim/lvim/utils/installer/config.example.lua ~/.config/lvim/config.lua
+  408  lvim config.lua
+  409  lvim .
+  410  ls
+  411  lvim --headless +'lua require("lvim.utils").generate_settings()' +qa && sort -o lv-settings.lua{,}
+  412  lvim config.lua
+  413  ls
+  414  lvim config.lua
+  415  lvim .
+  416  sudo apt install wl-clipboard
+  417  sudo apt autoremove
+  418  lvim config.lua
+  419  pkill tmux
+  420  lvim
+  421  cduni
+  422  ls
+  423  cd SDGE
+  424  çs
+  425  ls
+  426  cd Ficha1
+  427  lvim .
+  428  cd ~/.config/lvim
+  429  ls
+  430  lvim lv-settings.lua
+  431  lvim .
+  432  lvim lv-settings.lua
+  433  ls
+  434  lvim lv-settings.lua
+  435  lvim config.lua
+  436  xclip
+  437  sudo apt install xclip
+  438  lvim config.lua
+  439  sudo apt remove --purge wl-clipboard
+  440  exit
+  441  cd maelstrom2
+  442  ./maelstrom serve
+  443  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 200
+  444  python3
+  445  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 3 --concurrency 3n --rate 200
+  446  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 10 --node-count 4 --concurrency 2n --rate 200
+  447  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 100 --node-count 4 --concurrency 3n --rate 200
+  448  df -h ~
+  449  df -h
+  450  sudo apt install gparted
+  451  cd ..
+  452  cd alacritty
+  453  lvim alacritty.toml
+  454  exit
+  455  cd ..
+  456  cd lvim
+  457  lvim .
+  458  exit
+  459  lua
+  460  sudo apt install lua
+  461  sudo apt install lua5.4
+  462  lua config.lua
+  463  lvim .
+  464  sudo apt remove --purge lua5.4
+  465  lvim .
+  466  lvim config.lua
+  467  lvim .
+  468  exit
+  469  lvim config.lua
+  470  cd ..
+  471  cd alacritty
+  472  ls
+  473  lvim alacritty.toml
+  474  cd ..
+  475  cd lvim
+  476  ls
+  477  lvim config.lua
+  478  exit
+  479  lvim alacritty.toml
+  480  lvim .
+  481  lvim alacritty.toml
+  482  lvim .
+  483  lvim alacritty.toml
+  484  exit
+  485  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 100 --node-count 4 --concurrency 3n --rate 2000
+  486  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 20 --node-count 10 --concurrency 3n --rate 2000
+  487  df -h
+  488  df -h ~
+  489  ls
+  490  cd ..
+  491  ls
+  492  git init -b main
+  493  git add *
+  494  ls
+  495  commit "Ficha1 feita e apontamentos"
+  496  git config --global user.email "pg53907@alunos.uminho.pt"
+  497  git config --global user.name "joaonovais181"
+  498  commit "Ficha1 feita e apontamentos"
+  499  push
+  500  push -b main
+  501  git remote add origin git@github.com:JoaoNovais181/SDGE.git
+  502  push -u origin main
+  503  ls
+  504  cd ..
+  505  ls
+  506  cd PSD
+  507  ls
+  508  add *
+  509  commit "o que tenho ate agora"
+  510  ls -a
+  511  cat > .gitignore
+  512  status
+  513  add .gitignore
+  514  commit "gitignore"
+  515  push
+  516  ls
+  517  cd ..
+  518  ls
+  519  cd TAF
+  520  ls
+  521  git init -b main
+  522  add *
+  523  commit "O que tenho de TAF"
+  524  git remote add origin git@github.com:JoaoNovais181/TAF.git
+  525  push -u origin main
+  526  cd ..
+  527  ls
+  528  cd VCPI
+  529  ls
+  530  git init -b main
+  531  add *
+  532  commit "O que tenho de VCPI"
+  533  git remote add origin git@github.com:JoaoNovais181/TAF.git
+  534  git remote add origin git@github.com:JoaoNovais181/VCPI.git
+  535  git remote remove origin origin@github.com:JoaoNovais181/TAF.git
+  536  git remote remove origin@github.com:JoaoNovais181/TAF.git
+  537  git remote remove origin origin@github.com:JoaoNovais181/TAF.git
+  538  git remote remove origin github.com:JoaoNovais181/TAF.git
+  539  git remote remove github.com:JoaoNovais181/TAF.git
+  540  git remote add origin git@github.com:JoaoNovais181/VCPI.git
+  541  status
+  542  git remote show
+  543  git remote remove
+  544  git remote remove origin
+  545  git remote add origin git@github.com:JoaoNovais181/VCPI.git
+  546  push -u origin main
+  547  ls
+  548  cd ..
+  549  ls
+  550  cd VTR
+  551  ls
+  552  git init -b main
+  553  ls nau
+  554  ls -a nau
+  555  rm -rf nau
+  556  git clone git@github.com:Nau3D/nau.git
+  557  ls
+  558  code Aula3
+  559  cd nau
+  560  ls
+  561  cmake-gui .&
+  562  cd b
+  563  cd build
+  564  ls
+  565  make
+  566  cd ..
+  567  ls
+  568  git restore *
+  569  ls
+  570  status
+  571  ls
+  572  cd ..
+  573  ls
+  574  rm -rf nau
+  575  git clone git@github.com:Nau3D/nau.git
+  576  cd nau
+  577  cmake-gui .&
+  578  cd build
+  579  ls
+  580  cd bin
+  581  ls
+  582  cd ..
+  583  ls
+  584  make
+  585  make composerImGui
+  586  cd bin
+  587  ls
+  588  ./composerImGui ../../../Aula3/lighting.xml
+  589  cd ..
+  590  ls
+  591  add *
+  592  status
+  593  ls
+  594  git remote add origin git@github.com:JoaoNovais181/VTR.git
+  595  push -u origin main
+  596  git init -b main
+  597  ls
+  598  status
+  599  add *
+  600  commit "aulas"
+  601  git remote add origin git@github.com:JoaoNovais181/VTR.git
+  602  git push -u origin main
+  603  exit
+  604  shutdown now
+  605  clear
+  606  cduni
+  607  ls
+  608  clear
+  609  ls
+  610  nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{ sum += $0 } END { printf("%d%%\n", sum) }'
+  611  cd ~/.config/alacritty
+  612  lvim alacritty.toml
+  613  ls
+  614  clear
+  615  lvim alacritty.toml
+  616  pkill tmux
+  617  ls
+  618  s
+  619  ls
+  620  s
+  621  l
+  622  cler
+  623  clear
+  624  ls
+  625  rm Universidade.zip
+  626  ls
+  627  l
+  628  cd .oh-my-zsh
+  629  ls
+  630  cd ..
+  631  ls
+  632  cd M
+  633  cd My-Configs
+  634  ls
+  635  rm alacritty.yml
+  636  rm alacritty.toml
+  637  cp ~/.config/alacritty/alacritty.toml .
+  638  ls
+  639  cp ~/.zshrc .
+  640  ls
+  641  ls -a
+  642  add *
+  643  commit "configs novas"
+  644  push
+  645  cd ..
+  646  git clone git@github.com:JoaoNovais181/My-Configs.git
+  647  mv My-Configs confs
+  648  git clone git@github.com:JoaoNovais181/My-Configs.git
+  649  cduni
+  650  ls
+  651  cd VTR
+  652  ls
+  653  cd nau
+  654  cd build/bin
+  655  ls
+  656  ./composerImGui ../../../Aula3/lighting.xml
+  657  çs
+  658  cd ..
+  659  ls
+  660  cd Aula3
+  661  code .
+  662  mv confs/* My-Configs
+  663  ls confs
+  664  rm -rf confs
+  665  ls
+  666  cd My-Configs
+  667  ls
+  668  rm alacritty.yml
+  669  add *
+  670  commit "novas"
+  671  push
+  672  status
+  673  add alacritty.yml
+  674  commit "remover alacritty.yml"
+  675  push
+  676  cduni
+  677  cd VTR
+  678  code Aula3
+  679  exit
+  680  cduni
+  681  cd VTR/nau/build/bin
+  682  ./composerImGui ../../../Aula3/lighting.xml
+  683  ps
+  684  add *
+  685  ls
+  686  commit "adicionei constante minIntensity no fragment shader para spotlight"
+  687  push
+  688  exit
+  689  pkill tmux
+  690  shutdown now
+  691  ls
+  692  cduni
+  693  ls
+  694  cd VTR
+  695  ls
+  696  code Aula3
+  697  cduni
+  698  cd VTR/nau/build/bin
+  699  ./composerImGui ../../../Aula3/lighting.xml
+  700  cd Aula3
+  701  cp shaders/lighting_spotlight.frag shaders/lighting_flashlight.frag
+  702  cp shaders/lighting_spotlight.vert shaders/lighting_flashlight.vert
+  703  ./composerImGui ../../../Aula3/lighting.xml
+  704  cd ~
+  705  mkdir git
+  706  cd git
+  707  git clone https://github.com/Microsoft/vcpkg.git\ncd vcpkg\n./bootstrap-vcpkg.sh\n./vcpkg integrate install\n./vcpkg install glslang
+  708  ls
+  709  git clone https://github.com/KhronosGroup/glslang.git\n
+  710  cd glslang
+  711  git clone https://github.com/KhronosGroup/glslang.git\n
+  712  ./update_glslang_sources.py
+  713  mkdir -p $BUILD_DIR\ncd $BUILD_DIR
+  714  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$(pwd)/install" $SOURCE_DIR\n# "Release" (for CMAKE_BUILD_TYPE) could also be "Debug" or "RelWithDebInfo"
+  715  ls
+  716  cd git/glslang
+  717  mkdir -p $BUILD_DIR\ncd $BUILD_DIR
+  718  cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$(pwd)/install" $SOURCE_DIR\n# "Release" (for CMAKE_BUILD_TYPE) could also be "Debug" or "RelWithDebInfo"
+  719  cd git/glslang
+  720  ls
+  721  mkdir build
+  722  cd build
+  723  ls
+  724  cd ..
+  725  ls
+  726  cmake-gui .&
+  727  cd build
+  728  make
+  729  sudo apt install glslang
+  730  sudo apt install glslangvalidator
+  731  cd ..
+  732  rm -rf glslang
+  733  apt-get install glslang-tools
+  734  cd ..
+  735  apt-get install glslang-tools
+  736  sudo apt-get install glslang-tools
+  737  ls
+  738  ls /bin/ | grep glsl
+  739  ./composerImGui ../../../Aula3/lighting.xml
+  740  exit
+  741  ls
+  742  add *
+  743  status
+  744  commit "flashlight"
+  745  push
+  746  shutdown now
+  747  ls
+  748  cduni
+  749  ls
+  750  cd nau
+  751  cd VTR
+  752  cd nau
+  753  ls
+  754  cd build/bin
+  755  cduni
+  756  cd VTR
+  757  code Aula3
+  758  ./composerImGui ../../../Aula3/lighting.xml
+  759  clear
+  760  ls
+  761  cduni
+  762  ls
+  763  cduni
+  764  ls
+  765  cd VTR
+  766  ls
+  767  code Aula3
+  768  cduni
+  769  cdnui
+  770  cduni
+  771  ls
+  772  cd VTR
+  773  cd nau/build/bin
+  774  ./composerImGui ../../../Aula3/lighting.xml
+  775  ls
+  776  cduni
+  777  lls
+  778  ls
+  779  cd SDGE
+  780  ls
+  781  cd ..
+  782  ls
+  783  cd maelstrom2
+  784  ls
+  785  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 5 --node-count 10 --concurrency 3n --rate 2000
+  786  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 5 --node-count 3 --concurrency 3n --rate 2000
+  787  ./maelstrom serve
+  788  shutdown now
+  789  cduni
+  790  ls
+  791  cd TAF
+  792  ls
+  793  cd ..
+  794  cd TAF
+  795  ls
+  796  cd Ficha0
+  797  ls
+  798  lvim .
+  799  dc ..
+  800  ls
+  801  cd ..
+  802  ls
+  803  lvim Aula3.md
+  804  ls
+  805  cd ..
+  806  ls
+  807  cd SDGE
+  808  ls
+  809  lvim Ficha1
+  810  python
+  811  cd ..
+  812  cd maelstrom2
+  813  ./maelstrom test -w lock --bin ../SDGE/Ficha1/lock-my-impl.py --time-limit 5 --node-count 3 --concurrency 3n --rate 2000
+  814  add *
+  815  commit "making aux functions"
+  816  push
+  817  exit
+  818  cd ~/.config/lvim
+  819  lvim config.lua
+  820  lvim Aula3.md
+  821  lvim config.lua
+  822  lvim Aula3.md
+  823  lvim config.lua
+  824  lvim Aula3.md
+  825  lvim config.lua
+  826  yarn
+  827  sudo apt install yarn
+  828  python
+  829  cd ..
+  830  ls
+  831  cd SDGE
+  832  ls
+  833  lvim Ficha1
+  834  exit
+  835  ls
+  836  mv Ficha0 Pratica
+  837  ls
+  838  status
+  839  add *
+  840  commit "Aula3 e mudança de estrutura"
+  841  push
+  842  status
+  843  git rm Ficha0/*
+  844  git rm Ficha0/echoplus.py 
+  845  git rm Ficha0/echo.py
+  846  git rm Ficha0/LinKV.py
+  847  git rm Ficha0/ms.py
+  848  git rm Ficha0/__pycache__/
+  849  git rm -r Ficha0/__pycache__/
+  850  ls
+  851  status
+  852  add *
+  853  commit "Mudei estrutura"
+  854  push
+  855  ls
+  856  status
+  857  clear
+  858  ls
+  859  lvim .
+  860  ls
+  861  cd ..
+  862  cd maelstrom
+  863  ls
+  864  cd ..
+  865  cd maelstrom
+  866  cd ..
+  867  ls
+  868  cd maelstrom2
+  869  ls
+  870  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 3n --rate 2000
+  871  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+  872  ls
+  873  cd ..
+  874  ls
+  875  rm -rf maelstrom
+  876  mv maelstrom2 maelstrom
+  877  ls
+  878  cd maelstrom
+  879  ls
+  880  ./maelstrom store
+  881  ./maelstrom serve
+  882  clear
+  883  ls
+  884  lvim .
+  885  python
+  886  add *
+  887  ls
+  888  status
+  889  commit "Aula3 pratica inicio"
+  890  push
+  891  shutdown now
+  892  cduni
+  893  ls
+  894  cd PSD
+  895  ls
+  896  clear
+  897  s
+  898  ls
+  899  touch Aula3.md
+  900  lvim Aula3.md
+  901  ls
+  902  mkdir Guiao4
+  903  ls
+  904  cd Guiao4
+  905  sudo apt install maven
+  906  ls
+  907  status
+  908  ls
+  909  code .
+  910  ls ../Guiao3
+  911  ls ../Guiao3/guiao3
+  912  ls ../Guiao3/guiao3/src
+  913  ls ../Guiao3/guiao3/src/main
+  914  ls ../Guiao3/guiao3/src/main/java
+  915  ls ../Guiao3/guiao3/src/main/java/guiao3
+  916  mvn compile -f "/home/tbag/Universidade/4Ano/2Sem/PSD/Guiao4/guiao4/pom.xml"
+  917  ls ../Guiao3/guiao3/src/main/java/guiao3
+  918  code .
+  919  mvn compile -f "/home/tbag/Universidade/4Ano/2Sem/PSD/Guiao4/guiao4/pom.xml"
+  920  clear
+  921  mvn generate-source -f "/home/tbag/Universidade/4Ano/2Sem/PSD/Guiao4/guiao4/pom.xml"
+  922  cd ~/Downloads
+  923  tar -fxvz ideaIU-2023.3.4.tar.gz
+  924  tar -czf ideaIU-2023.3.4.tar.gz
+  925  tar -xvzf ideaIU-2023.3.4.tar.gz
+  926  ls
+  927  cd idea-IU-233.14475.28
+  928  ls
+  929  cd bin
+  930  ls
+  931  ./idea.sh
+  932  ln -s /bin/idea ./inspect.sh
+  933  ln -s ./idea.sh /bin/idea
+  934  sudo ln -s ./idea.sh /bin/idea
+  935  exit
+  936  idea
+  937  exit
+  938  pkill
+  939  pkill tmux
+  940  cduni
+  941  cd PSD
+  942  ls
+  943  cd Guiao4
+  944  idea .
+  945  open /bin
+  946  sudo rm /bin/idea
+  947  cd ~/Downloads
+  948  ls
+  949  cd idea-IU-233.14475.28
+  950  ls
+  951  cat build.txt
+  952  cat Install-Linux-tar.txt
+  953  pwd
+  954  cd bin
+  955  ls
+  956  pwd
+  957  lvim ~/.zshrc
+  958  source ~/.zshrc
+  959  idea.sh
+  960  exit
+  961  source ~/.zshrc
+  962  idea.sh .
+  963  ls
+  964  cd ..
+  965  cd Guiao
+  966  cd Guiao4
+  967  cd ~/Downloads
+  968  ls
+  969  rm -rf idea*
+  970  lvim ~/.zshrc
+  971  code .
+  972  tar -xvzf ideaIC-2023.3.4.tar.gz
+  973  ls
+  974  tar -xvzf ideaIC-2023.3.4.tar.gz
+  975  tar -xvzf ideaIC-2023.3.4\ \(1\).tar.gz
+  976  ls
+  977  cd idea-IC-233.14475.28
+  978  ls
+  979  cd bin
+  980  pwd
+  981  lvim ~/.zshrc
+  982  exit
+  983  pkill tmux
+  984  cduni
+  985  cd PSD
+  986  cd Guiao4
+  987  idea.sh .
+  988  idea.sh guiao4
+  989  code ..
+  990  shutdown now
+  991  cduni
+  992  ls
+  993  cd ../../3Ano/2Sem/CG/Trabalho-CG
+  994  ls
+  995  cd Fase1
+  996  ls
+  997  cd ..
+  998  ls
+  999  zip -r Fase1CG.zip Fase1
+ 1000  ls
+ 1001  ll
+ 1002  open .
+ 1003  cduni
+ 1004  ls
+ 1005  cd SDGE
+ 1006  ls
+ 1007  cd ..
+ 1008  ls
+ 1009  cd maelstrom
+ 1010  ls
+ 1011  cd ..
+ 1012  mv maelstrom maelstromLock
+ 1013  ls
+ 1014  cd SDGE
+ 1015  mv ~/Downloads/maelstrom\(1\).bz2 .
+ 1016  bzip2 -d maelstrom\(1\).bz2
+ 1017  ls
+ 1018  mv maelstrom\(1\) ../maelstromCbcast
+ 1019  cd ..
+ 1020  ls
+ 1021  tar -vf maelstromCbcast
+ 1022  tar --usage
+ 1023  ls
+ 1024  tar -xf maelstromCbcast
+ 1025  ls
+ 1026  mkdir maelstromCbcast
+ 1027  rm maelstromCbcast
+ 1028  mkdir maelstromCbcast
+ 1029  mv maelstrom maelstromCbcast
+ 1030  mv maelstrom.jar maelstromCbcast
+ 1031  cd maelstromCbcast
+ 1032  exit
+ 1033  ls
+ 1034  ./maelstrom serve
+ 1035  mkdir Ficha2
+ 1036  mv ~/Downloads/wrong-causal-broadcast.py ./Ficha2
+ 1037  lvim Ficha2
+ 1038  ls
+ 1039  mv Ficha1 Pratica
+ 1040  mv Ficha2/wrong-causal-broadcast.py Pratica
+ 1041  ls
+ 1042  rmdir Ficha2
+ 1043  status
+ 1044  git rm -r Ficha1
+ 1045  ls
+ 1046  status
+ 1047  cd Pratica
+ 1048  ls
+ 1049  lvim wrong-causal-broadcast.py
+ 1050  ./maelstrom -w cbcast --path-to-bin ../SDGE/Pratica/wrong-causal-broadcast.py --time-limit 10 --num-nodes 3 --concurrency 1n
+ 1051  ./maelstrom test -w cbcast --path-to-bin ../SDGE/Pratica/wrong-causal-broadcast.py --time-limit 10 --num-nodes 3 --concurrency 1n
+ 1052  ./maelstrom test -w cbcast --bin ../SDGE/Pratica/wrong-causal-broadcast.py --time-limit 10 --node-count 3 --concurrency 1n
+ 1053  ./maelstrom test -w cbcast --bin ../SDGE/Pratica/wrong-causal-broadcast.py --time-limit 10 --node-count 3 --concurrency 1n --latency-dist uniform --latency 500
+ 1054  python
+ 1055  ./maelstrom test -w cbcast --bin ../SDGE/Pratica/wrong-causal-broadcast.py --time-limit 10 --node-count 3 --concurrency 1n --latency-dist uniform --latency 500
+ 1056  ./maelstrom test -w cbcast --bin ../SDGE/Pratica/wrong-causal-broadcast.py --time-limit 10 --node-count 3 --concurrency 1n --latency-dist uniform --latency 500 --rate 500
+ 1057  shutdown now
+ 1058  cduni
+ 1059  ls
+ 1060  cd VO
+ 1061  cd VI
+ 1062  ls
+ 1063  mv ~/Downloads/04-VI-RT-RayMeshIntersection\(1\).pptx slides
+ 1064  ls ~/Downloads
+ 1065  ls slides
+ 1066  ls
+ 1067  cd VI-RT
+ 1068  ls
+ 1069  lvim VI-RT/
+ 1070  cd VI-RT
+ 1071  ls
+ 1072  lvim .
+ 1073  code .
+ 1074  cd ..
+ 1075  ls
+ 1076  make
+ 1077  ls
+ 1078  make
+ 1079  ls
+ 1080  cd build
+ 1081  ls
+ 1082  cd apps
+ 1083  ls
+ 1084  ./VI-RT
+ 1085  cd ..
+ 1086  ./build/apps/VI-RT
+ 1087  make
+ 1088  ./build/apps/VI-RT
+ 1089  make
+ 1090  ./build/apps/VI-RT
+ 1091  make
+ 1092  ./build/apps/VI-RT
+ 1093  make
+ 1094  ls
+ 1095  ./build/apps/VI-RT
+ 1096  ls
+ 1097  ls build/apps/
+ 1098  ls build/objects
+ 1099  ls build/objects/VI-RT
+ 1100  ls
+ 1101  ls VI-RT
+ 1102  make
+ 1103  ./build/apps/VI-RT
+ 1104  ls
+ 1105  make
+ 1106  ./build/apps/VI-RT
+ 1107  make
+ 1108  ./build/apps/VI-RT
+ 1109  \tmake
+ 1110  ./build/apps/VI-RT
+ 1111  \tmake
+ 1112  ./build/apps/VI-RT
+ 1113  \tmake
+ 1114  ./build/apps/VI-RT
+ 1115  \tmake
+ 1116  ./build/apps/VI-RT
+ 1117  \tmake
+ 1118  ./build/apps/VI-RT
+ 1119  shutdown now
+ 1120  cduni
+ 1121  cd VI
+ 1122  code VI-RT 
+ 1123  code VI-RT/VI-RT
+ 1124  make
+ 1125  cd VI-RT
+ 1126  make
+ 1127  ./build/apps/VI-RT
+ 1128  make
+ 1129  ./build/apps/VI-RT
+ 1130  make
+ 1131  ./build/apps/VI-RT
+ 1132  make
+ 1133  ./build/apps/VI-RT > output.txt
+ 1134  lvim output.txt
+ 1135  make
+ 1136  lvim output.txt
+ 1137  ./build/apps/VI-RT > output.txt
+ 1138  lvim output.txt
+ 1139  makeºº
+ 1140  make
+ 1141  ./build/apps/VI-RT > output.txt
+ 1142  lvim output.txt
+ 1143  cduni
+ 1144  s
+ 1145  ls
+ 1146  cd VTR
+ 1147  ls
+ 1148  mkdir Aula4
+ 1149  cd Aula4
+ 1150  ls
+ 1151  mv ~/Downloads/start-5.zip .
+ 1152  unzip start-5.zip
+ 1153  ls
+ 1154  rm start-5.zip
+ 1155  ls
+ 1156  lvim .
+ 1157  ls
+ 1158  code .4
+ 1159  code .
+ 1160  ls
+ 1161  ls ..
+ 1162  cduni
+ 1163  ls
+ 1164  cd VTR
+ 1165  ls
+ 1166  cd nau
+ 1167  cd build/bin
+ 1168  ./composerImGui ../../../Aula4/texture.xml
+ 1169  cd ~/Downloads
+ 1170  ls
+ 1171  rm code_1.8
+ 1172  rm code_1.86.2-1707854558_amd64.deb
+ 1173  sudo apt install ./code_1.87.0-1709078641_amd64.deb
+ 1174  rm code_1.87.0-1709078641_amd64.deb 
+ 1175  code .
+ 1176  exit
+ 1177  code .
+ 1178  ./composerImGui ../../../Aula4/texture.xml
+ 1179  cd ~
+ 1180  lvim .config/lvim/config.lua
+ 1181  lvim .
+ 1182  exit
+ 1183  conda install --name VCPI -c anaconda pytorch
+ 1184  ./composerImGui ../../../Aula4/texture.xml
+ 1185  cd ..
+ 1186  ls
+ 1187  add *
+ 1188  status
+ 1189  commit "aula4"
+ 1190  push
+ 1191  shutdown now
+ 1192  cduni
+ 1193  ls
+ 1194  cd VI
+ 1195  ls
+ 1196  cd VI-RT
+ 1197  ls
+ 1198  code VI-RT
+ 1199  make
+ 1200  ls
+ 1201  make clean
+ 1202  make
+ 1203  ls
+ 1204  ./build/apps/VI-RT > output.txt
+ 1205  lvim output.txt
+ 1206  make
+ 1207  ./build/apps/VI-RT > output.txt
+ 1208  make
+ 1209  ./build/apps/VI-RT 
+ 1210  make
+ 1211  ./build/apps/VI-RT 
+ 1212  make
+ 1213  ./build/apps/VI-RT 
+ 1214  make
+ 1215  ./build/apps/VI-RT 
+ 1216  make
+ 1217  ./build/apps/VI-RT 
+ 1218  make
+ 1219  ./build/apps/VI-RT 
+ 1220  make
+ 1221  ./build/apps/VI-RT 
+ 1222  make
+ 1223  ./build/apps/VI-RT 
+ 1224  make
+ 1225  ./build/apps/VI-RT 
+ 1226  make
+ 1227  ./build/apps/VI-RT 
+ 1228  make
+ 1229  ./build/apps/VI-RT 
+ 1230  make
+ 1231  ./build/apps/VI-RT 
+ 1232  make
+ 1233  ./build/apps/VI-RT 
+ 1234  make
+ 1235  ./build/apps/VI-RT 
+ 1236  make
+ 1237  ./build/apps/VI-RT 
+ 1238  make
+ 1239  ./build/apps/VI-RT 
+ 1240  make
+ 1241  ./build/apps/VI-RT 
+ 1242  shutdown now
+ 1243  cduni
+ 1244  ls
+ 1245  cd VCPI
+ 1246  ls
+ 1247  mkdir Aula3
+ 1248  df -h ~
+ 1249  ls
+ 1250  cd Aula3
+ 1251  mv ~/Downloads/04-ImageSegmentation.pptx .
+ 1252  mv ~/Downloads/ImageSegmentation.ipynb .
+ 1253  ls
+ 1254  code .
+ 1255  cd ..
+ 1256  code .
+ 1257  reboot
+ 1258  cduni
+ 1259  ls
+ 1260  clear
+ 1261  ls
+ 1262  clear
+ 1263  ls
+ 1264  clear
+ 1265  ls
+ 1266  clear
+ 1267  ls
+ 1268  clear
+ 1269  ls
+ 1270  clear
+ 1271  ls
+ 1272  clear
+ 1273  ls
+ 1274  clear
+ 1275  ls
+ 1276  clear
+ 1277  ls
+ 1278  clear
+ 1279  shutdown now
+ 1280  ls
+ 1281  cduni
+ 1282  ls
+ 1283  cd VI
+ 1284  ls
+ 1285  cd VI-RT
+ 1286  ls
+ 1287  code VI-RT
+ 1288  mak
+ 1289  make
+ 1290  ./build/apps/VI-RT 
+ 1291  make
+ 1292  ./build/apps/VI-RT 
+ 1293  make
+ 1294  ./build/apps/VI-RT 
+ 1295  make
+ 1296  ./build/apps/VI-RT 
+ 1297  make
+ 1298  ./build/apps/VI-RT 
+ 1299  shutdown now
+ 1300  cduni
+ 1301  ls
+ 1302  cd TAF
+ 1303  ls
+ 1304  sudo apt install libffmpeg
+ 1305  cduni
+ 1306  cd VI
+ 1307  code VI-RT/VI-RT
+ 1308  cd VI-RT
+ 1309  make
+ 1310  ./build/apps/VI-RT 
+ 1311  find / -name chromium
+ 1312  sudo find / -name chromium
+ 1313  find / -name libffmpeg.so
+ 1314  sudo find / -name libffmpeg.so
+ 1315  sudo cp -i /usr/lib/chromium/libffmpeg.so /usr/lib/x86_64-linux-gnu/opera/
+ 1316  make
+ 1317  ./build/apps/VI-RT 
+ 1318  cd ..
+ 1319  ls
+ 1320  lvim teste.cpp
+ 1321  gcc -Wall -g teste.cpp
+ 1322  lvim teste.cpp
+ 1323  gcc -Wall -g teste.cpp
+ 1324  ./a.out
+ 1325  shutdown now
+ 1326  cduni
+ 1327  ls
+ 1328  cd VI
+ 1329  ls
+ 1330  cd VI-RT
+ 1331  ls
+ 1332  code VI-RT
+ 1333  cd ~
+ 1334  ls
+ 1335  cduni
+ 1336  cd VI
+ 1337  ls
+ 1338  code teste.cpp
+ 1339  gcc -Wall -g teste.cpp
+ 1340  ./a.out
+ 1341  make
+ 1342  ./build/apps/VI-RT 
+ 1343  make
+ 1344  ./build/apps/VI-RT 
+ 1345  gcc -Wall -g teste.cpp
+ 1346  ./build/apps/VI-RT 
+ 1347  ./a.out
+ 1348  make
+ 1349  gcc -Wall -g teste.cpp
+ 1350  ./a.out
+ 1351  ./build/apps/VI-RT 
+ 1352  make
+ 1353  ./build/apps/VI-RT 
+ 1354  gcc -Wall -g teste.cpp
+ 1355  ./a.out
+ 1356  gcc -Wall -g teste.cpp
+ 1357  ./a.out
+ 1358  \tmake
+ 1359  ./build/apps/VI-RT 
+ 1360  \tmake
+ 1361  ./build/apps/VI-RT 
+ 1362  \tmake
+ 1363  ./build/apps/VI-RT 
+ 1364  gcc -Wall -g teste.cpp
+ 1365  ./build/apps/VI-RT 
+ 1366  gcc -Wall -g teste.cpp
+ 1367  ./a.out
+ 1368  \tmake
+ 1369  ./build/apps/VI-RT 
+ 1370  \tmake
+ 1371  ./build/apps/VI-RT 
+ 1372  \tmake
+ 1373  ./build/apps/VI-RT 
+ 1374  \tmake
+ 1375  ./build/apps/VI-RT 
+ 1376  ls
+ 1377  cd ..
+ 1378  ls
+ 1379  open slides/04-VI-RT-RayMeshIntersection\(1\).pptx
+ 1380  clear
+ 1381  ls
+ 1382  exit
+ 1383  ls
+ 1384  cduni
+ 1385  ls
+ 1386  cd TAF
+ 1387  ls
+ 1388  cd Pratica
+ 1389  ls
+ 1390  cd ..
+ 1391  ls
+ 1392  cd Pratica
+ 1393  ls
+ 1394  lvim LinKV.py
+ 1395  shutdown now
+ 1396  cduni
+ 1397  ls
+ 1398  cd TAF
+ 1399  ls
+ 1400  cd Pratica
+ 1401  lvim .
+ 1402  cd ..
+ 1403  c d..
+ 1404  ls
+ 1405  cd ..
+ 1406  cd maelstromLock
+ 1407  ld
+ 1408  ls
+ 1409  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1410  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 2n 
+ 1411  ./maelstrom serve
+ 1412  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 2n 
+ 1413  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1414  shutdown now
+ 1415  cduni
+ 1416  ls
+ 1417  lvim ~/.zshrc
+ 1418  pkill tmux
+ 1419  ps
+ 1420  ps -a
+ 1421  gnome-terminal
+ 1422  ls
+ 1423  exit
+ 1424  bash
+ 1425  ps
+ 1426  pkill zsh
+ 1427  ps
+ 1428  ls
+ 1429  cduni
+ 1430  ps
+ 1431  ls
+ 1432  cd PSD
+ 1433  ls
+ 1434  lvim Aula4.md
+ 1435  clear
+ 1436  ssh -4 root@ocurso.org
+ 1437  ping 159.223.7.250
+ 1438  nc 159.223.7.250:25565
+ 1439  nc 159.223.7.250 25565
+ 1440  nc 159.223.7.250
+ 1441  idea.sh
+ 1442  echo $PATH
+ 1443  idea.sh
+ 1444  find ~ -name Animedle
+ 1445  find ~ -name DLC
+ 1446  find ~ -name Dlc
+ 1447  find ~ -name "*Dlc*"
+ 1448  find ~ -name *Dlc*
+ 1449  idea.sh
+ 1450  shutdown now
+ 1451  wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-2_all.deb
+ 1452  sudo dpkg -i ./protonvpn-stable-release_1.0.3-2_all.deb && sudo apt update
+ 1453  sudo apt install proton-vpn-gnome-desktop
+ 1454  reboot
+ 1455  sudo apt remove --purge proton*
+ 1456  sudo apt remove --purge proton-vpn-gtk-app
+ 1457  sudo apt remove --purge protonvpn-stable-release 
+ 1458  sudo apt autoremove
+ 1459  \tcd Downloads
+ 1460  ls
+ 1461  sudo apt install ./windscribe_2.9.9_amd64.deb
+ 1462  sudo dpkg -i ./windscribe_2.9.9_amd64.deb
+ 1463  ls
+ 1464  cduni
+ 1465  ls
+ 1466  cd ..
+ 1467  cd 3Ano/2Sem
+ 1468  ls
+ 1469  cd CG
+ 1470  ls
+ 1471  cd Trabalho-CG
+ 1472  ls
+ 1473  cd PosEntrega
+ 1474  ls
+ 1475  code .
+ 1476  shutdown now
+ 1477  ls
+ 1478  cduni
+ 1479  ls
+ 1480  mkdir maelstromCRDT
+ 1481  cp maelstromCbcast/* maelstromCRDT
+ 1482  cd maelstromCRDT
+ 1483  çs
+ 1484  ls
+ 1485  rm maelstrom.jar
+ 1486  mv ~/Downloads/maelstrom.jar .
+ 1487  cduni
+ 1488  ls
+ 1489  cd TAF
+ 1490  ls
+ 1491  cd Pratica
+ 1492  ls
+ 1493  cd ..
+ 1494  cd SDGE
+ 1495  ls
+ 1496  cd Pratica
+ 1497  ls
+ 1498  cd ..
+ 1499  ls
+ 1500  cd Pratica
+ 1501  ls
+ 1502  lvim .
+ 1503  mv wrong-causal-broadcast.py causal-broadcast.py
+ 1504  cp causal-broadcast.py crdt.py
+ 1505  lvim crdt.py
+ 1506  python
+ 1507  cduni
+ 1508  ls
+ 1509  cd maelstromCbcast
+ 1510  ./maelstrom test -w
+ 1511  ./maelstrom test 
+ 1512  ./maelstrom doc
+ 1513  ./maelstrom help
+ 1514  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1515  cd ..
+ 1516  ls
+ 1517  cd maelstromCRDT
+ 1518  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1519  ./maelstrom serve
+ 1520  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1521  ^[OA
+ 1522  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1523  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 20
+ 1524  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200 --latency 100
+ 1525  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 5 --concurrency 5n --rate 200 --latency 100
+ 1526  clear
+ 1527  shutdown 
+ 1528  shutdown now
+ 1529  cduni
+ 1530  ls
+ 1531  cd VCPI
+ 1532  ls
+ 1533  mkdir TP
+ 1534  cd TP
+ 1535  ls
+ 1536  mv ~/Downloads/DartTarget.ipynb .
+ 1537  code 
+ 1538  code .
+ 1539  cd ..
+ 1540  code .
+ 1541  cduni
+ 1542  ls
+ 1543  cd VCPI
+ 1544  code .
+ 1545  ls
+ 1546  shutdown now
+ 1547  sudo apt remove --purge windscribe 
+ 1548  sudo apt autoremove
+ 1549  sudo apt autoclean
+ 1550  clear
+ 1551  cduni
+ 1552  ls
+ 1553  clear
+ 1554  ls
+ 1555  clear
+ 1556  ls
+ 1557  lear
+ 1558  ls
+ 1559  clear
+ 1560  cd VTR
+ 1561  ls
+ 1562  mkdir Aula5
+ 1563  cd Aula
+ 1564  cd Aula5
+ 1565  mv ~/Downloads/6-Texturing-alunos.zip .
+ 1566  unzip 6-Texturing-alunos.zip
+ 1567  ls
+ 1568  rm 6-Texturing-alunos.zip
+ 1569  mv 6\ -\ Texturing\ alunos/* .
+ 1570  ls
+ 1571  cd Texturing
+ 1572  cd Texturing..
+ 1573  cd ..
+ 1574  cd 6\ -\ Texturing\ alunos
+ 1575  ls
+ 1576  cd ..
+ 1577  rmdir 6\ -\ Texturing\ alunos
+ 1578  mv Texturing/* .
+ 1579  rm Texturing
+ 1580  rmdir Texturing
+ 1581  l
+ 1582  ls
+ 1583  code .
+ 1584  ls
+ 1585  cduni
+ 1586  cd VTR/nau
+ 1587  ls
+ 1588  cd build/bin
+ 1589  ls
+ 1590  ./composerImGui ../../../Aula5/textureModel.xml
+ 1591  mv ~/Downloads/otherTextures.zip textures
+ 1592  cd textures
+ 1593  unzip otherTextures.zip
+ 1594  ls
+ 1595  rm .zip
+ 1596  rm otherTextures.zip
+ 1597  ./composerImGui ../../../Aula5/textureModel.xml
+ 1598  \tmv ~/Downloads/noise-1.zip ..
+ 1599  cd ..
+ 1600  ls
+ 1601  unzip noise-1.zip
+ 1602  ls
+ 1603  rm noise-1.zip
+ 1604  ls
+ 1605  ./composerImGui ../../../Aula5/worley/worley.xml
+ 1606  ./composerImGui ../../../Aula5/perlin/perlin.xml
+ 1607  ./composerImGui ../../../Aula5/worley/worley.xml
+ 1608  ./composerImGui ../../../Aula5/textureModel.xml
+ 1609  shutdown now 
+ 1610  conda install --name VCPI -c anaconda torchvision matplotlib pandas scikit-learn seaborn torchinfo
+ 1611  cuda
+ 1612  ls /usr/local/cuda
+ 1613  apt search cuda-drivers
+ 1614  sudo apt update\nsudo apt install apt-transport-https ca-certificates gnupg
+ 1615  sudo apt install nvidia-cuda-tookit
+ 1616  cd Downloads
+ 1617  ls
+ 1618  wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
+ 1619  rm 04-VI-RT-RayMeshIntersection\(1\)*
+ 1620  ls
+ 1621  sudo dpkg -i cuda-keyring_1.1-1_all.deb
+ 1622  sudo apt-get update
+ 1623  sudo apt-get -y install cuda-toolkit-12-4
+ 1624  ls
+ 1625  sudo apt install ./discord-0.0.44.deb
+ 1626  sudo dpkg -i discord-0.0.44.deb
+ 1627  conda install --name VCPI -c anaconda torchvision matplotlib pandas scikit-learn seaborn torchinfo
+ 1628  cduni
+ 1629  ls
+ 1630  cd VCPI
+ 1631  ls
+ 1632  code .
+ 1633  exit
+ 1634  cduni
+ 1635  ls
+ 1636  cd VCPI
+ 1637  ls
+ 1638  git clone git@github.com:Nau3D/Deep-Learning-Course-PyTorch.git
+ 1639  ls
+ 1640  code Deep-Learning-Course-PyTorch
+ 1641  clearl
+ 1642  clear
+ 1643  exit
+ 1644  cduni
+ 1645  cd VCPI/Deep-Learning-Course-PyTorch
+ 1646  sudo apt-get -y install cuda-toolkit-12-4
+ 1647  ls
+ 1648  clear
+ 1649  nvcc
+ 1650  sudo reboot
+ 1651  nvcc
+ 1652  nvcc 
+ 1653  ls
+ 1654  cd Downloads
+ 1655  ls
+ 1656  sudo dpkg -i ./cuda-keyring_1.1-1_all.deb
+ 1657  sudo apt-get update
+ 1658  sudo apt-get -y install cuda-toolkit-12-4
+ 1659  sudo apt-get install -y cuda-drivers
+ 1660  sudo apt-get install -y cuda-drivers-535
+ 1661  sudo apt --fix-broken  install
+ 1662  nvcc
+ 1663  reboot
+ 1664  sudo reboot
+ 1665  cduni
+ 1666  nvcc
+ 1667  ls
+ 1668  cduni
+ 1669  ls
+ 1670  cd VCPI
+ 1671  ls
+ 1672  cd Deep-Learning-Course-PyTorch
+ 1673  ls
+ 1674  code .
+ 1675  sudo apt-get install -y cuda-drivers-535
+ 1676  sudo apt-get -y install cuda-toolkit-12-4
+ 1677  sudo apt autoremove
+ 1678  nvidia-cuda-mps-control
+ 1679  ls /usr/local/cuda-12.4
+ 1680  cd ..
+ 1681  ls
+ 1682  lvm ~/.zshrc
+ 1683  lvim ~/.zshrc
+ 1684  source ~/.zshrc
+ 1685  ls /usr/local/cuda-12.4
+ 1686  ls /usr/local/cuda-12.4/bin
+ 1687  lvim ~/.zshrc
+ 1688  source ~/.zshrc
+ 1689  nvcc --version
+ 1690  nvidia-smi
+ 1691  sudo apt-get install cuda
+ 1692  sudo apt-get install -y cuda-12-4
+ 1693  nvcc --version
+ 1694  sudo reboot
+ 1695  cduni
+ 1696  ls
+ 1697  cd VCPI
+ 1698  code Deep-Learning-Course-PyTorch
+ 1699  sudo apt install nvidia-driver-535\n
+ 1700  sudo apt install nvidia-driver-550\n
+ 1701  sudo apt autoremove
+ 1702  conda install -c nvidia cuda-nvcc
+ 1703  conda install -c "nvidia/label/cuda-11.3.0" cuda-nvcc
+ 1704  nvcc --version\n
+ 1705  conda install -c anaconda cudatoolkit\n
+ 1706  python
+ 1707  conda activate VCPI
+ 1708  python
+ 1709  sudo reboot
+ 1710  conda activate VCPI
+ 1711  python
+ 1712  cduni
+ 1713  ls
+ 1714  cd VI
+ 1715  ls
+ 1716  sudo reboot
+ 1717  cd Downloads
+ 1718  ls
+ 1719  sudo apt install ./discord-0.0.44.deb
+ 1720  cduni
+ 1721  cd VCPI
+ 1722  cd ..
+ 1723  cd VI
+ 1724  ls
+ 1725  cd VI-RT
+ 1726  ls
+ 1727  cd ..
+ 1728  ols
+ 1729  ls
+ 1730  code VI-RT
+ 1731  cd VI-RT
+ 1732  code VI-RT
+ 1733  cduni
+ 1734  ls
+ 1735  cd TAF
+ 1736  ls
+ 1737  cd Pratica
+ 1738  lvim .
+ 1739  cd ..
+ 1740  ls
+ 1741  cd ..
+ 1742  cd maelstrom
+ 1743  cd maelstromCRDT
+ 1744  ls
+ 1745  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1746  ./maelstrom serve
+ 1747  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1748  lvim .
+ 1749  ls
+ 1750  clear
+ 1751  cd ..
+ 1752  ls
+ 1753  cd ..
+ 1754  ls
+ 1755  cd VTR
+ 1756  ls
+ 1757  exit
+ 1758  cd Aula5
+ 1759  ls
+ 1760  code .
+ 1761  cduni
+ 1762  cd VTR/nau/build/bin
+ 1763  ./composerImGui ../../../Aula5/textureModel.xml
+ 1764  clear
+ 1765  shutdown now
+ 1766  sudo shutdown
+ 1767  exit
+ 1768  sudo shutdown now
+ 1769  cduni
+ 1770  ls
+ 1771  cd VCPI
+ 1772  ls
+ 1773  cd TP
+ 1774  ls
+ 1775  code .
+ 1776  cd ..
+ 1777  ls
+ 1778  mkdir PI
+ 1779  mkdir VC
+ 1780  mv Aula* PI
+ 1781  mv TP PI
+ 1782  mv Deep-Learning-Course-PyTorch VC
+ 1783  ls
+ 1784  code PI
+ 1785  ls
+ 1786  cd TP
+ 1787  ls
+ 1788  cd ..
+ 1789  ls
+ 1790  cd PI
+ 1791  ls
+ 1792  code TP
+ 1793  code ~/Downloads/DartTarget_Grupo1.ipynb
+ 1794  ls
+ 1795  cd ..
+ 1796  ls
+ 1797  cd VTR
+ 1798  ls
+ 1799  zip -r Aula5.zip Aula5
+ 1800  open .
+ 1801  rm .zip
+ 1802  rm Aula5.zip
+ 1803  cd. .
+ 1804  cd ..
+ 1805  cd VCPIP
+ 1806  ls
+ 1807  cd VCPI
+ 1808  ls
+ 1809  rm -rf TP
+ 1810  ls
+ 1811  status
+ 1812  add *
+ 1813  status
+ 1814  git rm Aula1/
+ 1815  git rm -r Aula1/
+ 1816  status
+ 1817  add *
+ 1818  commit "PI acabado e inicio VC, e TP"
+ 1819  push
+ 1820  ls PI
+ 1821  rm -rf Aula2/
+ 1822  s
+ 1823  ls
+ 1824  add *
+ 1825  status
+ 1826  git rm Aula2/
+ 1827  git rm -r Aula2/
+ 1828  commit "RM aula2"
+ 1829  push
+ 1830  shutdown now
+ 1831  ls
+ 1832  cduni
+ 1833  l
+ 1834  ls
+ 1835  l
+ 1836  rm ._maelstrom.jar
+ 1837  ls
+ 1838  ll
+ 1839  l
+ 1840  cd VTR
+ 1841  ls
+ 1842  lvim Aula5
+ 1843  cd nau
+ 1844  exit
+ 1845  cduni
+ 1846  cd VTR/nau/build/bin
+ 1847  ./composerImGui ../../../Aula5/textureModel.xml
+ 1848  shutdown now
+ 1849  cduni
+ 1850  ls
+ 1851  cd VCPI/PI/TP
+ 1852  code .
+ 1853  cd ..
+ 1854  cd VTR/nau/build/bin
+ 1855  ./composerImGui ../../../Aula5/textureModel.xml
+ 1856  cd ..
+ 1857  cd VTR/Aula5
+ 1858  lvim .
+ 1859  ./composerImGui ../../../Aula5/textureModel.xml
+ 1860  shutdown now
+ 1861  cduni
+ 1862  ls
+ 1863  cd TAF
+ 1864  ls
+ 1865  cd ..
+ 1866  cd maelstromCbcast
+ 1867  cd ..
+ 1868  ls
+ 1869  cd maelstromCbcast
+ 1870  ls
+ 1871  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1872  ./maelstrom serve
+ 1873  ls
+ 1874  clear
+ 1875  ls
+ 1876  cd Pratica
+ 1877  lvim .
+ 1878  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LinKV.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1879  ls
+ 1880  cat echo.py > LogBasedReplication.py
+ 1881  lvim LogBasedReplication.py
+ 1882  cat echoplus.py > LogBasedReplication.py
+ 1883  lvim LogBasedReplication.py
+ 1884  \tpython
+ 1885  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1886  ls
+ 1887  cd ..
+ 1888  ls
+ 1889  cd maelstromLock
+ 1890  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1891  cd ..
+ 1892  ls
+ 1893  cd maelstromLock
+ 1894  ./maelstrom serve
+ 1895  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 5 --node-count 3 --concurrency 2n --rate 2000
+ 1896  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200
+ 1897  shutdown now
+ 1898  cduni
+ 1899  ls
+ 1900  cd PSD
+ 1901  ls
+ 1902  cat Aula4.md
+ 1903  touch Aula5.md
+ 1904  lvim Aula5.md
+ 1905  sudo apt install erlang
+ 1906  erl
+ 1907  erl --help
+ 1908  man erl
+ 1909  ls
+ 1910  mkdir Guiao5
+ 1911  ls
+ 1912  cd Guiao5
+ 1913  touch ficha.erl
+ 1914  lvim ficha.erl
+ 1915  cd Guiao5
+ 1916  ls
+ 1917  erlc ficha.erl
+ 1918  erl ficha.beam
+ 1919  ls
+ 1920  rm ficha.beam
+ 1921  erlc ficha.erl
+ 1922  erl
+ 1923  clear
+ 1924  erlc ficha.erl
+ 1925  erl
+ 1926  clear
+ 1927  ps
+ 1928  pkill zsh
+ 1929  ps
+ 1930  lvim myqueue.erl
+ 1931  erlc myqueue.erl
+ 1932  erl
+ 1933  lvim .
+ 1934  lvim priorityqueue.erl
+ 1935  shutdown now
+ 1936  cduni
+ 1937  ls
+ 1938  status
+ 1939  cd PSD
+ 1940  ls
+ 1941  status
+ 1942  add *
+ 1943  status
+ 1944  commit "Guiao 4 (unfinished) e 5(unfinished)"
+ 1945  push
+ 1946  cd..
+ 1947  cd .
+ 1948  cd ..
+ 1949  exit
+ 1950  cd maelstromCRDT
+ 1951  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 5 --concurrency 5n --rate 200 --latency 100
+ 1952  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200 --latency 100
+ 1953  ./maelstrom serve
+ 1954  ./maelstrom test -w or-set --bin ../SDGE/Pratica/crdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200
+ 1955  cd SDGE
+ 1956  ls
+ 1957  cd Pratica
+ 1958  ls
+ 1959  cat < crdt.py > causalCrdt.py
+ 1960  chmod +x causalCrdt.py
+ 1961  lvim causal
+ 1962  lvim causalCrdt.py
+ 1963  code .
+ 1964  like
+ 1965  add *
+ 1966  status
+ 1967  commit "broadcast causal, crdt e crdt causal\n"
+ 1968  push
+ 1969  status
+ 1970  shutdown now
+ 1971  cduni
+ 1972  ls
+ 1973  cd VI
+ 1974  ls
+ 1975  rm teste.cpp a.out
+ 1976  ls
+ 1977  clear
+ 1978  ls
+ 1979  clear
+ 1980  ls
+ 1981  clear
+ 1982  ls
+ 1983  clear
+ 1984  ls
+ 1985  clear
+ 1986  ls
+ 1987  clear
+ 1988  ls
+ 1989  clear
+ 1990  ls
+ 1991  clear
+ 1992  ls
+ 1993  clear
+ 1994  ls
+ 1995  cd VI-RT
+ 1996  ls
+ 1997  cd VI-RT
+ 1998  ls
+ 1999  code VI-RT
+ 2000  exit
+ 2001  cat VI-RT/Camera/perspective.[hpp, cpp]
+ 2002  cat VI-RT/Camera/perspective.[hpp/cpp]
+ 2003  cat VI-RT/Camera/perspective.[hpp, cpp]
+ 2004  \tmake
+ 2005  ./build/apps/VI-RT
+ 2006  ls
+ 2007  open MyImage.ppm
+ 2008  make
+ 2009  ./build/apps/VI-RT
+ 2010  open MyImage.ppm
+ 2011  make
+ 2012  ./build/apps/VI-RT
+ 2013  make
+ 2014  ./build/apps/VI-RT
+ 2015  open MyImage.ppm
+ 2016  make
+ 2017  ./build/apps/VI-RT
+ 2018  open MyImage.ppm
+ 2019  make
+ 2020  ./build/apps/VI-RT
+ 2021  open MyImage.ppm
+ 2022  make
+ 2023  ./build/apps/VI-RT
+ 2024  open MyImage.ppm
+ 2025  make
+ 2026  ./build/apps/VI-RT
+ 2027  make
+ 2028  ./build/apps/VI-RT
+ 2029  make
+ 2030  ./build/apps/VI-RT
+ 2031  make
+ 2032  ./build/apps/VI-RT
+ 2033  open MyImage.ppm
+ 2034  make
+ 2035  ./build/apps/VI-RT
+ 2036  open MyImage.ppm
+ 2037  make
+ 2038  ./build/apps/VI-RT
+ 2039  open MyImage.ppm
+ 2040  make
+ 2041  ./build/apps/VI-RT
+ 2042  open MyImage.ppm
+ 2043  make
+ 2044  ./build/apps/VI-RT
+ 2045  make
+ 2046  ./build/apps/VI-RT
+ 2047  make
+ 2048  ./build/apps/VI-RT
+ 2049  make
+ 2050  ./build/apps/VI-RT
+ 2051  make
+ 2052  ./build/apps/VI-RT
+ 2053  open MyImage.ppm
+ 2054  make
+ 2055  ./build/apps/VI-RT
+ 2056  make
+ 2057  ./build/apps/VI-RT
+ 2058  open MyImage.ppm
+ 2059  make
+ 2060  ./build/apps/VI-RT
+ 2061  open MyImage.ppm
+ 2062  make
+ 2063  ./build/apps/VI-RT
+ 2064  open MyImage.ppm
+ 2065  make
+ 2066  ./build/apps/VI-RT
+ 2067  open MyImage.ppm
+ 2068  make
+ 2069  ./build/apps/VI-RT
+ 2070  open MyImage.ppm
+ 2071  rm MyImage.ppm
+ 2072  ./build/apps/VI-RT
+ 2073  open MyImage.ppm
+ 2074  make
+ 2075  ./build/apps/VI-RT
+ 2076  open MyImage.ppm
+ 2077  make
+ 2078  ./build/apps/VI-RT
+ 2079  open MyImage.ppm
+ 2080  make
+ 2081  ./build/apps/VI-RT
+ 2082  open MyImage.ppm
+ 2083  ./build/apps/VI-RT
+ 2084  open MyImage.ppm
+ 2085  make
+ 2086  ./build/apps/VI-RT
+ 2087  open MyImage.ppm
+ 2088  make
+ 2089  ./build/apps/VI-RT
+ 2090  open MyImage.ppm
+ 2091  ./build/apps/VI-RT
+ 2092  open MyImage.ppm
+ 2093  ./build/apps/VI-RT
+ 2094  open MyImage.ppm
+ 2095  make
+ 2096  ./build/apps/VI-RT
+ 2097  make
+ 2098  ./build/apps/VI-RT
+ 2099  make
+ 2100  ./build/apps/VI-RT
+ 2101  make
+ 2102  ./build/apps/VI-RT
+ 2103  omak
+ 2104  make
+ 2105  ./build/apps/VI-RT
+ 2106  make
+ 2107  ./build/apps/VI-RT
+ 2108  open MyImage.ppm
+ 2109  make
+ 2110  ./build/apps/VI-RT
+ 2111  make
+ 2112  ./build/apps/VI-RT
+ 2113  make
+ 2114  ./build/apps/VI-RT
+ 2115  make
+ 2116  ./build/apps/VI-RT
+ 2117  make
+ 2118  ./build/apps/VI-RT
+ 2119  open MyImage.ppm
+ 2120  make
+ 2121  ./build/apps/VI-RT
+ 2122  open MyImage.ppm
+ 2123  sudo apt install gimp
+ 2124  make
+ 2125  ./build/apps/VI-RT
+ 2126  make
+ 2127  ./build/apps/VI-RT
+ 2128  make
+ 2129  ./build/apps/VI-RT
+ 2130  make
+ 2131  ./build/apps/VI-RT
+ 2132  make
+ 2133  ./build/apps/VI-RT
+ 2134  make
+ 2135  ./build/apps/VI-RT
+ 2136  make
+ 2137  ./build/apps/VI-RT
+ 2138  open MyImage.ppm
+ 2139  make
+ 2140  ./build/apps/VI-RT
+ 2141  open MyImage.ppm
+ 2142  make
+ 2143  ./build/apps/VI-RT
+ 2144  make
+ 2145  ./build/apps/VI-RT
+ 2146  make
+ 2147  ./build/apps/VI-RT
+ 2148  open MyImage.ppm
+ 2149  ./build/apps/VI-RT
+ 2150  make
+ 2151  ./build/apps/VI-RT
+ 2152  make
+ 2153  ./build/apps/VI-RT
+ 2154  open MyImage.ppm
+ 2155  shutdown now
+ 2156  cduni
+ 2157  ls
+ 2158  cd VTR
+ 2159  ls
+ 2160  mkdir Aula6
+ 2161  ls
+ 2162  cd Aula6
+ 2163  ls
+ 2164  mv ~/Downloads/startPoint.zip .
+ 2165  mv ~/Downloads/nissibeach_* .
+ 2166  ls
+ 2167  unzip startPoint.zip
+ 2168  ls
+ 2169  unzip nissibeach_1.zip
+ 2170  ls
+ 2171  unzip nissibeach_2.zip .
+ 2172  unzip nissibeach_2.zip 
+ 2173  ls
+ 2174  rm .zip
+ 2175  rm *.zip
+ 2176  ls
+ 2177  ls textures
+ 2178  ls textures/nissibeach_cm
+ 2179  mv *.jpg textures/nissibeach_cm
+ 2180  ls
+ 2181  lvim .
+ 2182  code .
+ 2183  cduni
+ 2184  cd VTR/nau/build/bin
+ 2185  ./composerImGui ../../../Aula6/base.xml
+ 2186  sudo apt upgrade code
+ 2187  ./composerImGui ../../../Aula6/base.xml
+ 2188  ./composerImGui ../../../Aula5/textureModel.xml
+ 2189  ./composerImGui ../../../Aula6/base.xml
+ 2190  clear
+ 2191  ls
+ 2192  cat imgui.ini
+ 2193  clear
+ 2194  ls
+ 2195  cd nauSettings
+ 2196  ls
+ 2197  cd ..
+ 2198  ls
+ 2199  ls geometry
+ 2200  ls bitmaps
+ 2201  ckear
+ 2202  clear
+ 2203  ls
+ 2204  clear
+ 2205  ls
+ 2206  clear
+ 2207  ls
+ 2208  clear
+ 2209  ls
+ 2210  clear
+ 2211  ls
+ 2212  clear
+ 2213  ls
+ 2214  clear
+ 2215  ls
+ 2216  clear
+ 2217  ls
+ 2218  clear
+ 2219  ls
+ 2220  clear
+ 2221  shutdown now
+ 2222  cduni
+ 2223  cd VCPI
+ 2224  ls
+ 2225  cd CV
+ 2226  cd VC
+ 2227  clear
+ 2228  mkdir Aula2
+ 2229  ls
+ 2230  cd Aula2
+ 2231  mv ~/Downloads/MNIST\ I\ -\ basic\ FC\ tutorial-empty.ipynb .
+ 2232  ls
+ 2233  code MNIST\ I\ -\ basic\ FC\ tutorial-empty.ipynb
+ 2234  ls ../Deep-Learning-Course-PyTorch
+ 2235  ls
+ 2236  cd ..
+ 2237  ls
+ 2238  mkdir Deep-Learning-Course-PyTorch/concepts/Aula2
+ 2239  mv Aula2/MNIST\ I\ -\ basic\ FC\ tutorial-empty.ipynb Deep-Learning-Course-PyTorch/concepts/Aula2 
+ 2240  code Deep-Learning-Course-PyTorch
+ 2241  conda install --name VCPI -c anaconda torch
+ 2242  conda install --name VCPI -c anaconda pytorch
+ 2243  conda install --name VCPI -c anaconda pytorch==1.9.0
+ 2244  conda install --name VCPI -c anaconda pytorch=1.9.0
+ 2245  conda install --name VCPI -c anaconda openssl
+ 2246  conda install --name VCPI -c anaconda python=3.7.1
+ 2247  conda install --name VCPI -c anaconda python=3.8
+ 2248  ls
+ 2249  code Deep-Learning-Course-PyTorch
+ 2250  conda activate VCPI
+ 2251  ls
+ 2252  conda --help
+ 2253  conda remove VCPI
+ 2254  conda list
+ 2255  conda list vcpi
+ 2256  ls
+ 2257  python --version
+ 2258  pip
+ 2259  pip install torch\ntorchvision\nnumpy\nmatplotlib\npandas\nscikit-learn\nseaborn\ntorchinfo
+ 2260  conda deactivate vcpi
+ 2261  conda deactivate VCPI
+ 2262  conda deactivate 
+ 2263  python --version
+ 2264  conda install --name VCPI -c anaconda torchvision=0.10.0 matplotlib pandas scikit-learn seaborn torchinfo pytorch=1.9
+ 2265  python
+ 2266  df -h ~
+ 2267  exit
+ 2268  conda activate VCPI
+ 2269  code Deep-Learning-Course-PyTorch
+ 2270  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/zsh/envVars.txt
+ 2271  nvidia-smi
+ 2272  shutdown now
+ 2273  sudo apt ugprade discord
+ 2274  sudo /usr/bin/apt ugprade discord
+ 2275  sudo /usr/bin/apt ugdate discord
+ 2276  sudo /usr/bin/apt update discord
+ 2277  sudo /usr/bin/apt upgrade discord
+ 2278  ls
+ 2279  cd Downloads/idea-IC-233.14475.28
+ 2280  cd ..
+ 2281  ls
+ 2282  sudo apt install ./discord-0.0.45.deb
+ 2283  ssh -4 root@ocurso.org
+ 2284  ls
+ 2285  rm *.deb
+ 2286  ls
+ 2287  rm *.tar.gz
+ 2288  ls
+ 2289  rm 05-VI-RT-Camera_Image.pptx
+ 2290  rm DartTarget_Grupo1.ipynb
+ 2291  ls
+ 2292  rm test.jepsen
+ 2293  ls
+ 2294  clear
+ 2295  ls
+ 2296  cd ..
+ 2297  ls
+ 2298  rm protonvpn-stable-release_1.0.3-2_all.deb
+ 2299  ls
+ 2300  ls -a
+ 2301  cat .profile
+ 2302  clear
+ 2303  ifconfig
+ 2304  scp root@ocurso.org:/var/docker/shared/standalone/backups/default/ocurso-2024-03-15-164715-v20240117093148.tar.gz ./
+ 2305  ls
+ 2306  rm ocurso-2024-03-15-164715-v20240117093148.tar.gz
+ 2307  scp root@ocurso.org:/var/docker/shared/standalone/backups/default/ocurso-2024-03-15-164715-v20240117093148.tar.gz ./
+ 2308  conda install --help
+ 2309  conda list
+ 2310  conda env list
+ 2311  ssh root@161.35.105.61
+ 2312  ls
+ 2313  nslookup ocurso.org
+ 2314  ssh -4 root@ocurso.org
+ 2315  ssh 161.35.105.61
+ 2316  ssh 161.35.105.6
+ 2317  ssh 161.35.105.61
+ 2318  ssh roo@161.35.105.61
+ 2319  ssh root@161.35.105.61
+ 2320  ssh -4 root@161.35.105.61
+ 2321  telnet root@161.35.105.61
+ 2322  telnet root@161.35.105.61:22
+ 2323  telnet 161.35.105.61:22
+ 2324  ping 161.35.105.61
+ 2325  ssh -4 root@161.35.105.61
+ 2326  nslookup ocurso.org
+ 2327  ssh root@161.35.105.61
+ 2328  ssh -4 root@ocurso.org
+ 2329  ssh-keygen -f "/home/tbag/.ssh/known_hosts" -R "ocurso.org"
+ 2330  ssh -4 root@ocurso.org
+ 2331  exit
+ 2332  cd Downloads
+ 2333  ls
+ 2334  shutdown now
+ 2335  cduni
+ 2336  s
+ 2337  ls
+ 2338  cd SDGE
+ 2339  ls
+ 2340  cd Pra
+ 2341  cd Pratica
+ 2342  lvim causalCrdt.py
+ 2343  cduni
+ 2344  ls
+ 2345  cd TAF
+ 2346  ls
+ 2347  cd Pratica
+ 2348  ls
+ 2349  lvim LogBasedReplication.py
+ 2350  cd ..
+ 2351  ls
+ 2352  cd maelstromLock
+ 2353  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200
+ 2354  ./maelstrom serve
+ 2355  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200
+ 2356  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 5 --node-count 3 --concurrency 2n --rate 500
+ 2357  add *
+ 2358  commit "LogBasedReplication done"
+ 2359  push
+ 2360  cduni
+ 2361  ls
+ 2362  cd SDGE
+ 2363  ls
+ 2364  cd Pratica
+ 2365  ls
+ 2366  lvim causalCrdt.py
+ 2367  sudo apt install spotify
+ 2368  curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg\necho "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list\n
+ 2369  sudo apt-get update && sudo apt-get install spotify-client\n
+ 2370  python
+ 2371  cd ..
+ 2372  cd maelstromCRDT
+ 2373  cd ..
+ 2374  cd maelstromCRDT
+ 2375  ./maelstrom serve
+ 2376  ./maelstrom test -w or-set --bin ../SDGE/Pratica/causalCrdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200
+ 2377  python
+ 2378  ./maelstrom test -w or-set --bin ../SDGE/Pratica/causalCrdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200
+ 2379  python
+ 2380  ./maelstrom test -w or-set --bin ../SDGE/Pratica/causalCrdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200
+ 2381  python
+ 2382  ./maelstrom test -w or-set --bin ../SDGE/Pratica/causalCrdt.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200
+ 2383  status
+ 2384  add *
+ 2385  ls
+ 2386  status
+ 2387  git rm __pycache__/
+ 2388  git rm -r __pycache__/
+ 2389  status
+ 2390  git rm -rf __pycache__/
+ 2391  status
+ 2392  commit "causal CRDT or-set"
+ 2393  ls
+ 2394  touch ../.gitignore
+ 2395  cat > ../.gitignore
+ 2396  add ../.gitignore
+ 2397  commit "gitignore"
+ 2398  push
+ 2399  pull
+ 2400  exit
+ 2401  status
+ 2402  shutdown now
+ 2403  cduni
+ 2404  ls
+ 2405  cd VI
+ 2406  ls
+ 2407  cd VI-RT
+ 2408  ls
+ 2409  make
+ 2410  ./build/apps/VI-RT
+ 2411  open MyImage.ppm
+ 2412  ls
+ 2413  cd ..
+ 2414  ls
+ 2415  cd slides
+ 2416  ls
+ 2417  open 00-Apresentacao\(1\).pptx
+ 2418  open 02-VI-RT-Structure.pptx
+ 2419  ls
+ 2420  open 03-VI-RT-SceneLoading.pptx
+ 2421  code ..
+ 2422  cd ..
+ 2423  cd .
+ 2424  ls
+ 2425  cd ..
+ 2426  ls
+ 2427  cd VTR
+ 2428  ls
+ 2429  cd nau
+ 2430  cd build/bin
+ 2431  ./composerImGui ../../../Aula6/base.xml
+ 2432  ls
+ 2433  cd ..
+ 2434  ls
+ 2435  cd ..
+ 2436  ls
+ 2437  cd ..
+ 2438  ls
+ 2439  cd Aula
+ 2440  cd Aula6
+ 2441  code .
+ 2442  shutdown now
+ 2443  cduni
+ 2444  ls
+ 2445  ssh -4 root@ocurso.org
+ 2446  clear
+ 2447  ls
+ 2448  ping ocurso.org
+ 2449  ls
+ 2450  cd VI
+ 2451  ls
+ 2452  cd VI-RT
+ 2453  ls
+ 2454  code VI-RT
+ 2455  open MyImage.ppm
+ 2456  exit
+ 2457  ssh -4 root@ocurso.org
+ 2458  ls
+ 2459  ping ocurso.org
+ 2460  cd VI
+ 2461  cd VI-RT
+ 2462  make
+ 2463  ./build/apps/VI-RT
+ 2464  make
+ 2465  ./build/apps/VI-RT
+ 2466  open MyImage.ppm
+ 2467  make
+ 2468  ./build/apps/VI-RT
+ 2469  open MyImage.ppm
+ 2470  make
+ 2471  ./build/apps/VI-RT
+ 2472  open MyImage.ppm
+ 2473  clear
+ 2474  exit
+ 2475  ls
+ 2476  LS
+ 2477  CLEAR
+ 2478  clear
+ 2479  shutdown now
+ 2480  cduni
+ 2481  ls
+ 2482  cd PSD
+ 2483  ls
+ 2484  mv Guiao5 Erlang
+ 2485  cd Erlang
+ 2486  ls
+ 2487  touch login.erl
+ 2488  lvim login.erl
+ 2489  mv login.erl login_manager.erl
+ 2490  lvim login_manager.erl
+ 2491  apt install rebar
+ 2492  apt install rebar3
+ 2493  lvim login_manager.erl
+ 2494  ls
+ 2495  clear
+ 2496  erl login_manager.erl
+ 2497  fg
+ 2498  ps
+ 2499  pkill zsh
+ 2500  ps
+ 2501  clear
+ 2502  ls
+ 2503  clear
+ 2504  ls
+ 2505  clear
+ 2506  erl login_manager.erl
+ 2507  k
+ 2508  clear
+ 2509  shutdown now
+ 2510  cduni
+ 2511  ls
+ 2512  cd SDGE
+ 2513  ls
+ 2514  cd Pratica
+ 2515  ls
+ 2516  s
+ 2517  clear
+ 2518  ls
+ 2519  clear
+ 2520  ping 172.26.105.85
+ 2521  ping 192.168.162.152
+ 2522  curl 192.168.162.152:7652/main
+ 2523  while :; do curl 192.168.162.152:7652/main > ficheiro.txt; done
+ 2524  ls
+ 2525  clear
+ 2526  cat ficheiro.txt
+ 2527  rm ficheiro.txt
+ 2528  ls
+ 2529  cduni
+ 2530  ls
+ 2531  cd maelstromLock
+ 2532  cd ..
+ 2533  cd maelstromCRDT
+ 2534  ls
+ 2535  touch epidemic-broadcast-eager.py
+ 2536  chmod +x epidemic-broadcast-eager.py
+ 2537  lvim epidemic-broadcast-eager.py
+ 2538  cat causal-broadcast.py > epidemic-broadcast-eager.py
+ 2539  lvim epidemic-broadcast-eager.py
+ 2540  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200
+ 2541  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200 --topology total
+ 2542  ./maelstrom serve
+ 2543  ls
+ 2544  cd ..
+ 2545  ls
+ 2546  cd maelstromLock
+ 2547  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200 --topology total
+ 2548  cd..
+ 2549  cd ..
+ 2550  ls
+ 2551  cd maelstromLock
+ 2552  ./maelstrom serve
+ 2553  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --rate 200 --topology total
+ 2554  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --topology total
+ 2555  cat epidemic-broadcast-eager.py > epidemic-broadcast-eagerLazy.py
+ 2556  chmod +x epidemic-broadcast-eagerLazy.py
+ 2557  lvim epidemic-broadcast-eagerLazy.py
+ 2558  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --topology total
+ 2559  0
+ 2560  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --topology total
+ 2561  shutdown now
+ 2562  cduni
+ 2563  ls
+ 2564  cd VI
+ 2565  ls
+ 2566  cd VI-RT
+ 2567  ls
+ 2568  cd ..
+ 2569  ls
+ 2570  cd slides
+ 2571  ls
+ 2572  cd ..
+ 2573  ls
+ 2574  rm -rf slides
+ 2575  rm ~/Downloads/06-VI-RT-Light_Shader_Renderer.pptx
+ 2576  ls
+ 2577  cd VI-RT
+ 2578  ls
+ 2579  open MyImage.ppm
+ 2580  code VI-RT
+ 2581  ls
+ 2582  make
+ 2583  ./build/apps/VI-RT
+ 2584  open MyImage.ppm
+ 2585  make
+ 2586  ./build/apps/VI-RT
+ 2587  open MyImage.ppm
+ 2588  make
+ 2589  ./build/apps/VI-RT
+ 2590  make
+ 2591  ./build/apps/VI-RT
+ 2592  make
+ 2593  ./build/apps/VI-RT
+ 2594  make
+ 2595  ./build/apps/VI-RT
+ 2596  open MyImage.ppm
+ 2597  make
+ 2598  ./build/apps/VI-RT
+ 2599  open MyImage.ppm
+ 2600  make
+ 2601  ./build/apps/VI-RT
+ 2602  open MyImage.ppm
+ 2603  make
+ 2604  open MyImage.ppm
+ 2605  ./build/apps/VI-RT
+ 2606  make
+ 2607  ./build/apps/VI-RT
+ 2608  cduni
+ 2609  ls
+ 2610  clear
+ 2611  ls
+ 2612  cd ls
+ 2613  ls
+ 2614  clear
+ 2615  ls
+ 2616  cd SDGE
+ 2617  ls
+ 2618  cd Pratica
+ 2619  ls
+ 2620  lvim epidemic-broadcast-eager.py
+ 2621  ls
+ 2622  cduni
+ 2623  cd maelstromLock
+ 2624  ls
+ 2625  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --topology total
+ 2626  ./maelstrom serve
+ 2627  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --topology total
+ 2628  ../SDGE/Pratica/epidemic-broadcast-eager.py
+ 2629  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --topology total
+ 2630  ../SDGE/Pratica/epidemic-broadcast-eager.py
+ 2631  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eager.py --time-limit 5 --node-count 3 --concurrency 2n --topology total
+ 2632  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eagerLazy.py --time-limit 5 --node-count 3 --concurrency 2n --topology total
+ 2633  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eagerLazy.py --time-limit 5 --node-count 4 --concurrency 2n --topology total
+ 2634  sudo apt upgrade discord
+ 2635  cd ~/Downloads
+ 2636  ls
+ 2637  sudo apt install ./discord-0.0.46.deb
+ 2638  clear
+ 2639  cduni
+ 2640  ls
+ 2641  cd maelstromLock
+ 2642  ls
+ 2643  cd ..
+ 2644  ls
+ 2645  cd VI
+ 2646  ls
+ 2647  cd VI-RT
+ 2648  ls
+ 2649  code VI-RT
+ 2650  exit
+ 2651  make
+ 2652  ls
+ 2653  make
+ 2654  ls VI-RT
+ 2655  cmake-gui ./VI-RT&
+ 2656  ls
+ 2657  make
+ 2658  make clean
+ 2659  make
+ 2660  ./build/apps/VI-RT
+ 2661  open MyImage.ppm
+ 2662  make
+ 2663  ./build/apps/VI-RT
+ 2664  open MyImage.ppm
+ 2665  make
+ 2666  ./build/apps/VI-RT
+ 2667  make
+ 2668  ./build/apps/VI-RT
+ 2669  make
+ 2670  ./build/apps/VI-RT
+ 2671  make
+ 2672  ./build/apps/VI-RT
+ 2673  make
+ 2674  ./build/apps/VI-RT
+ 2675  code VI-RT
+ 2676  make
+ 2677  ./build/apps/VI-RT
+ 2678  make
+ 2679  ./build/apps/VI-RT
+ 2680  make
+ 2681  ./build/apps/VI-RT
+ 2682  make
+ 2683  ./build/apps/VI-RT
+ 2684  make
+ 2685  ./build/apps/VI-RT
+ 2686  make
+ 2687  ./build/apps/VI-RT
+ 2688  make
+ 2689  ./build/apps/VI-RT
+ 2690  make
+ 2691  ./build/apps/VI-RT
+ 2692  make
+ 2693  ./build/apps/VI-RT
+ 2694  make
+ 2695  ./build/apps/VI-RT
+ 2696  make
+ 2697  ./build/apps/VI-RT
+ 2698  open MyImage.ppm
+ 2699  ./build/apps/VI-RT
+ 2700  open MyImage.ppm
+ 2701  ./build/apps/VI-RT
+ 2702  make
+ 2703  ./build/apps/VI-RT
+ 2704  open MyImage.ppm
+ 2705  make
+ 2706  ./build/apps/VI-RT
+ 2707  make
+ 2708  ./build/apps/VI-RT
+ 2709  make
+ 2710  ./build/apps/VI-RT
+ 2711  make
+ 2712  ./build/apps/VI-RT
+ 2713  make
+ 2714  ./build/apps/VI-RT
+ 2715  make
+ 2716  ./build/apps/VI-RT
+ 2717  make
+ 2718  ./build/apps/VI-RT
+ 2719  make
+ 2720  ./build/apps/VI-RT
+ 2721  make
+ 2722  ./build/apps/VI-RT
+ 2723  make
+ 2724  ./build/apps/VI-RT
+ 2725  code VI-RT
+ 2726  make
+ 2727  ./build/apps/VI-RT
+ 2728  open MyImage.ppm
+ 2729  make
+ 2730  ./build/apps/VI-RT
+ 2731  make
+ 2732  ./build/apps/VI-RT
+ 2733  make
+ 2734  ./build/apps/VI-RT
+ 2735  make
+ 2736  ./build/apps/VI-RT
+ 2737  make
+ 2738  ./build/apps/VI-RT
+ 2739  make clean
+ 2740  make
+ 2741  ./build/apps/VI-RT
+ 2742  open MyImage.ppm
+ 2743  shutdown now
+ 2744  cduni
+ 2745  ls
+ 2746  cd VTR
+ 2747  ls
+ 2748  mkdir Aula7
+ 2749  ls
+ 2750  mv ~/Downloads/models_and_textures.zip Aula7
+ 2751  mv ~/Downloads/start_barrel.zip Aula7
+ 2752  cd Aula7
+ 2753  unzip models_and_textures.zip
+ 2754  unzip start_barrel.zip
+ 2755  ls
+ 2756  rm *.zip
+ 2757  ls
+ 2758  code .
+ 2759  cduni
+ 2760  ls
+ 2761  cd VTR/nau/build/bin
+ 2762  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 2763  \tclear
+ 2764  ls
+ 2765  clear
+ 2766  ls
+ 2767  lvim .
+ 2768  code .
+ 2769  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 2770  lvim ~/.tmux.conf
+ 2771  pkill tmux
+ 2772  ls
+ 2773  cduni
+ 2774  cd VTR/Aula7
+ 2775  ls
+ 2776  cduni
+ 2777  cd VTR
+ 2778  ls
+ 2779  cd nau/build/bin
+ 2780  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 2781  clear
+ 2782  ls
+ 2783  clear
+ 2784  ls
+ 2785  clear
+ 2786  ls
+ 2787  clear
+ 2788  ls
+ 2789  clear
+ 2790  ls
+ 2791  clear
+ 2792  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 2793  nvidia-smi
+ 2794  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 2795  shutdown now
+ 2796  cduni
+ 2797  sudo nvim /etc/default/grub
+ 2798  update-grub
+ 2799  sudo update-grub
+ 2800  vbeinfo
+ 2801  videoinfo
+ 2802  ls
+ 2803  cd VCPI
+ 2804  ls
+ 2805  cd VC
+ 2806  ls
+ 2807  cd Deep-Learning-Course-PyTorch
+ 2808  ls
+ 2809  cd concepts
+ 2810  ls
+ 2811  mkdir Aula3
+ 2812  cd Aula3
+ 2813  ls
+ 2814  ls ../Aula2
+ 2815  mkdir data
+ 2816  mv ~/Downloads/*.pt .
+ 2817  ls
+ 2818  mv ~/Downloads/*.ipynb
+ 2819  mv ~/Downloads/*.ipynb .
+ 2820  ls
+ 2821  mv ~/Downloads/*.ipynb .
+ 2822  ls
+ 2823  mv *.pt data
+ 2824  ls
+ 2825  code ../..
+ 2826  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/zsh/envVars.txt
+ 2827  status
+ 2828  pull
+ 2829  ls
+ 2830  ls ..
+ 2831  ls ../..
+ 2832  clear
+ 2833  conda activate VCPI
+ 2834  conda
+ 2835  conda info
+ 2836  python
+ 2837  nvidia-smi
+ 2838  mv ~/Downloads/*.ipynb .
+ 2839  conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+ 2840  conda install -name VCPI pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+ 2841  conda install -n VCPI pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+ 2842  rm MNIST\ III\ -\ FC\ vs\ Conv-empty.ipynb
+ 2843  mv ~/Downloads/*.ipynb .
+ 2844  exit
+ 2845  pull
+ 2846  exit
+ 2847  cd ~
+ 2848  lvim .tmux.conf
+ 2849  cd .tmux
+ 2850  ls
+ 2851  cd plugins
+ 2852  ls
+ 2853  cd tmux
+ 2854  ls
+ 2855  status
+ 2856  pull
+ 2857  cat INSTALL.md
+ 2858  exit
+ 2859  reboot
+ 2860  cduni
+ 2861  ls
+ 2862  conda activate VCPI
+ 2863  python
+ 2864  ls
+ 2865  cd VCPI
+ 2866  ls
+ 2867  cd VC
+ 2868  ls
+ 2869  code Deep-Learning-Course-PyTorch
+ 2870  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/zsh/envVars.txt
+ 2871  conda activate VCPI
+ 2872  pip install numpy
+ 2873  conda deactivate VCPI
+ 2874  conda deactivate 
+ 2875  pip install numpy
+ 2876  code Deep-Learning-Course-PyTorch
+ 2877  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/zsh/envVars.txt
+ 2878  python --version
+ 2879  python3 --version
+ 2880  /bin/python3 --version
+ 2881  /usr/bin/python3 --version
+ 2882  pip install numpy
+ 2883  sudo apt remove --purge miniconda
+ 2884  sudo apt remove --purge conda
+ 2885  clear
+ 2886  pip --help
+ 2887  pip install --help
+ 2888  pip install --python python3 numpy
+ 2889  pip --python python3 install numpy
+ 2890  pip --python /bin/pytohn install numpy
+ 2891  pip --python /bin/python install numpy
+ 2892  clear
+ 2893  sudo apt install cuda-12-1
+ 2894  sudo apt remove --purge cuda-12-4
+ 2895  sudo apt install cuda-12-1
+ 2896  sudo apt autoremove
+ 2897  nvidia-smi
+ 2898  sudo apt install cuda-12-1
+ 2899  cd ~
+ 2900  lvim .config/lvim/config.lua
+ 2901  nvidia-smi
+ 2902  clear
+ 2903  sudo apt list
+ 2904  sudo apt list | grep cuda
+ 2905  exit
+ 2906  pip install torch
+ 2907  pip remove torch
+ 2908  pip uninstall torch
+ 2909  python
+ 2910  ps
+ 2911  ps -a
+ 2912  shutdown now
+ 2913  cduni
+ 2914  cd VTR
+ 2915  ls
+ 2916  add *
+ 2917  commit "Ate aula 7"
+ 2918  push
+ 2919  cduni
+ 2920  ls
+ 2921  clear
+ 2922  ls
+ 2923  cd PSD
+ 2924  ls
+ 2925  cd Erlang
+ 2926  ls
+ 2927  lvim .
+ 2928  ls
+ 2929  clear
+ 2930  ls
+ 2931  status
+ 2932  cd ..
+ 2933  ls
+ 2934  cd ..
+ 2935  ls
+ 2936  reboot
+ 2937  cduni
+ 2938  ls
+ 2939  cd PSD
+ 2940  ls
+ 2941  cd ~
+ 2942  lvim .config/lvim/config.lua
+ 2943  exit
+ 2944  cd Erlang
+ 2945  ls
+ 2946  touch Lock.erl
+ 2947  lvim Lock.erl
+ 2948  rm Lock.erl
+ 2949  rm lock.erl
+ 2950  touch lock.erl
+ 2951  lvim lo
+ 2952  rm lo
+ 2953  lvim lock.erl
+ 2954  cd ..
+ 2955  ls
+ 2956  cd VTR
+ 2957  ls
+ 2958  cd nau/build/bin
+ 2959  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 2960  ./composerImGui ../../../Aula6/base.xml
+ 2961  shutdown now
+ 2962  cduni && cd PSD
+ 2963  l
+ 2964  add *
+ 2965  commit "erlang"
+ 2966  push
+ 2967  status
+ 2968  cd ..
+ 2969  sl
+ 2970  ls
+ 2971  cd PSD
+ 2972  git rm --cached Guiao5/*
+ 2973  git rm  Guiao5/*
+ 2974  ls
+ 2975  add Guiao5/*
+ 2976  status
+ 2977  git rm Guiao5/ficha.beam
+ 2978  git rm Guiao5/*
+ 2979  git rm Guiao5/ficha.erl
+ 2980  git rm Guiao5/myqueue.beam
+ 2981  git rm Guiao5/myqueue.erl
+ 2982  git rm Guiao5/priorityqueue.erl
+ 2983  add *
+ 2984  commit "remover"
+ 2985  push
+ 2986  shutdown now
+ 2987  cduni
+ 2988  ls
+ 2989  cd SDGE
+ 2990  ls
+ 2991  status
+ 2992  ls
+ 2993  cd Pratica
+ 2994  ls
+ 2995  cduni
+ 2996  cd maelstromLock
+ 2997  ./maelstrom serve
+ 2998  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eagerLazy.py --time-limit 5 --node-count 4 --concurrency 2n --topology total
+ 2999  cat < epidemic-broadcast-eagerLazy.py > broadcastPeerSampling.py
+ 3000  chmod +x broadcastPeerSampling.py
+ 3001  lvim broadcastPeerSampling.py
+ 3002  ./maelstrom test -w broadcast --bin ../SDGE/Pratica/epidemic-broadcast-eagerLazy.py --time-limit 5 --node-count 10 --concurrency 2n --topology total
+ 3003  python
+ 3004  add *
+ 3005  commit "epidemics e inicio shuffling"
+ 3006  push
+ 3007  pull
+ 3008  git config pull.rebase false
+ 3009  pull
+ 3010  push
+ 3011  exit
+ 3012  shutdown now
+ 3013  cduni
+ 3014  ls
+ 3015  cd VTR
+ 3016  ls
+ 3017  status
+ 3018  cd ~/Downloads
+ 3019  ls
+ 3020  apt install ./discord-0.0.47.deb
+ 3021  exit
+ 3022  ls
+ 3023  mkdir Aula8
+ 3024  cd Aula8
+ 3025  ls
+ 3026  mkdir parallax
+ 3027  mv ~/Downloads/parallax_mapping_start.zip parallax
+ 3028  mkdir normalMapping
+ 3029  mv ~/Downloads/normal_mapping_TS_vs_CS_start.zip normalMapping
+ 3030  ls
+ 3031  cd normalMapping
+ 3032  ls
+ 3033  unzip normal_mapping_TS_vs_CS_start.zip
+ 3034  ls
+ 3035  cd ..
+ 3036  ls
+ 3037  mv normalMapping/normal_mapping_TS_vs_CS_start.zip .
+ 3038  rm -rf normalMapping
+ 3039  unzip normal_mapping_TS_vs_CS_start.zip
+ 3040  ks
+ 3041  ls
+ 3042  rm normal_mapping_TS_vs_CS_start.zip
+ 3043  mv parallax/parallax_mapping_start.zip .
+ 3044  unzip parallax
+ 3045  unzip parallax_mapping_start.zip
+ 3046  ls
+ 3047  rm parallax_mapping_start.zip
+ 3048  ls
+ 3049  cd ..
+ 3050  ls
+ 3051  cd Aula7
+ 3052  ls
+ 3053  lvim .
+ 3054  cduni
+ 3055  cd VTR/nau/build/bin
+ 3056  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 3057  code .
+ 3058  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 3059  status
+ 3060  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 3061  python
+ 3062  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 3063  ./composerImGui 
+ 3064  D
+ 3065  ./composerImGui 
+ 3066  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 3067  cd ..
+ 3068  ls
+ 3069  cd Aula8
+ 3070  ls
+ 3071  cd normal\ mapping\ -\ TS\ vs\ CS\ -\ start
+ 3072  ls
+ 3073  code .
+ 3074  cd ..
+ 3075  ls
+ 3076  cd Aula7
+ 3077  ls
+ 3078  code .
+ 3079  ./composerImGui ../../../Aula7/start_barrel/texture.xml
+ 3080  cd ..
+ 3081  cd Aula8
+ 3082  cd normal\ mapping\ -\ TS\ vs\ CS\ -\ start
+ 3083  ./composerImGui ../../../Aula8/normal\ mapping\ -\ TS\ vs\ CS\ -\ start/textureModel.xml
+ 3084  cd ..
+ 3085  ls
+ 3086  cd parallax\ mapping\ -\ start
+ 3087  rm -rf ../parallax
+ 3088  code .
+ 3089  ./composerImGui ../../../Aula8/parallax\ mapping\ -\ start/textureModel.xml
+ 3090  shutdown now
+ 3091  cduni
+ 3092  cd VCPI
+ 3093  ls
+ 3094  cd VC
+ 3095  ls
+ 3096  cd Deep-Learning-Course-PyTorch
+ 3097  ls
+ 3098  cd concepts
+ 3099  ls
+ 3100  mkdir Aula4
+ 3101  cd Aula
+ 3102  cd Aula4
+ 3103  pull
+ 3104  git stash save 
+ 3105  pull
+ 3106  ls
+ 3107  ls ..
+ 3108  ls ../..
+ 3109  mv ~/Downloads/modelos_DL_04.zip .
+ 3110  mv ~/Downloads/-torch\ -\ empty.ipynb .
+ 3111  mv /home/tbag/Downloads/layers-torch\ -\ empty.ipynb /home/tbag/Downloads/validation-torch\ -\ empty.ipynb  .
+ 3112  ls
+ 3113  code .
+ 3114  ls
+ 3115  mv ~/Downloads/gtsrb_datasets.zip .
+ 3116  ls
+ 3117  unzip gtsrb_datasets.zip
+ 3118  ls
+ 3119  unzip modelos_DL_04.zip
+ 3120  ls
+ 3121  ls ../Aula3
+ 3122  mkdir data
+ 3123  mv *.pt data
+ 3124  ls
+ 3125  rm gtsrb_datasets.zip modelos_DL_04.zip 
+ 3126  /usr/bin/pip install matplotlib
+ 3127  pwd
+ 3128  ls ..
+ 3129  ls ../..
+ 3130  pwd ../..
+ 3131  pwd ../../
+ 3132  cd ..
+ 3133  pwd
+ 3134  cd ..
+ 3135  ls
+ 3136  cd ..
+ 3137  ls
+ 3138  cd ..
+ 3139  ls
+ 3140  cd VCPI
+ 3141  ls
+ 3142  cd VC
+ 3143  ls
+ 3144  cd Deep-Learning-Course-PyTorch
+ 3145  ls
+ 3146  code 3-MNIST_FC_vs_Conv.ipynb
+ 3147  nvidia-smi
+ 3148  spotify --help
+ 3149  spotify --show-console
+ 3150  clear
+ 3151  ps
+ 3152  shutdown now
+ 3153  exit
+ 3154  cduni
+ 3155  ls
+ 3156  cd maelstromLock
+ 3157  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 5 --node-count 3 --concurrency 2n --rate 500
+ 3158  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 10 --node-count 3 --concurrency 2n --rate 500
+ 3159  cd TAF
+ 3160  ls
+ 3161  cd Pra
+ 3162  cd Pratica
+ 3163  ls
+ 3164  lvim LogBasedReplication.py
+ 3165  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 10 --node-count 3 --concurrency 2n --rate 500
+ 3166  python
+ 3167  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 10 --node-count 3 --concurrency 2n --rate 500
+ 3168  ./maelstrom test -w lin-kv --bin ../TAF/Pratica/LogBasedReplication.py --time-limit 5 --node-count 3 --concurrency 2n --rate 500
+ 3169  shutdown now
+ 3170  cduni
+ 3171  ls
+ 3172  cd PDF
+ 3173  cd PSD
+ 3174  ls
+ 3175  cd Erlang
+ 3176  ls
+ 3177  touch chat.erl
+ 3178  lvim chat.erl
+ 3179  mv ~/Downloads/chatv3.erl .
+ 3180  ls
+ 3181  lvim chatv3.erl
+ 3182  ls
+ 3183  erl chatv3.erl
+ 3184  ls
+ 3185  ps
+ 3186  erl chatv3.erl
+ 3187  telnet localhost:12345
+ 3188  telnet 0.87.0:12345
+ 3189  telnet 0.0.0.0:12345
+ 3190  nc localhost:12345
+ 3191  nc localhost 12345
+ 3192  ps
+ 3193  telnet
+ 3194  netstat -p tcp -nc | grep 12345
+ 3195  netstat -p tcp -no | grep 12345
+ 3196  sudo netstat -p tcp -no | grep 12345
+ 3197  sudo netstat -p tcp -no
+ 3198  clear
+ 3199  sudo netstat -p tcp -no | grep 12345
+ 3200  erl chatv3.erl
+ 3201  sudo netstat -p tcp -no | grep 12345
+ 3202  sudo netstat -p tcp -no | grep 
+ 3203  sudo netstat -p tcp -no | grep 1
+ 3204  sudo netstat -p tcp -no | grep 12
+ 3205  sudo netstat -p tcp -no | grep 123
+ 3206  sudo netstat -p tcp -no | grep 1234
+ 3207  sudo netstat -p tcp  | grep 1234
+ 3208  sudo netstat -p tcp
+ 3209  sudo netstat -p tcp -no | grep 1234
+ 3210  status
+ 3211  pull
+ 3212  touch roomManager.erl
+ 3213  ls
+ 3214  cd ..
+ 3215  ls
+ 3216  cd ..
+ 3217  ls
+ 3218  cd TAF
+ 3219  ls
+ 3220  cd Pratica
+ 3221  ls
+ 3222  lvim LinKV.py
+ 3223  exit
+ 3224  lvim main.c
+ 3225  ls
+ 3226  exit
+ 3227  nc localhost 12345
+ 3228  erl chatv3.erl
+ 3229  k
+ 3230  erl chatv3.erl
+ 3231  nc localhost 12345
+ 3232  k
+ 3233  erl chatv3.erl
+ 3234  nc localhost 12345
+ 3235  k
+ 3236  erl chatv3.erl
+ 3237  nc localhost 12345
+ 3238  erl chatv3.erl
+ 3239  nc localhost 12345
+ 3240  erl chatv3.erl
+ 3241  nc localhost 12345
+ 3242  shutdown now
+ 3243  cd Downloads
+ 3244  ls
+ 3245  sudo apt install ./discord-0.0.48.deb
+ 3246  ls
+ 3247  rm discord-0.0.4*
+ 3248  ls
+ 3249  ll
+ 3250  df -h ~
+ 3251  cduni
+ 3252  ls
+ 3253  cd VTR
+ 3254  cd ..
+ 3255  ls
+ 3256  cd SDGE
+ 3257  ls
+ 3258  cd Pratica
+ 3259  ls
+ 3260  touch consistentHashing.py
+ 3261  chmod +x consistentHashing.py
+ 3262  cat > consistentHashing.py crdt.py
+ 3263  lvim consistentHashing.py
+ 3264  ls
+ 3265  pip install hashlib
+ 3266  python
+ 3267  cduni
+ 3268  ls
+ 3269  cd maelstromLock
+ 3270  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 5 --node-count 3 --concurrency 2n --rate 500
+ 3271  ./maelstrom serve
+ 3272  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 5 --node-count 3 --concurrency 2n --rate 500
+ 3273  cduuni
+ 3274  ls
+ 3275  cduni
+ 3276  ls
+ 3277  cd TAF
+ 3278  ls
+ 3279  cd Pratica
+ 3280  ls
+ 3281  lvim LinKV.py
+ 3282  lvim echoplus.py
+ 3283  ls
+ 3284  exit
+ 3285  shutdown now
+ 3286  cduni
+ 3287  ls
+ 3288  cd VI
+ 3289  ls
+ 3290  cd VI-RT
+ 3291  ls
+ 3292  make
+ 3293  ./build/apps/VI-RT
+ 3294  open MyImage.ppm
+ 3295  ls
+ 3296  code VI-RT
+ 3297  make
+ 3298  ./build/apps/VI-RT
+ 3299  make
+ 3300  ./build/apps/VI-RT
+ 3301  shutdown now
+ 3302  cduni
+ 3303  ls
+ 3304  cd VTR
+ 3305  ls
+ 3306  mkdir Aula9
+ 3307  ls
+ 3308  cd Aula9
+ 3309  ls
+ 3310  mv ~/Downloads/geometry_shader_start.zip .
+ 3311  ls
+ 3312  unzip geometry_shader_start.zip
+ 3313  ls
+ 3314  rm geometry_shader_start.zip
+ 3315  ls
+ 3316  cd geometry\ divide\ -\ start
+ 3317  ls
+ 3318  cd ..
+ 3319  ls
+ 3320  touch apontamentos.md
+ 3321  lvim apontamentos.md
+ 3322  code .
+ 3323  cduni
+ 3324  cd VTR/nau/build/bin
+ 3325  ./composerImGui ../../../Aula9/geometry\ divide\ -\ start/geomAdj.xml
+ 3326  ./composerImGui ../../../Aula9/geometry\ shader\ -\ pass\ through\ -\ start/geomTest.xml
+ 3327  ./composerImGui ../../../Aula9/geometry\ divide\ -\ start/geomAdj.xml
+ 3328  ./composerImGui ../../../Aula9/geometry\ shader\ -\ stereo\ -\ start/stereo.xml
+ 3329  ./composerImGui ../../../Aula9/geometry\ shader\ -\ pass\ through\ -\ start/geomTest.xml
+ 3330  ls
+ 3331  mv ~/Downloads/showMeThyNormals-todo.zip .
+ 3332  unzip showMeThyNormals-todo.zip
+ 3333  ls
+ 3334  rm showMeThyNormals-todo.zip
+ 3335  ./composerImGui ../../../Aula9/geometry\ shader\ -\ pass\ through\ -\ start/geomTest.xml
+ 3336  ./composerImGui ../../../Aula9/showMeThyNormals\ -\ todo/showmethynormals.xml
+ 3337  code ..
+ 3338  ./composerImGui ../../../Aula9/showMeThyNormals\ -\ todo/showmethynormals.xml
+ 3339  code ..
+ 3340  ./composerImGui ../../../Aula9/showMeThyNormals\ -\ todo/showmethynormals.xml
+ 3341  ls
+ 3342  clear
+ 3343  ls
+ 3344  cele
+ 3345  claer
+ 3346  ls
+ 3347  status
+ 3348  add *
+ 3349  ls
+ 3350  statsu
+ 3351  status
+ 3352  git add ../Aula8
+ 3353  git add ../Aula7
+ 3354  ls
+ 3355  status
+ 3356  commit "Aula7 8 e 9"
+ 3357  push
+ 3358  pull
+ 3359  git config pull.rebase false
+ 3360  pull
+ 3361  push
+ 3362  shutdown now
+ 3363  duni
+ 3364  ls
+ 3365  cduni
+ 3366  ls
+ 3367  cd VCPI
+ 3368  ls
+ 3369  cd VC
+ 3370  ls
+ 3371  cd Deep-Learning-Course-PyTorch
+ 3372  ls
+ 3373  cd concepts
+ 3374  pull
+ 3375  ls
+ 3376  mkdir Aula5
+ 3377  cd Aula5
+ 3378  ls
+ 3379  mv ~/Downloads/dogsVScats.zip /home/tbag/Downloads/3-empty.ipynb /home/tbag/Downloads/validation-torch\ -\ empty\(1\).ipynb .
+ 3380  ls
+ 3381  unzip dogsVScats.zip
+ 3382  ls
+ 3383  rm dogsVScats.zip
+ 3384  code .
+ 3385  conda activate vcpi
+ 3386  conda activate VCPI
+ 3387  conda install -n VCPI torchvision.transforms
+ 3388  ls
+ 3389  ls ../Aula4
+ 3390  ls ../Aula4/dataset
+ 3391  pwd ../Aula4/dataset
+ 3392  pwd
+ 3393  ls ..
+ 3394  conda install -n VCPI torchvision
+ 3395  code .
+ 3396  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/zsh/envVars.txt
+ 3397  conda install -n VCPI pytorch
+ 3398  conda install -n VCPI torchvision=0.17
+ 3399  shutdown now
+ 3400  pkill tmux
+ 3401  pkill zsh
+ 3402  ls
+ 3403  ps
+ 3404  kill 2966
+ 3405  kill -SIGTERM 2966
+ 3406  ps
+ 3407  kill -SIGTERM 2966
+ 3408  kill -9 2966
+ 3409  omz update
+ 3410  ls
+ 3411  alacritty --version
+ 3412  sudo apt list
+ 3413  sudo apt list | grep alacritty
+ 3414  ls
+ 3415  cduni
+ 3416  ls
+ 3417  cd PSD
+ 3418  ls
+ 3419  cd ..
+ 3420  ls
+ 3421  cd ~/Downloads
+ 3422  ls
+ 3423  sudo apt install ./discord-0.0.49.deb 
+ 3424  rm discord-0.0.49.deb
+ 3425  ls
+ 3426  rm models_and_textures.zip
+ 3427  exit
+ 3428  ls
+ 3429  cd SDGE
+ 3430  ls
+ 3431  cd Pratica
+ 3432  ls
+ 3433  lvim consistentHashing.py
+ 3434  cduni
+ 3435  ls
+ 3436  cd maelstromLock
+ 3437  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 5 --node-count 3 --concurrency 2n --rate 10
+ 3438  ./maelstrom serve
+ 3439  python
+ 3440  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 5 --node-count 3 --concurrency 2n --rate 10
+ 3441  exit
+ 3442  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 5 --node-count 3 --concurrency 2n --rate 10
+ 3443  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 5 --node-count 3 --concurrency 2n --rate 100
+ 3444  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 5 --node-count 3 --concurrency 2n --rate 500
+ 3445  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 5 --node-count 5 --concurrency 2n --rate 500
+ 3446  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 15 --node-count 5 --concurrency 2n --rate 500
+ 3447  python
+ 3448  ./maelstrom test -w lin-kv --bin ../SDGE/Pratica/consistentHashing.py --time-limit 15 --node-count 5 --concurrency 2n --rate 500
+ 3449  add consistentHashing.py
+ 3450  commit "consistent hashing feito"
+ 3451  push
+ 3452  status
+ 3453  lvim broadcastPeerSampling.py
+ 3454  shutdown now
+ 3455  ls
+ 3456  reboot
+ 3457  ping http://172.26.105.85
+ 3458  ping 172.26.105.85
+ 3459  ping 172.20.10.2
+ 3460  ls
+ 3461  cduni
+ 3462  ls
+ 3463  cd VTR
+ 3464  ls
+ 3465  cd Aula9
+ 3466  ls
+ 3467  mv ~/Downloads/samples.zip .
+ 3468  mkdir Samples
+ 3469  ls
+ 3470  mv samples.zip Samples
+ 3471  cd Samples
+ 3472  ls
+ 3473  unzip samples.zip
+ 3474  ls
+ 3475  rm samples.zip
+ 3476  code geometry\ shader\ -\ grass
+ 3477  ls
+ 3478  exit
+ 3479  cduni
+ 3480  ls
+ 3481  cd TAF
+ 3482  ls
+ 3483  cd Pratica
+ 3484  ls
+ 3485  lvim LogBasedReplication.py
+ 3486  python
+ 3487  shutdown now
+ 3488  cduni
+ 3489  çs
+ 3490  cd VTR/nau/build/bin
+ 3491  ./composerImGui ../../../Aula9/Samples/geometry\ shader\ -\ grass/geomTest.xml
+ 3492  clear
+ 3493  ls
+ 3494  exit
+ 3495  ls
+ 3496  cduni
+ 3497  ls
+ 3498  cd PSD
+ 3499  ls
+ 3500  mkdir zeroMQ
+ 3501  cd zeroMQ
+ 3502  mv ~/Downloads/zeromq-examples.zip
+ 3503  mv ~/Downloads/zeromq-examples.zip .
+ 3504  unzip zeromq-examples.zip
+ 3505  ls
+ 3506  rm zeromq-examples.zip
+ 3507  rm -rf __MACOSX
+ 3508  ls
+ 3509  mv zeromq-examples/* .
+ 3510  ls
+ 3511  rm zeromq-examples
+ 3512  rmdir zeromq-examples
+ 3513  ls
+ 3514  cd examples
+ 3515  ls
+ 3516  code .
+ 3517  cd ..
+ 3518  ls
+ 3519  ./compile examples/request_reply/*.java
+ 3520  ls
+ 3521  ./run examples/request_reply/EchoServer.java 
+ 3522  exit
+ 3523  ./run examples/request_reply/EchoClient.class
+ 3524  ./run examples/request_reply/EchoClient
+ 3525  ./run examples/request_reply/EchoServer 333
+ 3526  ./run examples/request_reply/EchoServer 3333
+ 3527  ./run examples/request_reply/EchoClient 3333
+ 3528  ./run examples/request_reply/EchoClient 3333 111
+ 3529  ./run examples/request_reply/EchoServer 3334
+ 3530  ./run examples/request_reply/EchoClient 3333 3334
+ 3531  ./run examples/request_reply/EchoServer 3334
+ 3532  exit
+ 3533  ls
+ 3534  clear
+ 3535  ls
+ 3536  clear
+ 3537  ls
+ 3538  clear
+ 3539  ./run examples/request_reply/ThreadedEchoServer 3333 5
+ 3540  ./run examples/request_reply/EchoClient 3333 
+ 3541  ./compile examples/request_reply/*.java
+ 3542  ./run examples/request_reply/EchoClient 3333 
+ 3543  ./run examples/request_reply/ThreadedEchoServer 3333 5
+ 3544  ./run examples/request_reply/EchoClient 3333 
+ 3545  ./run examples/request_reply/ThreadedEchoServer 3333 5
+ 3546  exit
+ 3547  mkdir Guiao8
+ 3548  cd Guiao8/
+ 3549  touch F.java G.java H.java S.java C.java
+ 3550  code .
+ 3551  shutdown now
+ 3552  cduni
+ 3553  ls
+ 3554  cd SDGE
+ 3555  ls
+ 3556  cd Pra
+ 3557  cd Pratica
+ 3558  ls
+ 3559  touch geoReplication.py
+ 3560  chmod +x geoReplication.py
+ 3561  lvim geoReplication.py
+ 3562  cat < crdt.py > geoReplication.py
+ 3563  lvim geoReplication.py
+ 3564  python
+ 3565  ls
+ 3566  cduni
+ 3567  cd maelstromLock
+ 3568  ./maelstrom test -w txn-list-append --bin ../SDGE/Pratica/consistentHashing.py --time-limit 10 --max-txn-length 1
+ 3569  ./maelstrom serve
+ 3570  ./maelstrom test -w txn-list-append --bin ../SDGE/Pratica/consistentHashing.py --time-limit 5 --max-txn-length 1
+ 3571  ./maelstrom test -w txn-list-append --bin ../SDGE/Pratica/geoReplication.py --time-limit 5 --max-txn-length 1
+ 3572  python
+ 3573  ./maelstrom test -w txn-list-append --bin ../SDGE/Pratica/geoReplication.py --time-limit 5 --max-txn-length 1
+ 3574  l
+ 3575  cduni
+ 3576  ls
+ 3577  cd PSD
+ 3578  ls
+ 3579  cd Erlang
+ 3580  ls
+ 3581  lvim .
+ 3582  erl chatv3.erl
+ 3583  exit
+ 3584  nc localhost 12345
+ 3585  erl chatv3.erl
+ 3586  nc localhost 12345
+ 3587  erl chatv3.erl
+ 3588  nc localhost 12345
+ 3589  erl chatv3.erl
+ 3590  nc localhost 12345
+ 3591  erl chatv3.erl
+ 3592  nc localhost 12345
+ 3593  erl chatv3.erl
+ 3594  nc localhost 12345
+ 3595  erl chatv3.erl
+ 3596  nc localhost 12345
+ 3597  erl chatv3.erl
+ 3598  nc localhost 12345
+ 3599  erl chatv3.erl
+ 3600  nc localhost 12345
+ 3601  erl chatv3.erl
+ 3602  nc localhost 12345
+ 3603  erl chatv3.erl
+ 3604  nc localhost 12345
+ 3605  erl chatv3.erl
+ 3606  nc localhost 12345
+ 3607  erl chatv3.erl
+ 3608  nc localhost 12345
+ 3609  erl chatv3.erl
+ 3610  nc localhost 12345
+ 3611  erl chatv3.erl
+ 3612  nc localhost 12345
+ 3613  erl chatv3.erl
+ 3614  nc localhost 12345
+ 3615  shutdown now
+ 3616  cduni
+ 3617  cd ..
+ 3618  ls
+ 3619  cd 2Ano
+ 3620  ls
+ 3621  cd 2Sem
+ 3622  ls
+ 3623  cd POO
+ 3624  ls
+ 3625  mkdir Ficha6
+ 3626  mv ~/Downloads/*java .
+ 3627  ls
+ 3628  mv *java Ficha6
+ 3629  ls
+ 3630  cd Ficha6
+ 3631  ls
+ 3632  lvim .
+ 3633  code .
+ 3634  shutdown now
+ 3635  exit
+ 3636  cduni
+ 3637  ls
+ 3638  cd VTR/nau/build/bin
+ 3639  ./composerImGui ../../../Aula9/Samples/geometry\ shader\ -\ grass/geomTest.xml
+ 3640  shutdown now
+ 3641  cduni
+ 3642  ls
+ 3643  git clone
+ 3644  git clone git@github.com:72Rogan/PSD_SDGE_Project.git
+ 3645  cd VI
+ 3646  ls
+ 3647  cd VI-RT
+ 3648  ls
+ 3649  code VI-RT
+ 3650  make
+ 3651  ./build/apps/VI-RT
+ 3652  open MyImage.ppm
+ 3653  make
+ 3654  ./build/apps/VI-RT
+ 3655  open MyImage.ppm
+ 3656  make
+ 3657  ./build/apps/VI-RT
+ 3658  open MyImage.ppm
+ 3659  make
+ 3660  ./build/apps/VI-RT
+ 3661  open MyImage.ppm
+ 3662  make
+ 3663  ./build/apps/VI-RT
+ 3664  open MyImage.ppm
+ 3665  make
+ 3666  ./build/apps/VI-RT
+ 3667  make
+ 3668  ./build/apps/VI-RT
+ 3669  make
+ 3670  ./build/apps/VI-RT
+ 3671  make
+ 3672  ./build/apps/VI-RT
+ 3673  open M
+ 3674  open MyImage.ppm
+ 3675  make
+ 3676  ./build/apps/VI-RT
+ 3677  open MyImage.ppm
+ 3678  \tmake
+ 3679  ./build/apps/VI-RT
+ 3680  make
+ 3681  ./build/apps/VI-RT
+ 3682  open MyImage.ppm
+ 3683  make
+ 3684  ./build/apps/VI-RT
+ 3685  open MyImage.ppm
+ 3686  make
+ 3687  open MyImage.ppm
+ 3688  ./build/apps/VI-RT
+ 3689  open MyImage.ppm
+ 3690  make
+ 3691  ./build/apps/VI-RT
+ 3692  make
+ 3693  ./build/apps/VI-RT
+ 3694  make
+ 3695  ./build/apps/VI-RT
+ 3696  make
+ 3697  ./build/apps/VI-RT
+ 3698  make
+ 3699  ./build/apps/VI-RT
+ 3700  make
+ 3701  ./build/apps/VI-RT
+ 3702  open MyImage.ppm
+ 3703  make
+ 3704  ./build/apps/VI-RT
+ 3705  make
+ 3706  ./build/apps/VI-RT
+ 3707  make
+ 3708  ./build/apps/VI-RT
+ 3709  gdb build/apps/VI-RT
+ 3710  make
+ 3711  cmake-gui ./VI-RT&
+ 3712  ls
+ 3713  cd VI-RT
+ 3714  ls
+ 3715  cd ..
+ 3716  make
+ 3717  make clean
+ 3718  make
+ 3719  ls
+ 3720  cd build
+ 3721  ls
+ 3722  cd apps
+ 3723  ls
+ 3724  ./VI-RT
+ 3725  ./VI-RT 
+ 3726  cd ..
+ 3727  ls
+ 3728  make
+ 3729  ls
+ 3730  cd apps
+ 3731  ls
+ 3732  ./VI-RT
+ 3733  cd ..
+ 3734  ./build/apps/VI-RT
+ 3735  lvim Makefile
+ 3736  make
+ 3737  make clean
+ 3738  make
+ 3739  gdb ./build/apps/VI-RT
+ 3740  make
+ 3741  ./build/apps/VI-RT
+ 3742  make
+ 3743  ./build/apps/VI-RT
+ 3744  make
+ 3745  ./build/apps/VI-RT
+ 3746  make
+ 3747  ./build/apps/VI-RT
+ 3748  open MyImage.ppm
+ 3749  make
+ 3750  ./build/apps/VI-RT
+ 3751  make
+ 3752  ./build/apps/VI-RT
+ 3753  shutdown now
+ 3754  cduni
+ 3755  ls
+ 3756  cd VI/VI-RT
+ 3757  open MyImage.ppm
+ 3758  code VI-RT
+ 3759  make
+ 3760  ./build/apps/VI-RT
+ 3761  make
+ 3762  ./build/apps/VI-RT
+ 3763  make
+ 3764  ./build/apps/VI-RT
+ 3765  make
+ 3766  ./build/apps/VI-RT
+ 3767  make
+ 3768  ./build/apps/VI-RT
+ 3769  make
+ 3770  ./build/apps/VI-RT
+ 3771  make
+ 3772  ./build/apps/VI-RT
+ 3773  make
+ 3774  ./build/apps/VI-RT
+ 3775  make
+ 3776  ./build/apps/VI-RT
+ 3777  make
+ 3778  ./build/apps/VI-RT
+ 3779  make
+ 3780  ./build/apps/VI-RT
+ 3781  make
+ 3782  ./build/apps/VI-RT
+ 3783  make
+ 3784  ./build/apps/VI-RT
+ 3785  make
+ 3786  ./build/apps/VI-RT
+ 3787  make
+ 3788  ./build/apps/VI-RT
+ 3789  make
+ 3790  ./build/apps/VI-RT
+ 3791  make
+ 3792  ./build/apps/VI-RT
+ 3793  make
+ 3794  ./build/apps/VI-RT
+ 3795  make
+ 3796  ./build/apps/VI-RT
+ 3797  make
+ 3798  ./build/apps/VI-RT
+ 3799  make
+ 3800  ./build/apps/VI-RT
+ 3801  make
+ 3802  ./build/apps/VI-RT
+ 3803  make
+ 3804  ./build/apps/VI-RT
+ 3805  cd ~/Downloads
+ 3806  ls
+ 3807  sudo apt install ./discord-0.0.50.deb
+ 3808  smake
+ 3809  exit
+ 3810  make
+ 3811  ./build/apps/VI-RT
+ 3812  make
+ 3813  ./build/apps/VI-RT
+ 3814  make
+ 3815  ./build/apps/VI-RT
+ 3816  make
+ 3817  ./build/apps/VI-RT
+ 3818  make
+ 3819  ./build/apps/VI-RT
+ 3820  make
+ 3821  ./build/apps/VI-RT
+ 3822  make
+ 3823  ./build/apps/VI-RT
+ 3824  make
+ 3825  ./build/apps/VI-RT
+ 3826  make
+ 3827  ./build/apps/VI-RT
+ 3828  make
+ 3829  ./build/apps/VI-RT
+ 3830  \tmake
+ 3831  ./build/apps/VI-RT
+ 3832  make
+ 3833  ./build/apps/VI-RT
+ 3834  make
+ 3835  ./build/apps/VI-RT
+ 3836  make
+ 3837  ./build/apps/VI-RT
+ 3838  make
+ 3839  ./build/apps/VI-RT
+ 3840  open MyImage.ppm
+ 3841  make
+ 3842  ./build/apps/VI-RT
+ 3843  open MyImage.ppm
+ 3844  make
+ 3845  ./build/apps/VI-RT
+ 3846  make
+ 3847  ./build/apps/VI-RT
+ 3848  make
+ 3849  ./build/apps/VI-RT
+ 3850  make
+ 3851  ./build/apps/VI-RT
+ 3852  make
+ 3853  ./build/apps/VI-RT
+ 3854  make
+ 3855  ./build/apps/VI-RT
+ 3856  make
+ 3857  ./build/apps/VI-RT
+ 3858  shutdown now
+ 3859  cduni
+ 3860  ls
+ 3861  cd VTR
+ 3862  ls
+ 3863  mkdir Aula10
+ 3864  cd Aula10
+ 3865  ls
+ 3866  mv ~/Downloads/aula10-tess.zip .
+ 3867  unzip aula10-tess.zip
+ 3868  ls
+ 3869  clear
+ 3870  rm aula10-tess.zip
+ 3871  ls
+ 3872  code .
+ 3873  cduni
+ 3874  ls
+ 3875  cd VTR/nau/build/bin
+ 3876  ls
+ 3877  ./composerImGui ../../../Aula10/quadandtri.xml
+ 3878  mv ~/Downloads/*.zip .
+ 3879  ls
+ 3880  open tessellation
+ 3881  open tessellation-alunos.zip
+ 3882  mkdir tesselation-alunos
+ 3883  mv tessellation-alunos.zip tesselation-alunos
+ 3884  mv tesselation-alunos tessellation-alunos
+ 3885  cd tessellation-alunos
+ 3886  unzip tessellation-alunos.zip
+ 3887  ls
+ 3888  rm .zip
+ 3889  rm tessellation-alunos.zip
+ 3890  cd ..
+ 3891  ls
+ 3892  open tess_to_do.zip
+ 3893  mkdir to_do
+ 3894  mv tess_to_do.zip to_do
+ 3895  cd to_do
+ 3896  unzip tess_to_do.zip
+ 3897  ls
+ 3898  rm tess_to_do.zip
+ 3899  ls
+ 3900  cd ..
+ 3901  ls
+ 3902  code tessellation-alunos
+ 3903  ls
+ 3904  ./composerImGui ../../../Aula10/tessellation-alunos/bezierQuad.xml
+ 3905  ./composerImGui ../../../Aula10/tessellation-alunos/pnTriangles.xml
+ 3906  ./composerImGui ../../../Aula10/tessellation-alunos/bezierQuad.xml
+ 3907  code to_do
+ 3908  ./composerImGui ../../../Aula10/tessellation-alunos/pnTriangles.xml 
+ 3909  code to_do
+ 3910  code tessellation-alunos
+ 3911  shutdown now
+ 3912  cduni
+ 3913  ls
+ 3914  cd VCPI/PI
+ 3915  ls
+ 3916  cd ..
+ 3917  ls
+ 3918  cd VC
+ 3919  ls
+ 3920  cd Deep-Learning-Course-PyTorch
+ 3921  ls
+ 3922  pull
+ 3923  ls
+ 3924  cd concepts
+ 3925  ls
+ 3926  mkdir Aula6
+ 3927  cd Aula6
+ 3928  ls
+ 3929  mv ~/Downloads/Transfer\ Learning\ start.zip
+ 3930  mv ~/Downloads/Transfer\ Learning\ start.zip .
+ 3931  unzip Transfer\ Learning\ start.zip
+ 3932  ls
+ 3933  rm Transfer\ Learning\ start.zip
+ 3934  ls
+ 3935  code .
+ 3936  open transferLearning-empty.html
+ 3937  ls
+ 3938  code ../Aula5
+ 3939  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/zsh/envVars.txt
+ 3940  conda activate VCPI
+ 3941  conda update torchvision pytorch 
+ 3942  conda update all
+ 3943  conda update --all
+ 3944  cd ..
+ 3945  ls
+ 3946  cd ..
+ 3947  ls
+ 3948  code 6.1_balanced\ evaluation.ipynb
+ 3949  pull
+ 3950  cd concepts
+ 3951  ls
+ 3952  code ../Aula5
+ 3953  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/zsh/envVars.txt
+ 3954  conda update --all
+ 3955  conda install -n VCPI torchvision=0.17
+ 3956  code ../Aula5
+ 3957  exit
+ 3958  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/zsh/envVars.txt
+ 3959  conda install -n VCPI torch
+ 3960  conda install -n VCPI pytorch
+ 3961  conda update pytorch
+ 3962  conda create --name VCPI opencv matplotlib numpy
+ 3963  conda create --name VCPI_2 opencv matplotlib numpy
+ 3964  conda activate VCPI_2
+ 3965  conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+ 3966  conda install matplotlib\npandas\nscikit-learn\nseaborn\ntorchinfo
+ 3967  code ../Aula5
+ 3968  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/zsh/envVars.txt
+ 3969  conda install --name VCPI_2 pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+ 3970  conda --help
+ 3971  conda list 
+ 3972  conda install --name VCPI_2 pytorch=2.0 torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+ 3973  ls
+ 3974  ls ..
+ 3975  ls ../..
+ 3976  code ../Aula4
+ 3977  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/zsh/envVars.txt
+ 3978  conda deactivate VCPI_2
+ 3979  conda deactivate
+ 3980  conda remove VCPI_2
+ 3981  conda list
+ 3982  conda remove VCPI_2
+ 3983  conda remove --help
+ 3984  conda remove -n VCPI_2 --all
+ 3985  conda remove -n VCPI --all
+ 3986  conda deactivate
+ 3987  conda remove -n VCPI --all
+ 3988  conda create --name VCPI opencv matplotlib numpy 
+ 3989  conda activate VCPI
+ 3990  conda install --name VCPI matplotlib pandas scikit-learn seaborn torchinfo
+ 3991  conda install --name VCPI matplotlib pandas scikit-learn seaborn
+ 3992  conda install --name VCPI pytorch=2.0 torchvision torchaudio torchinfo pytorch-cuda=12.1 -c pytorch -c nvidia
+ 3993  conda install --name VCPI pytorch=2.0 torchvision torchaudio  pytorch-cuda=12.1 -c pytorch -c nvidia
+ 3994  conda install --name VCPI pytorch=2.0 torchvision=0.17 torchaudio  pytorch-cuda=12.1 -c pytorch -c nvidia
+ 3995  conda install --name VCPI pytorch=2.2.2 torchvision=0.17 torchaudio  pytorch-cuda=12.1 -c pytorch -c nvidia
+ 3996  conda create --name VCPI opencv matplotlib numpy python=3.11
+ 3997  conda activate VCPI
+ 3998  conda install --name VCPI pytorch=2.2.2 torchvision=0.17 torchaudio  pytorch-cuda=12.1 -c pytorch -c nvidia
+ 3999  python --version
+ 4000  conda create --name VCPI opencv matplotlib numpy python=3.8
+ 4001  conda activate VCPI
+ 4002  python --version
+ 4003  conda install --name VCPI pytorch=2.2.2 torchvision=0.17 torchaudio  pytorch-cuda=12.1 -c pytorch -c nvidia
+ 4004  conda update --all
+ 4005  conda install --name VCPI pytorch torchvision=0.17 torchaudio  pytorch-cuda=12.1 -c pytorch -c nvidia
+ 4006  conda install --name VCPI pytorch=2.2.0 torchvision=0.17 torchaudio  pytorch-cuda=12.1 -c nvidia -c pytorch
+ 4007  conda install --name VCPI pytorch=2.2.1 torchvision=0.17 torchaudio  pytorch-cuda=12.1 -c nvidia -c pytorch
+ 4008  conda install --name VCPI pytorch=2.1.1 torchvision=0.17 torchaudio  pytorch-cuda=12.1 -c nvidia -c pytorch
+ 4009  conda create --name VCPI  matplotlib numpy python=3.8
+ 4010  df -h ~
+ 4011  conda activate VCPI
+ 4012  conda install --name VCPI pytorch=2.2.1 torchvision=0.17 torchaudio  pytorch-cuda=12.1 -c nvidia -c pytorch
+ 4013  code ../Aula4
+ 4014  code ../Aula5
+ 4015  /usr/bin/python3 /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/printEnvVariablesToFile.py /home/tbag/.vscode/extensions/ms-python.python-2024.4.1/python_files/deactivate/zsh/envVars.txt
+ 4016  conda install --name VCPI matplotlib pandas scikit-learn seaborn
+ 4017  ls
+ 4018  df -h ~
+ 4019  conda clean
+ 4020  conda clean -a 
+ 4021  clear
+ 4022  df -h ~
+ 4023  ls
+ 4024  rm ./*
+ 4025  ls
+ 4026  mv ~/Downloads/Transfer\ Learning\ start.zip .
+ 4027  unzip Transfer\ Learning\ start.zip
+ 4028  ls
+ 4029  rm Transfer\ Learning\ start.zip
+ 4030  code .
+ 4031  conda install --name VCPI -c conda-forge torchinfo
+ 4032  conda install --name VCPI -c conda-forge tqdm
+ 4033  ls ~/Downloads
+ 4034  exit
+ 4035  ls
+ 4036  sl
+ 4037  exit
+ 4038  df -h ~
+ 4039  clear
+ 4040  cl
+ 4041  clear
+ 4042  shutdown now
+ 4043  cduni
+ 4044  cd PSD
+ 4045  ls
+ 4046  cd Erlang
+ 4047  add *
+ 4048  commit "fichas de erlang"
+ 4049  push
+ 4050  shutdown now
+ 4051  cduni
+ 4052  ls
+ 4053  cd PSD
+ 4054  cd ..
+ 4055  cd PSD_SDGE_Project
+ 4056  pull
+ 4057  cd .
+ 4058  cd ..
+ 4059  ls
+ 4060  cd VTR
+ 4061  ls
+ 4062  pull
+ 4063  cd ..
+ 4064  ls
+ 4065  code PSD_SDGE_Project
+ 4066  ls
+ 4067  OA
+ 4068  cd PSD
+ 4069  ls
+ 4070  code Guiao4
+ 4071  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4072  pwd
+ 4073  ls
+ 4074  cduni
+ 4075  ls
+ 4076  cd VI
+ 4077  ls
+ 4078  cd VI-RT
+ 4079  ls
+ 4080  open MyImage.ppm
+ 4081  exit
+ 4082  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4083  cduni
+ 4084  ls
+ 4085  code PSD_SDGE_Project
+ 4086  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4087  mvn compile -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4088  mvn
+ 4089  ls
+ 4090  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4091  mvn clean -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4092  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4093  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 2.mp4
+ 4094  shutdown now
+ 4095  cduni
+ 4096  ls
+ 4097  cd PSD
+ 4098  ls
+ 4099  cd zeroMQ
+ 4100  ls
+ 4101  code .
+ 4102  ls
+ 4103  cd ..
+ 4104  cd PSD_SDGE_Project
+ 4105  code .
+ 4106  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4107  mvn clean -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4108  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4109  ls
+ 4110  cd examples
+ 4111  ls
+ 4112  lvim pub_sub
+ 4113  ls
+ 4114  cd ..
+ 4115  ls
+ 4116  ./compile examples/pub_sub/*.java
+ 4117  ./run examples/pub_sub/Publisher 1234
+ 4118  exit
+ 4119  ./run examples/pub_sub/Subscriber 1234 ibm
+ 4120  ./run examples/pub_sub/Subscriber 1234 apple
+ 4121  exit
+ 4122  ./run examples/pub_sub/Publisher 1234
+ 4123  ./run examples/pub_sub/Subscriber 1234 ibm apple
+ 4124  ./run examples/pub_sub/Subscriber 1234 apple
+ 4125  ./run examples/pub_sub/Publisher 1235
+ 4126  ./run examples/pub_sub/MultipleConnectSub 1234 1235 ibm apple 
+ 4127  ./run examples/pub_sub/Subscriber 1234 apple
+ 4128  lvim pub_sub_broker
+ 4129  code pub_sub_broker
+ 4130  ls
+ 4131  cd ..
+ 4132  ls
+ 4133  ./compile examples/pub_sub_broker/*.java
+ 4134  ./run examples/pub_sub_broker/Broker 1234
+ 4135  ./run examples/pub_sub_broker/Broker 1234 1235
+ 4136  ./run examples/pub_sub_broker/Publisher 1234
+ 4137  ./run examples/pub_sub/Subscriber 1234 apple
+ 4138  ./run examples/pub_sub_broker/Broker 1235 1234
+ 4139  ls
+ 4140  mkdir Guiao9
+ 4141  cd Guiao9
+ 4142  l
+ 4143  ls
+ 4144  clear
+ 4145  ls
+ 4146  touch Client.java
+ 4147  touch Server.java
+ 4148  code .
+ 4149  code examples/pub_sub
+ 4150  code Guiao9
+ 4151  code .
+ 4152  code examples/pub_sub
+ 4153  code .
+ 4154  lvim .
+ 4155  erl
+ 4156  exit
+ 4157  shutdown now
+ 4158  mkdir AulasC
+ 4159  cd AulasC
+ 4160  touch maior.c
+ 4161  lvim maior.c
+ 4162  gcc -Wall -o maior maior.c
+ 4163  ./maior
+ 4164  touch dinheiro.c
+ 4165  lvim dinheiro.c
+ 4166  gcc -Wall -o dinheiro dinheiro.c
+ 4167  ./dinheiro 
+ 4168  touch mediana.c
+ 4169  lvim mediana.c
+ 4170  gcc -Wall -o mediana mediana.c
+ 4171  ./mediana
+ 4172  gcc -Wall -o mediana mediana.c
+ 4173  ./mediana
+ 4174  gcc -Wall -o mediana mediana.c
+ 4175  ./mediana
+ 4176  gcc -Wall -o mediana mediana.c
+ 4177  ./mediana
+ 4178  touch potencia.c
+ 4179  lvim potencia.c
+ 4180  touch media.c
+ 4181  lvim media.c
+ 4182  reboot
+ 4183  cd AulasC
+ 4184  ls
+ 4185  lvim media.c
+ 4186  gcc -Wall -o media media.c
+ 4187  ./media
+ 4188  gcc -Wall -o media media.c
+ 4189  ./media
+ 4190  gcc -Wall -o media media.c
+ 4191  ./media
+ 4192  cduni
+ 4193  ls
+ 4194  cd ..
+ 4195  cd 3Ano/2Sem
+ 4196  ls
+ 4197  cd CG
+ 4198  ls
+ 4199  cd Trabalho-CG
+ 4200  ls
+ 4201  zip -r Fase3CG.zip Fase3
+ 4202  shutdown now
+ 4203  cduni
+ 4204  ls
+ 4205  cd SDGE
+ 4206  ls
+ 4207  cd Pratica
+ 4208  ls
+ 4209  lvim geoReplication.py
+ 4210  cd ~/Downloads
+ 4211  sudo apt install ./discord-0.0.51.deb
+ 4212  clear
+ 4213  exit
+ 4214  cduni
+ 4215  ls
+ 4216  cd maelstromLock
+ 4217  ./maelstrom serve
+ 4218  ./maelstrom test -w txn-list-append --bin ../SDGE/Pratica/geoReplication.py --time-limit 5 --max-txn-length 1
+ 4219  lvim geoReplication.py
+ 4220  cduni
+ 4221  ls
+ 4222  cd PSD_SDGE_Project
+ 4223  code .
+ 4224  exit
+ 4225  python
+ 4226  ./maelstrom test -w txn-list-append --bin ../SDGE/Pratica/geoReplication.py --time-limit 5 --max-txn-length 1
+ 4227  ./maelstrom test -w txn-list-append --bin ../SDGE/Pratica/geoReplication.py --time-limit 10 --max-txn-length 1 --consistency-models read-atomic
+ 4228  ./maelstrom test -w txn-list-append --bin ../SDGE/Pratica/geoReplication.py --time-limit 10 --max-txn-length 1 --consistency-models read-atomic --rate 50
+ 4229  cduni
+ 4230  ls
+ 4231  cd PSD_SDGE_Project
+ 4232  code .
+ 4233  idea.sh dados
+ 4234  pwd
+ 4235  \tcode .
+ 4236  cd ~
+ 4237  ls
+ 4238  cd Videos
+ 4239  ls
+ 4240  shutdown now
+ 4241  cduni
+ 4242  ls
+ 4243  cd PSD_SDGE_Project
+ 4244  code .
+ 4245  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4246  shutdown now
+ 4247  
+ 4248  cduni
+ 4249  ls
+ 4250  cd PSD_SDGE_Project
+ 4251  code .
+ 4252  lvim .
+ 4253  mvn compile
+ 4254  cd dados
+ 4255  mvn compile
+ 4256  ls
+ 4257  cd demo
+ 4258  ls
+ 4259  mvn compile
+ 4260  java target.classes.data.DataServer 1 1
+ 4261  cd target
+ 4262  ls
+ 4263  java -cp demo-1.0-SNAPSHOT.jar:dependency DataServer
+ 4264  exit
+ 4265  code .
+ 4266  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4267  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 4.mp4          
+ 4268  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 3.mp4          
+ 4269  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 4.mp4          
+ 4270  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 3.mp4          
+ 4271  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 4.mp4          
+ 4272  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 3.mp4          
+ 4273  ls
+ 4274  cduni
+ 4275  ls
+ 4276  cd PSD
+ 4277  ls
+ 4278  cd Erlang
+ 4279  ls
+ 4280  lvim login_manager.erl
+ 4281  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 3.mp4          
+ 4282  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 4.mp4          
+ 4283  cduni
+ 4284  cd PSD_SDGE_Project
+ 4285  code .
+ 4286  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4287  status
+ 4288  git branch dados
+ 4289  git checkout -b dados
+ 4290  git switch dados
+ 4291  ls
+ 4292  status
+ 4293  add *
+ 4294  commit "Client->Server and Server->Client file transfer services done"
+ 4295  push
+ 4296  push --set-upstream origin dados
+ 4297  pull
+ 4298  status
+ 4299  add .gitignore
+ 4300  git switch main
+ 4301  pull
+ 4302  ls
+ 4303  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4304  mvn install -fe "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4305  mvn install -f -e "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4306  mvn install -e -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4307  git switch dados
+ 4308  ls
+ 4309  ls dados
+ 4310  ls dados/demo
+ 4311  git log
+ 4312  git switch main
+ 4313  git rebase -i 38dd871
+ 4314  status
+ 4315  git restore --staged .gitignore
+ 4316  status
+ 4317  git rebase -i 38dd871
+ 4318  git restore .gitignore
+ 4319  git rebase -i 38dd871
+ 4320  git switch dados
+ 4321  ls
+ 4322  git rm --cache dados/demo/target/ 
+ 4323  git rm  -r --cache dados/demo/target/ 
+ 4324  git switch main
+ 4325  ls
+ 4326  add *
+ 4327  add .gitignore
+ 4328  commit "removi target da cache e update do .gitignore"
+ 4329  push
+ 4330  git rm  -r --cache dados/demo/target/ 
+ 4331  add .gitignore
+ 4332  add *
+ 4333  commit "removi target da cache e update do .gitignore"
+ 4334  push
+ 4335  status
+ 4336  mvn install -e -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4337  status
+ 4338  git switch main
+ 4339  add .gitignore
+ 4340  commit ".gitignore updated"
+ 4341  push
+ 4342  git switch dados
+ 4343  cdunni
+ 4344  cduni
+ 4345  ls
+ 4346  cd SDGE
+ 4347  ls
+ 4348  cd Pratic
+ 4349  ls
+ 4350  cd Pratica
+ 4351  ls
+ 4352  lvim causalCrdt.py
+ 4353  cd ..
+ 4354  cd .
+ 4355  cd ..
+ 4356  ls
+ 4357  cd PSD
+ 4358  ls
+ 4359  cd Erlang/l
+ 4360  cd Erlang/
+ 4361  ls
+ 4362  lvim chatv3.erl
+ 4363  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4364  \tcode .
+ 4365  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.Teste 4.mp4          
+ 4366  mvn site -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4367  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4368  man
+ 4369  cd /home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project ; /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_eifn0jjksk1gq6ey94x5635nk.argfile data.DataServer localhost 5555 12346
+ 4370  shutdown now
+ 4371  cduni
+ 4372  ls
+ 4373  cd PSD_SDGE_Project
+ 4374  code .
+ 4375  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4376  ls
+ 4377  mkdir MiniTestes
+ 4378  cd MiniTestes
+ 4379  touch miniteste.c
+ 4380  lvim miniteste.c
+ 4381  gcc -Wall -o miniteste miniteste.c
+ 4382  ./miniteste
+ 4383  gcc -Wall -o miniteste miniteste.c
+ 4384  ./miniteste
+ 4385  gcc -Wall -o miniteste miniteste.c
+ 4386  ./miniteste
+ 4387  gcc -Wall -o miniteste miniteste.c
+ 4388  ./miniteste
+ 4389  gcc -Wall -o miniteste miniteste.c
+ 4390  ./miniteste
+ 4391  gcc -Wall -o miniteste miniteste.c
+ 4392  ./miniteste
+ 4393  gcc -Wall -o miniteste miniteste.c
+ 4394  ./miniteste
+ 4395  gcc -Wall -o miniteste miniteste.c
+ 4396  ./miniteste
+ 4397  gcc -Wall -o miniteste miniteste.c
+ 4398  ./miniteste
+ 4399  gcc -Wall -o miniteste miniteste.c
+ 4400  ./miniteste
+ 4401  gcc -Wall -o miniteste miniteste.c
+ 4402  ./miniteste
+ 4403  gcc -Wall -o miniteste miniteste.c
+ 4404  ./miniteste
+ 4405  gcc -Wall -o miniteste miniteste.c
+ 4406  ./miniteste
+ 4407  gcc -Wall -o miniteste miniteste.c
+ 4408  ./miniteste
+ 4409  gcc -Wall -o miniteste miniteste.c
+ 4410  ./miniteste
+ 4411  gcc -Wall -o miniteste miniteste.c
+ 4412  ./miniteste
+ 4413  gcc -Wall -o miniteste miniteste.c
+ 4414  ./miniteste
+ 4415  gcc -Wall -o miniteste miniteste.c
+ 4416  ./miniteste
+ 4417  gcc -Wall -o miniteste miniteste.c
+ 4418  ./miniteste
+ 4419  gcc -Wall -o miniteste miniteste.c
+ 4420  ./miniteste
+ 4421  gcc -Wall -o miniteste miniteste.c
+ 4422  ./miniteste
+ 4423  gcc -Wall -o miniteste miniteste.c
+ 4424  ./miniteste
+ 4425  gcc -Wall -o miniteste miniteste.c
+ 4426  ./miniteste
+ 4427  shutdown now
+ 4428  reboot
+ 4429  ls
+ 4430  cd AulasC
+ 4431  ls
+ 4432  lvim potencia.c
+ 4433  touch primos.c
+ 4434  lvim primos.c
+ 4435  gcc primos.c
+ 4436  gcc -Wall -o primos primos.c
+ 4437  ./primos
+ 4438  gcc -Wall -o primos primos.c
+ 4439  ./primos
+ 4440  lvim bissexto.c
+ 4441  gcc -Wall -o bissexto bissexto.c
+ 4442  ./bissexto
+ 4443  lvim bissexto.c
+ 4444  lvim data.c
+ 4445  gcc -Wall -o data data.c
+ 4446  ./data
+ 4447  gcc -Wall -o data data.c
+ 4448  ./data
+ 4449  gcc -Wall -o data data.c
+ 4450  ./data
+ 4451  gcc -Wall -o data data.c
+ 4452  ./data
+ 4453  ls
+ 4454  mkdir Ficha2
+ 4455  mv *.c Ficha2
+ 4456  mv bissexto Ficha2
+ 4457  mv data dinheiro maior media mediana primos Ficha2
+ 4458  rm a.out
+ 4459  ls
+ 4460  mkdir Ficha3
+ 4461  cd Ficha3
+ 4462  lvim ex1.c
+ 4463  cd ..
+ 4464  cd AulasC
+ 4465  cd Ficha2
+ 4466  ls
+ 4467  lvim potencia.c
+ 4468  cd ..
+ 4469  cd Ficha3
+ 4470  gcc -Wall -o ex1 ex1.c
+ 4471  ./ex1
+ 4472  gcc -Wall -o ex1 ex1.c
+ 4473  ./ex1
+ 4474  gcc -Wall -o ex1 ex1.c
+ 4475  ./ex1
+ 4476  gcc -Wall -o ex1 ex1.c
+ 4477  ./ex1
+ 4478  gcc -Wall -o ex1 ex1.c
+ 4479  ./ex1
+ 4480  gcc -Wall -o ex1 ex1.c
+ 4481  time ./ex1
+ 4482  gcc -Wall -o ex1 ex1.c
+ 4483  time ./ex1
+ 4484  gcc -Wall -o ex1 ex1.c
+ 4485  time ./ex1
+ 4486  gcc -Wall -o ex1 ex1.c
+ 4487  time ./ex1
+ 4488  lvim ex3.c
+ 4489  gcc -Wall -o ex3 ex3.c
+ 4490  ./ex3
+ 4491  gcc -Wall -o ex3 ex3.c
+ 4492  ./ex3
+ 4493  gcc -Wall -o ex3 ex3.c
+ 4494  ./ex3
+ 4495  time ./ex3
+ 4496  gcc -Wall -o ex3 ex3.c
+ 4497  time ./ex3
+ 4498  cd ..
+ 4499  ls
+ 4500  cd ..
+ 4501  zip -r Aulas.zip AulasC
+ 4502  open Aulas.zip
+ 4503  cduni
+ 4504  ls
+ 4505  cd VCPI/VC/Deep-Learning-Course-PyTorch
+ 4506  pull
+ 4507  ls
+ 4508  cd concepts
+ 4509  ls
+ 4510  mkdir Aula7
+ 4511  cd Aula7
+ 4512  mv ~/Downloads/*.ipynb .
+ 4513  ls
+ 4514  code .
+ 4515  conda install --name VCPI -c conda-forge skimage
+ 4516  conda install --name VCPI -c anaconda skimage
+ 4517  conda install --name VCPI skimage
+ 4518  conda install --name VCPI -c anaconda scikit-image
+ 4519  code .
+ 4520  pwd
+ 4521  nvidia-smi
+ 4522  pwd
+ 4523  nvidia-smi
+ 4524  shutdown now
+ 4525  cduni
+ 4526  ls
+ 4527  cd PSD_SDGE_Project
+ 4528  ls
+ 4529  add *
+ 4530  commit "feature: started adding dynamic data server initialization"
+ 4531  push
+ 4532  shutdown now
+ 4533  ls
+ 4534  mkdir CG_29
+ 4535  cd CG_29
+ 4536  mv ~/Downloads/Fase_3.zip
+ 4537  mv ~/Downloads/Fase_3.zip .
+ 4538  unzip Fase_3.zip
+ 4539  ls
+ 4540  cd Fase\ 3
+ 4541  ls
+ 4542  cmake-gui .&
+ 4543  /home/tbag/CG_29/Fase 3/build
+ 4544  sudo apt-get install libglew-dev\n
+ 4545  cmake-gui .&
+ 4546  cd build
+ 4547  make
+ 4548  ./engine test_2_1.xml
+ 4549  gdb engine
+ 4550  lvim .
+ 4551  cd ..
+ 4552  lvim .
+ 4553  code .
+ 4554  make
+ 4555  ./engine test_2_1.xml
+ 4556  cduni
+ 4557  ls
+ 4558  cd ..
+ 4559  ls
+ 4560  cd 3Ano/2Sem/CG/Trabalho-CG
+ 4561  ls
+ 4562  cd Fase3
+ 4563  ls
+ 4564  cd build
+ 4565  make
+ 4566  cd ..
+ 4567  cmake-gui .&
+ 4568  sudo apt-get install freeglut3-dev
+ 4569  ls
+ 4570  cd build
+ 4571  make
+ 4572  ls ..
+ 4573  ls
+ 4574  ls ../files
+ 4575  ls ../files/test_files_phase_3
+ 4576  ./engine test_files_phase_3/test_3_1.xml
+ 4577  code ..
+ 4578  make
+ 4579  ./engine test_files_phase_3/test_3_1.xml
+ 4580  make
+ 4581  ./engine test_3_1.xml
+ 4582  ./engine test_2_1.xml
+ 4583  make
+ 4584  ./engine test_2_1.xml
+ 4585  gdb engine
+ 4586  shutdown now
+ 4587  cduni
+ 4588  ls
+ 4589  cd PSD_SDGE_Project
+ 4590  ls
+ 4591  pull
+ 4592  code .
+ 4593  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4594  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4595  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235
+ 4596  lsusb
+ 4597  exit
+ 4598  pull
+ 4599  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4600  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4601  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235
+ 4602  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4603  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4604  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235
+ 4605  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4606  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4607  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4608  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4609  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4610  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4611  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4612  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4613  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4614  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4615  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4616  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4617  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4618  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4619  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4620  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4621  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4622  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4623  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4624  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4625  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4626  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4627  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4628  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4629  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4630  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4631  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4632  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4633  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4634  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4635  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4636  cduni
+ 4637  ls
+ 4638  cd PSD
+ 4639  cd Erlang
+ 4640  ls
+ 4641  lvim roomManager.erl chatv3.erl
+ 4642  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4643  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4644  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4645  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4646  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4647  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4648  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4649  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4650  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4651  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4652  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4653  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4654  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4655  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4656  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4657  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4658  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4659  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4660  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4661  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4662  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4663  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4664  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4665  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4666  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4667  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4668  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4669  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4670  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4671  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4672  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4673  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4674  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4675  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4676  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4677  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4678  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4679  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4680  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4681  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4682  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4683  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4684  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4685  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4686  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4687  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4688  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4689  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4690  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4691  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4692  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4693  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4694  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4695  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4696  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4697  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4698  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4699  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4700  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4701  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4702  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4703  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4704  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4705  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4706  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4707  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4708  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4709  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4710  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4711  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4712  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4713  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4714  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4715  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4716  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4717  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4718  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4719  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4720  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4721  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4722  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4723  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4724  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4725  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4726  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4727  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4728  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4729  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4730  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4731  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4732  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4733  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4734  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4735  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4736  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4737  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4738  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4739  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4740  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4741  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4742  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4743  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4744  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4745  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4746  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4747  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4748  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4749  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4750  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4751  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4752  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4753  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4754  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4755  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4756  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4757  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4758  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4759  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4760  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4761  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4762  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4763  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236
+ 4764  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4765  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4766  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4767  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4768  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4769  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4770  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4771  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234
+ 4772  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239
+ 4773  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4774  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4775  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4776  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4777  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4778  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4779  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4780  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4781  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server1
+ 4782  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4783  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4784  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4785  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server1
+ 4786  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server3
+ 4787  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4788  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4789  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server1
+ 4790  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server3
+ 4791  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4792  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4793  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server1
+ 4794  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server3
+ 4795  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4796  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4797  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server1
+ 4798  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server3
+ 4799  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4800  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4801  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server1
+ 4802  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server3
+ 4803  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4804  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4805  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server1
+ 4806  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server3
+ 4807  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4808  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4809  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server1
+ 4810  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server3
+ 4811  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4812  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4813  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server1
+ 4814  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server3
+ 4815  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server3
+ 4816  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4817  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4818  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4819  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4820  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4821  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4822  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1233 /home/tbag/Videos/server3
+ 4823  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4824  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4825  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4826  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4827  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4828  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4829  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4830  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4831  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4832  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4833  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4834  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4835  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4836  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4837  shutdown now
+ 4838  cduni
+ 4839  cd PSD_SDGE_Project
+ 4840  ls
+ 4841  exit
+ 4842  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4843  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer
+ 4844  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4845  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4846  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4847  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4848  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4849  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4850  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4851  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4852  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4853  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4854  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4855  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4856  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4857  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4858  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4859  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4860  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1233 /home/tbag/Videos/server3
+ 4861  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4862  exit
+ 4863  mvn install -f "/home/tbag/Universidade/4Ano/2Sem/PSD_SDGE_Project/dados/demo/pom.xml"
+ 4864  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4865  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4866  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4867  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4868  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1233 /home/tbag/Videos/server4
+ 4869  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4870  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4871  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4872  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4873  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1233 /home/tbag/Videos/server4
+ 4874  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4875  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4876  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4877  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4878  OA
+ 4879  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4880  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4881  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4882  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4883  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4884  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4885  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4886  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4887  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4888  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4889  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4890  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4891  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4892  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4893  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4894  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4895  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4896  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1233 /home/tbag/Videos/server4
+ 4897  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4898  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4899  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4900  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4901  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4902  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4903  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4904  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4905  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4906  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4907  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4908  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4909  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4910  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 4911  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 4912  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 4913  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 4914  shutdown now
+ 4915  add *
+ 4916  commit "feat: adding of new data servers done, needs further testing"
+ 4917  push
+ 4918  shutdown now
+ 4919  sudo shutdown now
+ 4920  cd AulasC
+ 4921  ls
+ 4922  cd Ficha3
+ 4923  ls
+ 4924  touch ex4.c
+ 4925  lvim ex4.c
+ 4926  gcc -Wall -o ex4 ex4.c
+ 4927  ./ex4
+ 4928  gcc -Wall -o ex4 ex4.c
+ 4929  ./ex4
+ 4930  gcc -Wall -o ex4 ex4.c
+ 4931  ./ex4
+ 4932  touch ex5.c
+ 4933  lvim ex5.c
+ 4934  cd ..
+ 4935  cd Ficha2
+ 4936  lvim potencia.c
+ 4937  gcc -Wall -o ex5 ex5.c
+ 4938  ./ex5
+ 4939  exit
+ 4940  gcc -Wall -o ex5 ex5.c
+ 4941  exit
+ 4942  gcc -Wall -o ex5 ex5.c
+ 4943  ./ex5
+ 4944  gcc -Wall -o ex5 ex5.c
+ 4945  ./ex5
+ 4946  gcc -Wall -o ex5 ex5.c
+ 4947  ./ex5
+ 4948  gcc -Wall -o ex5 ex5.c
+ 4949  ./ex5
+ 4950  gcc -Wall -o ex5 ex5.c
+ 4951  ./ex5
+ 4952  gcc -Wall -o ex5 ex5.c
+ 4953  ./ex5
+ 4954  gcc -Wall -o ex5 ex5.c
+ 4955  ./ex5
+ 4956  gcc -Wall -o ex5 ex5.c
+ 4957  ./ex5
+ 4958  gcc -Wall -o ex5 ex5.c
+ 4959  ./ex5
+ 4960  gcc -Wall -o ex5 ex5.c
+ 4961  ./ex5
+ 4962  gcc -Wall -o ex5 ex5.c
+ 4963  ./ex5
+ 4964  gcc -Wall -o ex5 ex5.c
+ 4965  ./ex5
+ 4966  ls
+ 4967  touch ex6.c
+ 4968  lvim ex6.c
+ 4969  gcc -Wall -o ex6 ex6.c
+ 4970  ./ex6
+ 4971  gcc -Wall -o ex6 ex6.c
+ 4972  ./ex6
+ 4973  cd ..
+ 4974  ls
+ 4975  cd Ficha3
+ 4976  ls
+ 4977  zip AulaHoje.zip ex4.c ex5.c ex6.c
+ 4978  ls
+ 4979  shutdown now
+ 4980  cduni
+ 4981  ls
+ 4982  cd PSD_SDGE_Project
+ 4983  code .
+ 4984  cd ~/Downloads
+ 4985  ls
+ 4986  sudo apt install ./discord-0.0.52.deb
+ 4987  rm AulaHoje.zip
+ 4988  rm discord-0.0.5*
+ 4989  ls
+ 4990  rm ocurso-2024-03-15-164715-v20240117093148.tar.gz
+ 4991  df -h ~
+ 4992  exit
+ 4993  cd ~/Downloads
+ 4994  ls
+ 4995  sudo apt install ./code
+ 4996  exit
+ 4997  cd ~/Downloads
+ 4998  sudo apt install ./code_1.88.1-1712771838_amd64.deb
+ 4999  rm code_1.88.1-1712771838_amd64.deb
+ 5000  code .
+ 5001  cduni
+ 5002  cd PSD_SDGE_Project
+ 5003  ls
+ 5004  clear
+ 5005  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5006  fg
+ 5007  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5008  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5009  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5010  fg
+ 5011  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5012  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5013  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5014  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5015  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5016  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5017  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5018  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5019  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5020  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5021  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5022  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5023  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5024  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5025  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5026  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5027  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5028  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5029  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5030  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server5
+ 5031  clear
+ 5032  ls
+ 5033  clear
+ 5034  claer
+ 5035  clear
+ 5036  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5037  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5038  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5039  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5040  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5041  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server5
+ 5042  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5043  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5044  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5045  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5046  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5047  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5048  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5049  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5050  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5051  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5052  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server5
+ 5053  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5054  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5055  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5056  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5057  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5058  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5059  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5060  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5061  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5062  shutdown now
+ 5063  cduni
+ 5064  ls
+ 5065  cd ~
+ 5066  ls
+ 5067  rm Aulas.zip
+ 5068  mkdir Testes
+ 5069  mkdir C
+ 5070  cd C
+ 5071  ls
+ 5072  touch linkedListTask.c
+ 5073  lvim linkedListTask.c
+ 5074  gcc -Wall -o linkedListTask linkedListTask.c
+ 5075  ./linkedListTask
+ 5076  lvim linkedListTask.c
+ 5077  gcc -Wall -o linkedListTask linkedListTask.c
+ 5078  lvim linkedListTask.c
+ 5079  ./linkedListTask
+ 5080  lvim linkedListTask.c
+ 5081  gcc -Wall -o linkedListTask linkedListTask.c
+ 5082  ./linkedListTask
+ 5083  gcc -Wall -o linkedListTask linkedListTask.c
+ 5084  ./linkedListTask
+ 5085  shutdown now
+ 5086  cduni
+ 5087  ls
+ 5088  cd PSD_SDGE_Project
+ 5089  ls
+ 5090  code .
+ 5091  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5092  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer
+ 5093  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5094  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1239 /home/tbag/Videos/server2
+ 5095  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 125 /home/tbag/Videos/server3
+ 5096  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5097  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5098  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 125 /home/tbag/Videos/server3
+ 5099  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server2
+ 5100  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5101  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5102  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5103  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5104  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5105  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5106  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5107  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5108  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5109  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5110  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5111  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5112  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5113  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5114  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5115  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5116  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5117  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5118  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5119  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5120  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5121  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5122  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5123  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5124  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5125  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5126  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5127  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5128  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5129  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5130  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5131  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5132  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5133  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5134  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5135  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5136  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5137  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5138  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5139  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5140  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5141  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5142  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5143  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5144  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5145  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5146  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5147  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5148  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5149  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5150  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5151  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5152  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5153  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5154  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DummyCentralServer
+ 5155  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1234 /home/tbag/Videos/server1
+ 5156  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1235 /home/tbag/Videos/server2
+ 5157  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1236 /home/tbag/Videos/server3
+ 5158  /usr/bin/env /usr/lib/jvm/java-17-openjdk-amd64/bin/java @/tmp/cp_b2v6sq3xov8gj03galfmgcd3n.argfile data.DataServer localhost 5555 1237 /home/tbag/Videos/server4
+ 5159  status
+ 5160  add *
+ 5161  commit "feat: dynamic server addition done"
+ 5162  push
+ 5163  add *
+ 5164  commit "fix: removed 'warnings'\n"
+ 5165  push
+ 5166  shutdown now
+ 5167  cduni
+ 5168  ls
+ 5169  cd ..
+ 5170  ls
+ 5171  cd ..
+ 5172  ls
+ 5173  cd 3Ano
+ 5174  ls
+ 5175  cd 2Sem
+ 5176  ls
+ 5177  cd CG
+ 5178  ls
+ 5179  cd Ficha6
+ 5180  ls
+ 5181  lvim main.cpp
+ 5182  cd ~
+ 5183  ls
+ 5184  mkdir Marc
+ 5185  cd Marc
+ 5186  ls
+ 5187  mv ~/Downloads/code.zip .
+ 5188  unzip code.zip
+ 5189  ls
+ 5190  rm code.zip
+ 5191  cmake-gui .&
+ 5192  ls
+ 5193  cd build
+ 5194  ls
+ 5195  make
+ 5196  ./class1
+ 5197  cd ..
+ 5198  ls
+ 5199  code main.cpp
+ 5200  cd buil
+ 5201  cd build
+ 5202  make
+ 5203  ./class1
+ 5204  make
+ 5205  ./class1
+ 5206  \tmake
+ 5207  ./class1
+ 5208  \tmake
+ 5209  ./class1
+ 5210  make
+ 5211  ./class1
+ 5212  make
+ 5213  ./class1
+ 5214  make
+ 5215  ./class1
+ 5216  make
+ 5217  ./class1
+ 5218  gdb class1
+ 5219  make
+ 5220  ./class1
+ 5221  gdb class1
+ 5222  make
+ 5223  ./class1
+ 5224  gdb class1
+ 5225  make
+ 5226  ./class1
+ 5227  make
+ 5228  ./class1
+ 5229  make
+ 5230  ./class1
+ 5231  make
+ 5232  ./class1
+ 5233  make
+ 5234  ./class1
+ 5235  make
+ 5236  ./class1
+ 5237  make
+ 5238  ./class1
+ 5239  make
+ 5240  ./class1
+ 5241  make
+ 5242  ./class1
+ 5243  make
+ 5244  ./class1
+ 5245  make
+ 5246  ./class1
+ 5247  make
+ 5248  ./class1
+ 5249  make
+ 5250  ./class1
+ 5251  make
+ 5252  ./class1
+ 5253  ks
+ 5254  cd .
+ 5255  ls
+ 5256  cd ..
+ 5257  ls
+ 5258  cd ..
+ 5259  ls
+ 5260  zip -r Marc.zip Marc
+ 5261  shutdown now
+ 5262  cduni
+ 5263  ls
+ 5264  cd VCPI
+ 5265  status
+ 5266  cd ..
+ 5267  cd VI
+ 5268  cd VI-RT
+ 5269  status
+ 5270  pull
+ 5271  ls
+ 5272  code VI-RT
+ 5273  make
+ 5274  ./build/apps/VI-RT
+ 5275  open MyImage.ppm
+ 5276  make
+ 5277  open MyImage.ppm
+ 5278  ./build/apps/VI-RT
+ 5279  make
+ 5280  ./build/apps/VI-RT
+ 5281  make
+ 5282  ./build/apps/VI-RT
+ 5283  make
+ 5284  ./build/apps/VI-RT
+ 5285  make
+ 5286  ./build/apps/VI-RT
+ 5287  make
+ 5288  ./build/apps/VI-RT
+ 5289  make
+ 5290  ./build/apps/VI-RT
+ 5291  make
+ 5292  ./build/apps/VI-RT
+ 5293  make
+ 5294  ./build/apps/VI-RT
+ 5295  make
+ 5296  ./build/apps/VI-RT
+ 5297  make
+ 5298  ./build/apps/VI-RT
+ 5299  make
+ 5300  ./build/apps/VI-RT
+ 5301  make
+ 5302  ./build/apps/VI-RT
+ 5303  make
+ 5304  ./build/apps/VI-RT
+ 5305  make
+ 5306  ./build/apps/VI-RT
+ 5307  make
+ 5308  ./build/apps/VI-RT
+ 5309  make
+ 5310  ./build/apps/VI-RT
+ 5311  make
+ 5312  ./build/apps/VI-RT
+ 5313  \tmake
+ 5314  history

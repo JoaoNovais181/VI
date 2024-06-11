@@ -1,0 +1,1261 @@
+# of vertices  : 76
+# of normals   : 0
+# of texcoords : 0
+# of shapes    : 8
+# of materials : 5
+Processing shape floor
+0
+013
+123
+764
+654
+11109
+1198
+
+There are 6 material indexes
+Processing shape light
+0
+121315
+131415
+
+There are 2 material indexes
+Processing shape ceiling
+0
+161719
+171819
+
+There are 2 material indexes
+Processing shape back_wall
+0
+202122
+202223
+
+There are 2 material indexes
+Processing shape green_wall
+0
+282931
+293031
+
+There are 2 material indexes
+Processing shape red_wall
+0
+323334
+323435
+
+There are 2 material indexes
+Processing shape short_block
+0
+363738
+363839
+404143
+414243
+444547
+454647
+484951
+495051
+525355
+535455
+
+There are 10 material indexes
+Processing shape tall_block
+0
+565759
+575859
+606163
+616263
+646567
+656667
+686971
+697071
+727375
+737475
+
+There are 10 material indexes
+Index: 0
+
+Another Iteration
+0 0
+Index: 1
+
+Another Iteration
+1 1
+0 0
+Index: 3
+
+Another Iteration
+3 2
+1 1
+0 0
+Index: 1
+
+Another Iteration
+3 2
+1 1
+0 0
+Index: 2
+
+Another Iteration
+2 3
+3 2
+1 1
+0 0
+Index: 3
+
+Another Iteration
+2 3
+3 2
+1 1
+0 0
+Index: 7
+
+Another Iteration
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 6
+
+Another Iteration
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 4
+
+Another Iteration
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 6
+
+Another Iteration
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 5
+
+Another Iteration
+5 9
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 4
+
+Another Iteration
+5 9
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 11
+
+Another Iteration
+11 11
+5 9
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 10
+
+Another Iteration
+10 12
+11 11
+5 9
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 9
+
+Another Iteration
+9 13
+10 12
+11 11
+5 9
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 11
+
+Another Iteration
+11 14
+9 13
+10 12
+11 11
+5 9
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 9
+
+Another Iteration
+11 14
+9 13
+10 12
+11 11
+5 9
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 8
+
+Another Iteration
+8 16
+11 14
+9 13
+10 12
+11 11
+5 9
+4 7
+6 6
+7 5
+2 3
+3 2
+1 1
+0 0
+Index: 12
+
+Another Iteration
+12 0
+Index: 13
+
+Another Iteration
+13 1
+12 0
+Index: 15
+
+Another Iteration
+15 2
+13 1
+12 0
+Index: 13
+
+Another Iteration
+15 2
+13 1
+12 0
+Index: 14
+
+Another Iteration
+14 3
+15 2
+13 1
+12 0
+Index: 15
+
+Another Iteration
+14 3
+15 2
+13 1
+12 0
+Index: 16
+
+Another Iteration
+16 0
+Index: 17
+
+Another Iteration
+17 1
+16 0
+Index: 19
+
+Another Iteration
+19 2
+17 1
+16 0
+Index: 17
+
+Another Iteration
+19 2
+17 1
+16 0
+Index: 18
+
+Another Iteration
+18 3
+19 2
+17 1
+16 0
+Index: 19
+
+Another Iteration
+18 3
+19 2
+17 1
+16 0
+Index: 20
+
+Another Iteration
+20 0
+Index: 21
+
+Another Iteration
+21 1
+20 0
+Index: 22
+
+Another Iteration
+22 2
+21 1
+20 0
+Index: 20
+
+Another Iteration
+22 2
+21 1
+20 0
+Index: 22
+
+Another Iteration
+22 2
+21 1
+20 0
+Index: 23
+
+Another Iteration
+23 4
+22 2
+21 1
+20 0
+Index: 28
+
+Another Iteration
+28 0
+Index: 29
+
+Another Iteration
+29 1
+28 0
+Index: 31
+
+Another Iteration
+31 2
+29 1
+28 0
+Index: 29
+
+Another Iteration
+31 2
+29 1
+28 0
+Index: 30
+
+Another Iteration
+30 3
+31 2
+29 1
+28 0
+Index: 31
+
+Another Iteration
+30 3
+31 2
+29 1
+28 0
+Index: 32
+
+Another Iteration
+32 0
+Index: 33
+
+Another Iteration
+33 1
+32 0
+Index: 34
+
+Another Iteration
+34 2
+33 1
+32 0
+Index: 32
+
+Another Iteration
+34 2
+33 1
+32 0
+Index: 34
+
+Another Iteration
+34 2
+33 1
+32 0
+Index: 35
+
+Another Iteration
+35 4
+34 2
+33 1
+32 0
+Index: 36
+
+Another Iteration
+36 0
+Index: 37
+
+Another Iteration
+37 1
+36 0
+Index: 38
+
+Another Iteration
+38 2
+37 1
+36 0
+Index: 36
+
+Another Iteration
+38 2
+37 1
+36 0
+Index: 38
+
+Another Iteration
+38 2
+37 1
+36 0
+Index: 39
+
+Another Iteration
+39 4
+38 2
+37 1
+36 0
+Index: 40
+
+Another Iteration
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 41
+
+Another Iteration
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 43
+
+Another Iteration
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 41
+
+Another Iteration
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 42
+
+Another Iteration
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 43
+
+Another Iteration
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 44
+
+Another Iteration
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 45
+
+Another Iteration
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 47
+
+Another Iteration
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 45
+
+Another Iteration
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 46
+
+Another Iteration
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 47
+
+Another Iteration
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 48
+
+Another Iteration
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 49
+
+Another Iteration
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 51
+
+Another Iteration
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 49
+
+Another Iteration
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 50
+
+Another Iteration
+50 21
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 51
+
+Another Iteration
+50 21
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 52
+
+Another Iteration
+52 23
+50 21
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 53
+
+Another Iteration
+53 24
+52 23
+50 21
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 55
+
+Another Iteration
+55 25
+53 24
+52 23
+50 21
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 53
+
+Another Iteration
+55 25
+53 24
+52 23
+50 21
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 54
+
+Another Iteration
+54 27
+55 25
+53 24
+52 23
+50 21
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 55
+
+Another Iteration
+54 27
+55 25
+53 24
+52 23
+50 21
+51 19
+49 18
+48 17
+46 15
+47 13
+45 12
+44 11
+42 9
+43 7
+41 6
+40 5
+39 4
+38 2
+37 1
+36 0
+Index: 56
+
+Another Iteration
+56 0
+Index: 57
+
+Another Iteration
+57 1
+56 0
+Index: 59
+
+Another Iteration
+59 2
+57 1
+56 0
+Index: 57
+
+Another Iteration
+59 2
+57 1
+56 0
+Index: 58
+
+Another Iteration
+58 3
+59 2
+57 1
+56 0
+Index: 59
+
+Another Iteration
+58 3
+59 2
+57 1
+56 0
+Index: 60
+
+Another Iteration
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 61
+
+Another Iteration
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 63
+
+Another Iteration
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 61
+
+Another Iteration
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 62
+
+Another Iteration
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 63
+
+Another Iteration
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 64
+
+Another Iteration
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 65
+
+Another Iteration
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 67
+
+Another Iteration
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 65
+
+Another Iteration
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 66
+
+Another Iteration
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 67
+
+Another Iteration
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 68
+
+Another Iteration
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 69
+
+Another Iteration
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 71
+
+Another Iteration
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 69
+
+Another Iteration
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 70
+
+Another Iteration
+70 21
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 71
+
+Another Iteration
+70 21
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 72
+
+Another Iteration
+72 23
+70 21
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 73
+
+Another Iteration
+73 24
+72 23
+70 21
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 75
+
+Another Iteration
+75 25
+73 24
+72 23
+70 21
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 73
+
+Another Iteration
+75 25
+73 24
+72 23
+70 21
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 74
+
+Another Iteration
+74 27
+75 25
+73 24
+72 23
+70 21
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Index: 75
+
+Another Iteration
+74 27
+75 25
+73 24
+72 23
+70 21
+71 19
+69 18
+68 17
+66 15
+67 13
+65 12
+64 11
+62 9
+63 7
+61 6
+60 5
+58 3
+59 2
+57 1
+56 0
+Scene Load: SUCCESS!! :-)
+#primitives = 8 ; #lights = 0 ; #materials = 5 ;
+
+1
+Rendering time = 0.000 secs
+
+That's all, folks!
