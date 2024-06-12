@@ -17,6 +17,10 @@
 #include "intersection.hpp"
 #include "BRDF.hpp"
 
+class HierarchicalGrid;
+
+class AccelStruct;
+
 class rehash {
 public:
     int objNdx, ourNdx;
@@ -28,11 +32,13 @@ public:
 class Scene {
     std::vector <Primitive *> prims;
     std::vector <BRDF *> BRDFs;
+    AccelStruct *accelStruct;
 public:
     std::vector <Light *> lights;
     int numPrimitives, numLights, numBRDFs;
 
-    Scene (): numPrimitives(0), numLights(0), numBRDFs(0) {}
+    Scene ();
+    Scene (bool generateAccelStruct);
     bool Load (const std::string &fname);
     bool SetLights (void) { return true; };
     bool trace (Ray r, Intersection *isect);
@@ -42,6 +48,8 @@ public:
         std::cout << "#lights = " << numLights << " ; ";
         std::cout << "#materials = " << numBRDFs << " ;" << std::endl;
     }
+    std::vector <Primitive *> getPrims() {return this->prims;}
+    BRDF *getMaterial(int indx) { return BRDFs[indx]; }
     void printScene();
 };
 

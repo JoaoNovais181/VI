@@ -1,0 +1,6 @@
+Scene Load: SUCCESS!! :-)
+#primitives = 8 ; #lights = 2 ; #materials = 8 ;
+
+Rendering time = 0.655 secs
+
+That's all, folks!

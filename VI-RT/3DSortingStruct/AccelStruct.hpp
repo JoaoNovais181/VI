@@ -8,16 +8,28 @@
 #ifndef AccelStruct_hpp
 #define AccelStruct_hpp
 
-#include "Ray.hpp"
-#include "Intersection.hpp"
-#include "Scene.hpp"
+#include <algorithm>
+#include <vector>
+#include "ray.hpp"
+#include "intersection.hpp"
+#include "BB.hpp"
+#include "primitive.hpp"
+#include "triangle.hpp"
+#include "mesh.hpp"
+
+
+class Scene;
 
 class AccelStruct {
-    public:
+
+public:
     AccelStruct () {}
     ~AccelStruct () {}
-    void build (Scene s) {}
-    bool trace (Scene s, Ray r, Intersection *isect) {}
+    virtual void build (Scene *s) = 0;
+    virtual bool trace (Ray r, Intersection *isect) = 0;
+
+protected:
+    Scene *scene;
 };
 
 #endif /* AccelStruct_hpp */

@@ -109,6 +109,7 @@ public:
     Point operator *(const float f) const { return {f*X, f*Y, f*Z};}
     Point operator *(const double f) const { return {(float)(f*X), (float)(f*Y), (float)(f*Z)};}
     Point operator +(const Vector &v) const { return {X+v.X, Y+v.Y, Z+v.Z};}
+    Point operator/(const float f) const { return Point(X / f, Y / f, Z / f); }
     friend Point operator*(const float f, const Point& p) {
         return p*f;
     }

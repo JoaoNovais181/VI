@@ -8,4 +8,7 @@ build/objects/VI-RT/Scene/scene.o: VI-RT/Scene/scene.cpp \
  VI-RT/Primitive/Geometry/mesh.hpp VI-RT/Primitive/Geometry/geometry.hpp \
  VI-RT/Primitive/BRDF/Phong.hpp VI-RT/Primitive/BRDF/BRDF.hpp \
  VI-RT/Light/AreaLight.hpp VI-RT/Light/light.hpp \
- VI-RT/Primitive/Geometry/triangle.hpp
+ VI-RT/Primitive/Geometry/triangle.hpp \
+ VI-RT/3DSortingStruct/AccelStruct.hpp \
+ VI-RT/3DSortingStruct/HierarchicalGrid.hpp \
+ VI-RT/3DSortingStruct/AccelStruct.hpp VI-RT/3DSortingStruct/BVH.hpp

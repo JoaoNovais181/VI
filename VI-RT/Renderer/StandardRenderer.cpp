@@ -38,8 +38,12 @@ void StandardRenderer::Render () {
                     cam->GenerateRay(x, y, &primary);
                 }
                 // trace ray (scene)
+                isect.depth = MAXFLOAT;
                 intersected = scene->trace(primary, &isect);
-                
+
+                // printf("\nPonto %f %f %f\n", isect.p.X, isect.p.Y, isect.p.Z);
+                // printf("Depth %f\n", isect.depth);
+
                 // shade this intersection (shader) - remember: depth=0
                 color += shd->shade(intersected, isect, 0);
             }

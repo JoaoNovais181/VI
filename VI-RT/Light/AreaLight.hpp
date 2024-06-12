@@ -40,6 +40,6 @@ public:
         _pdf = pdf;
         return intensity;
     }
-};
+        };
 
 #endif /* AreaLight_hpp */

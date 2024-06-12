@@ -8,7 +8,7 @@ SHELL	 := /bin/bash
 
 TARGET   := VI-RT
 
-INCLUDE  := -IVI-RT/Camera/ -IVI-RT/Image -IVI-RT/Light -IVI-RT/Primitive -IVI-RT/Primitive/BRDF -IVI-RT/Primitive/Geometry -IVI-RT/Rays -IVI-RT/Renderer -IVI-RT/Scene -IVI-RT/Shader -IVI-RT/utils -IVI-RT/Scene/tinyobjloader/
+INCLUDE  := -IVI-RT/Camera/ -IVI-RT/Image -IVI-RT/Light -IVI-RT/Primitive -IVI-RT/Primitive/BRDF -IVI-RT/Primitive/Geometry -IVI-RT/Rays -IVI-RT/Renderer -IVI-RT/Scene -IVI-RT/Shader -IVI-RT/utils -IVI-RT/Scene/tinyobjloader/ -IVI-RT/3DSortingStruct/
 
 SRC      :=                      \
    $(wildcard VI-RT/*.cpp) \
@@ -19,6 +19,7 @@ SRC      :=                      \
    $(wildcard VI-RT/Renderer/*.cpp)         \
    $(wildcard VI-RT/Scene/*.cpp)         \
    $(wildcard VI-RT/Shader/*.cpp)         \
+   $(wildcard VI-RT/3DSortingStruct/*.cpp)
 
 OBJECTS  := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 DEPENDENCIES \

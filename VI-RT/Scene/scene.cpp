@@ -16,9 +16,32 @@
 #include <iostream>
 #include <set>
 #include <vector>
-#include <AreaLight.hpp>
+#include "AreaLight.hpp"
+#include "AccelStruct.hpp"
+#include "HierarchicalGrid.hpp"
+#include "BVH.hpp"
 
 using namespace tinyobj;
+
+Scene::Scene () {
+    this->numBRDFs = 0;
+    this->numLights = 0;
+    this->numPrimitives = 0;
+    this->accelStruct = new HierarchicalGrid(3);
+}
+
+Scene::Scene (bool generateAccelStruct) {
+    this->numBRDFs = 0;
+    this->numLights = 0;
+    this->numPrimitives = 0;
+    if (generateAccelStruct) {
+        this->accelStruct = new HierarchicalGrid(3);
+        // this->accelStruct = new BVH();
+    }
+    else {
+        this->accelStruct = nullptr;
+    }
+}
 
 static void PrintInfo(const ObjReader myObj)
 {
@@ -184,6 +207,9 @@ bool Scene::Load(const std::string &fname)
         numPrimitives++;
     } // end iterate over shapes
 
+    if (this->accelStruct) 
+        this->accelStruct->build(this);
+
     return true;
 }
 
@@ -195,26 +221,29 @@ bool Scene::trace(Ray r, Intersection *isect)
     if (numPrimitives == 0)
         return false;
 
-    // iterate over all primitives
-    for (auto prim_itr = prims.begin(); prim_itr != prims.end(); prim_itr++)
-    {
-        if ((*prim_itr)->g->intersect(r, &curr_isect))
+    if (accelStruct) {
+        intersection = this->accelStruct->trace(r, isect);
+    }
+    else {
+        // iterate over all primitives
+        for (auto prim_itr = prims.begin(); prim_itr != prims.end(); prim_itr++)
         {
-            if (!intersection)
-            { // first intersection
-                intersection = true;
-                *isect = curr_isect;
-                isect->f = BRDFs[(*prim_itr)->material_ndx];
-            }
-            else if (curr_isect.depth < isect->depth)
+            if ((*prim_itr)->g->intersect(r, &curr_isect))
             {
-                *isect = curr_isect;
-                isect->f = BRDFs[(*prim_itr)->material_ndx];
+                if (!intersection)
+                { // first intersection
+                    intersection = true;
+                    *isect = curr_isect;
+                    isect->f = BRDFs[(*prim_itr)->material_ndx];
+                }
+                else if (curr_isect.depth < isect->depth)
+                {
+                    *isect = curr_isect;
+                    isect->f = BRDFs[(*prim_itr)->material_ndx];
+                }
             }
         }
     }
-
-    isect->isLight = false;
 
     isect->isLight = false;
     // now iterate over light sources and intersect with those that have geometry
