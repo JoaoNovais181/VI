@@ -20,7 +20,7 @@ RGB PathTracerShader::directLighting(Intersection isect, Phong *f)
     RGB color(0., 0., 0.);
     Light *l;
     int l_ndx;
-    const bool RANDOM_SAMPLE_ONE = false;
+    const bool RANDOM_SAMPLE_ONE = true;
     float light_pdf;
 
     for (auto l_iter = scene->lights.begin(); l_iter != scene->lights.end(); l_iter++)
@@ -164,7 +164,7 @@ RGB PathTracerShader::specularReflection(Intersection isect, Phong *f, int depth
     float cos = isect.gn.dot(isect.wo);
     Rdir = 2.f * cos * isect.gn - isect.wo;
 
-    if(f->Ns < 1000)
+    if (f->Ns < 1000)
     { // glossy materials
         // actual direction distributed around Rdir according to the cosine lobe
         // generate the cosine lobel sampled direction around (0,0,1)
@@ -215,24 +215,17 @@ RGB PathTracerShader::specularReflection(Intersection isect, Phong *f, int depth
     }
     else
     { // ideal specular reflection
-        Ray specular(isect.p, Rdir);
-
-        specular.pix_x = isect.pix_x;
-        specular.pix_y = isect.pix_y;
-
-        specular.FaceID = isect.FaceID;
-
-        specular.adjustOrigin(isect.gn);
-
-        // OK, we have the ray : trace and shade it recursively
-        bool intersected;
+        RGB color(0., 0., 0.);
+        Vector Rdir, s_dir;
+        float pdf;
         Intersection s_isect;
+        float cos = isect.gn.dot(isect.wo);
+        Rdir = 2.f * cos * isect.gn - isect.wo;
+        Ray specular(isect.p, Rdir);
+        specular.adjustOrigin(isect.gn);
         // trace ray
-        intersected = scene->trace(specular, &s_isect);
-
-        // shade this intersection
+        bool intersected = scene->trace(specular, &s_isect);
         RGB Rcolor = shade(intersected, s_isect, depth + 1);
-
         color = (f->Ks * Rcolor);
         return color;
     }
@@ -254,7 +247,7 @@ RGB PathTracerShader::diffuseReflection(Intersection isect, Phong *f, int depth)
 
     Vector D_around_Z;
     // cosine sampling
-    float cos_theta = D_around_Z.Z = sqrtf(rnd[1]);
+    float cos_theta = D_around_Z.Z = sqrtf(rnd[1]); // cos sampling
     D_around_Z.Y = sinf(2.0f * M_PI * rnd[0]) * sqrtf(1.0f - rnd[1]);
     D_around_Z.X = cosf(2.0f * M_PI * rnd[0]) * sqrtf(1.0f - rnd[1]);
     pdf = cos_theta / (M_PI);
@@ -265,7 +258,7 @@ RGB PathTracerShader::diffuseReflection(Intersection isect, Phong *f, int depth)
 
     dir = D_around_Z.Rotate(Rx, Ry, isect.gn);
 
-    Ray diffuse(isect.p, D_around_Z.Rotate(Rx, Ry, isect.gn));
+    Ray diffuse(isect.p, dir);
     // ok, we have the ray: trace and shade it recursively
 
     diffuse.pix_x = isect.pix_x;

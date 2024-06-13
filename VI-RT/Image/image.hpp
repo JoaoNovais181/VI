@@ -35,7 +35,16 @@ public:
         imagePlane[y*W+x] += rgb;
         return true;
     }
+    bool divide (int x, int y, int value) {
+        if (x>W or y>H) return false;
+        imagePlane[y*W+x] = imagePlane[y*W+x] / value;
+        return true;
+    }
     bool Save (std::string filename) {return true;}
+    RGB get(int x, int y) { return imagePlane[y*W+x]; }
+    void copy(Image *other) {
+        memcpy(imagePlane, other->imagePlane, W*H*sizeof(RGB));
+    }
 };
 
 #endif /* image_hpp */

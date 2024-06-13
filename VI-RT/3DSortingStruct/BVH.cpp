@@ -151,7 +151,7 @@ BVHNodeGeo *BVH::buildBVHGeoAux(std::vector<Triangle*>& triangles, int materialI
         node->boundingBox.update(tri->bb);
     }
 
-    if (triangles.size() <= 1)
+    if (triangles.size() <= 10)
     {
         node->triangles = triangles;
         // node->geometry = triangles[0];

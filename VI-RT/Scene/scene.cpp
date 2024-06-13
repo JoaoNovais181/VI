@@ -36,8 +36,8 @@ Scene::Scene (bool generateAccelStruct) {
     this->numLights = 0;
     this->numPrimitives = 0;
     if (generateAccelStruct) {
-        this->accelStruct = new HierarchicalGrid(3);
-        // this->accelStruct = new BVH();
+        // this->accelStruct = new HierarchicalGrid(3);
+        this->accelStruct = new BVH();
     }
     else {
         this->accelStruct = nullptr;

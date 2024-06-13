@@ -9,6 +9,7 @@
 #include "scene.hpp"
 #include "perspective.hpp"
 #include "StandardRenderer.hpp"
+#include "WindowRenderer.hpp"
 #include "ImagePPM.hpp"
 #include "AmbientShader.hpp"
 #include "WhittedShader.hpp"
@@ -88,8 +89,9 @@ int main(int argc, const char * argv[]) {
     // shd = new DistributedShader(&scene, background);
     shd = new PathTracerShader(&scene, background); 
     // declare the renderer
-    int spp=64;     // samples per pixel
-    StandardRenderer myRender (cam, &scene, img, shd, spp);
+    int spp=8;     // samples per pixel
+    // StandardRenderer myRender (cam, &scene, img, shd, spp);
+    WindowRenderer myRender (cam, &scene, img, shd, spp);
     // render
     start = clock();
     myRender.Render();

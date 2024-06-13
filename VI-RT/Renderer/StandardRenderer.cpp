@@ -10,31 +10,36 @@
 
 const bool jitter = true;
 
-void StandardRenderer::Render () {
-    int W=0,H=0;  // resolution
-    int x,y, ss;
+void StandardRenderer::Render()
+{
+    int W = 0, H = 0; // resolution
+    int x, y, ss;
 
     // get resolution from the camera
     cam->getResolution(&W, &H);
-    
+
     // main rendering loop: get primary rays from the camera until done
-    for (y=0 ; y< H ; y++) {  // loop over rows
-        for (x=0 ; x< W ; x++) { // loop over columns
+    for (ss = 0; ss < spp; ss++)
+    {
+        for (y = 0; y < H; y++)
+        { // loop over rows
             Ray primary;
             Intersection isect;
             bool intersected;
-            RGB color = RGB(0,0,0);
+            RGB color = RGB(0, 0, 0);
 
-            for (ss = 0 ; ss < spp ; ss++)
-            {
-
+            for (x = 0; x < W; x++)
+            { // loop over columns
                 // Generate Ray (camera)
-                if (jitter) {
+                if (jitter)
+                {
                     float jitterV[2];
                     jitterV[0] = ((float)rand()) / ((float)RAND_MAX);
                     jitterV[1] = ((float)rand()) / ((float)RAND_MAX);
                     cam->GenerateRay(x, y, &primary, jitterV);
-                } else {
+                }
+                else
+                {
                     cam->GenerateRay(x, y, &primary);
                 }
                 // trace ray (scene)
@@ -45,12 +50,13 @@ void StandardRenderer::Render () {
                 // printf("Depth %f\n", isect.depth);
 
                 // shade this intersection (shader) - remember: depth=0
-                color += shd->shade(intersected, isect, 0);
+                color = shd->shade(intersected, isect, 0);
+                img->add(x, y, color);
             }
-            color = color / spp;
-            // write the result into the image frame buffer (image)
-            img->set(x,y,color);
-            
         } // loop over columns
-    }   // loop over rows
+    } // loop over rows
+
+    for (y = 0; y < H; y++)
+        for (x = 0; x < W; x++)
+            img->divide(x, y, spp);
 }

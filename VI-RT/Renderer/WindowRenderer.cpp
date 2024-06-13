@@ -1,0 +1,344 @@
+#include "WindowRenderer.hpp"
+
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+
+#include <thread>
+
+#include "linmath.h"
+#include "ImagePPM.hpp"
+
+const bool jitter = true;
+
+float min (float a, float b) {
+    return (a<b) ?a :b;
+}
+
+/**
+ * TODO: adicionar buffers para os shaders
+ *
+ */
+void WindowRenderer::calculateBuffers()
+{
+    printf("Thread comecou\n");
+    int W = 0, H = 0; // resolution
+    int x, y, ss;
+
+    glfwMakeContextCurrent(window);
+
+    cam->getResolution(&W, &H);
+
+    Image *localImg = new Image(W, H);
+
+    // main rendering loop: get primary rays from the camera until done
+    for (ss = 1; !glfwWindowShouldClose(window); ss++)
+    {
+        char buffer[128];
+        snprintf(buffer, 128, "Ray Tracer - %d spp", ss);
+        glfwSetWindowTitle(window, buffer);
+        for (y = 0; y < H; y++)
+        { // loop over rows
+            Ray primary;
+            Intersection isect;
+            bool intersected;
+            RGB color = RGB(0, 0, 0);
+
+            for (x = 0; x < W; x++)
+            { // loop over columns
+                // Generate Ray (camera)
+                if (jitter)
+                {
+                    float jitterV[2];
+                    jitterV[0] = ((float)rand()) / ((float)RAND_MAX);
+                    jitterV[1] = ((float)rand()) / ((float)RAND_MAX);
+                    cam->GenerateRay(x, y, &primary, jitterV);
+                }
+                else
+                {
+                    cam->GenerateRay(x, y, &primary);
+                }
+                // trace ray (scene)
+                isect.depth = MAXFLOAT;
+                intersected = scene->trace(primary, &isect);
+
+                // printf("\nPonto %f %f %f\n", isect.p.X, isect.p.Y, isect.p.Z);
+                // printf("Depth %f\n", isect.depth);
+
+                // shade this intersection (shader) - remember: depth=0
+                color = shd->shade(intersected, isect, 0);
+                // RGB col = img->get(x, y);
+                // color = (col * ss + color) / (ss + 1);
+                localImg->add(x,y, color);
+                // color.R = min(1, color.R);
+                // color.G = min(1, color.G);
+                // color.B = min(1, color.B);
+                img->set(x, y, localImg->get(x,y)/ss);
+                this->updateTextureColor(x,y);
+            }
+        } // loop over columns
+    } // loop over rows
+}
+
+// Initialize texture with vec3 color data
+void WindowRenderer::initializeTexture()
+{
+    std::vector<float> colorData(W * H * 3); // Initialize with black colors
+
+    for (int y = 0; y < H; y++)
+    {
+        for (int x = 0; x < W; x++)
+        {
+            colorData[y*W+x+0] = 1;
+            colorData[y*W+x+1] = 1;
+            colorData[y*W+x+2] = 1;
+        }
+    }
+
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, W, H, 0, GL_RGB, GL_FLOAT, colorData.data());
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glBindTexture(GL_TEXTURE_2D, 0);
+}
+
+// Update the color at specific (x, y)
+void WindowRenderer::updateTextureColor(int x, int y)
+{
+    if (x < 0 || x >= W || y < 0 || y >= H)
+    {
+        std::cerr << "Error: Coordinates out of bounds." << std::endl;
+        return;
+    }
+
+    RGB color = img->get(x,y);
+    Vec3 newColor = Vec3(color.R, color.G, color.B);
+
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexSubImage2D(GL_TEXTURE_2D, 0, x, y, 1, 1, GL_RGB, GL_FLOAT, &newColor);
+    glBindTexture(GL_TEXTURE_2D, 0);
+}
+
+static const struct
+{
+    float x, y;
+} vertices[6] =
+{
+    {0.0f, 0.0f},
+    {1000.0f, 0.0f},
+    {0.0f, 1000.0f},
+    {0.0f, 1000.0f},
+    {1000.0f, 0.0f},
+    {1000.0f, 1000.0f}
+};
+
+static const char *vertex_shader_text =
+    "#version 460\n"
+    "uniform mat4 MVP;\n"
+    "uniform vec2 size;\n"
+    "in vec2 vPos;\n"
+    "out vec2 pos;\n"
+    "void main()\n"
+    "{\n"
+    "    vec2 ndcPos = vec2(\n"
+    "        2.0 * (vPos.x / size.x) - 1.0,\n"
+    "        2.0 * (vPos.y / size.y) - 1.0\n"
+    "    );\n"
+    "    pos = vPos;\n"
+    "    gl_Position = vec4(ndcPos, 0.0, 1.0);\n"
+    "}\n";
+
+
+static const char *fragment_shader_text =
+    "#version 460\n"
+    "uniform sampler2D colorTexture;\n"
+    "uniform vec2 size;\n"
+    "in vec2 pos;\n"
+    "out vec4 color;\n"
+    "void main()\n"
+    "{\n"
+    "    vec2 texCoord = vec2(pos.x/size.x, 1 - pos.y/size.y);\n"
+    "    vec3 hdrColor = texture2D(colorTexture, texCoord).rgb;\n"
+    "    const float exposure = 0.1;\n"
+    "    const float gamma = 2.2;\n"
+    "    vec3 mapped = vec3(1.0) - exp(-hdrColor * exposure);"
+    "    // gamma correction \n"
+    "    mapped = pow(mapped, vec3(1.0 / gamma));"
+    "    color = vec4(mapped, 1);\n"
+    // "    hdrColor.r = min(1, hdrColor.r);\n"
+    // "    hdrColor.g = min(1, hdrColor.g);\n"
+    // "    hdrColor.b = min(1, hdrColor.b);\n"
+    // "    color = vec4(hdrColor, 1);\n"
+    "}\n";
+
+static void error_callback(int error, const char *description)
+{
+    fprintf(stderr, "Error: %s\n", description);
+}
+
+static void key_callback(GLFWwindow *window, int key, int scancode, int action, int mods)
+{
+    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, GLFW_TRUE);
+}
+
+void WindowRenderer::Render()
+{
+
+    int x, y, ss;
+
+    // get resolution from the camera
+    cam->getResolution(&W, &H);
+
+    GLuint vertex_buffer, vertex_shader, fragment_shader, program;
+    GLint mvp_location, size_location, vpos_location;
+
+    glfwSetErrorCallback(error_callback);
+
+    if (!glfwInit())
+        exit(EXIT_FAILURE);
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+
+    window = glfwCreateWindow(W, H, "Ray Tracer", NULL, NULL);
+    if (!window)
+    {
+        glfwTerminate();
+        exit(EXIT_FAILURE);
+    }
+
+    glfwSetKeyCallback(window, key_callback);
+
+    glfwMakeContextCurrent(window);
+    // gladLoadGL(glfwGetProcAddress);
+    glfwSwapInterval(1);
+
+    if (glewInit() != GLEW_OK)
+    {
+        return;
+    }
+
+    // NOTE: OpenGL error checks have been omitted for brevity
+
+    // Prepare color data
+    // std::vector<Vec3> colors(W * H);
+    // for (y = 0; y < H; y++)
+    // {
+    //     for (x = 0; x < W; x++)
+    //     {
+    //         colors[y * W + x] = Vec3{1, 1, 1};
+    //     }
+    // }
+
+    // glGenBuffers(1, &ssbo);
+    // glBindBuffer(GL_SHADER_STORAGE_BUFFER, ssbo);
+    // glBufferData(GL_SHADER_STORAGE_BUFFER, colors.size() * sizeof(Vec3), colors.data(), GL_STATIC_DRAW);
+    // glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 2, ssbo);
+
+    initializeTexture();
+
+    glGenBuffers(1, &vertex_buffer);
+    glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    vertex_shader = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(vertex_shader, 1, &vertex_shader_text, NULL);
+    glCompileShader(vertex_shader);
+
+    fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragment_shader, 1, &fragment_shader_text, NULL);
+    glCompileShader(fragment_shader);
+
+    GLint isCompiled = 0;
+    glGetShaderiv(fragment_shader, GL_COMPILE_STATUS, &isCompiled);
+    if (isCompiled == GL_FALSE)
+    {
+        GLint maxLength = 0;
+        glGetShaderiv(fragment_shader, GL_INFO_LOG_LENGTH, &maxLength);
+
+        // The maxLength includes the NULL character
+        std::vector<GLchar> errorLog(maxLength);
+        glGetShaderInfoLog(fragment_shader, maxLength, &maxLength, &errorLog[0]);
+
+        // Provide the infolog in whatever manor you deem best.
+        printf("Erro Fragment:\n%s\n", errorLog.data());
+
+        // Exit with failure.
+        glDeleteShader(fragment_shader); // Don't leak the shader.
+        return;
+    }
+
+    glGetShaderiv(vertex_shader, GL_COMPILE_STATUS, &isCompiled);
+    if (isCompiled == GL_FALSE)
+    {
+        GLint maxLength = 0;
+        glGetShaderiv(vertex_shader, GL_INFO_LOG_LENGTH, &maxLength);
+
+        // The maxLength includes the NULL character
+        std::vector<GLchar> errorLog(maxLength);
+        glGetShaderInfoLog(vertex_shader, maxLength, &maxLength, &errorLog[0]);
+
+        // Provide the infolog in whatever manor you deem best.
+        printf("Erro Vertex:\n%s\n", errorLog.data());
+        // Exit with failure.
+        glDeleteShader(vertex_shader); // Don't leak the shader.
+        return;
+    }
+
+    program = glCreateProgram();
+    glAttachShader(program, vertex_shader);
+    glAttachShader(program, fragment_shader);
+    glLinkProgram(program);
+
+    mvp_location = glGetUniformLocation(program, "MVP");
+    size_location = glGetUniformLocation(program, "size");
+    vpos_location = glGetAttribLocation(program, "vPos");
+    glEnableVertexAttribArray(vpos_location);
+    glVertexAttribPointer(vpos_location, 2, GL_FLOAT, GL_FALSE,
+                          sizeof(vertices[0]), (void *)0);
+
+    auto f = [](WindowRenderer *r)
+    {
+        r->calculateBuffers();
+    };
+
+    std::thread thread_object(f, this);
+
+    while (!glfwWindowShouldClose(window))
+    {
+        // for (int y=0 ; y<H ; y++)
+        //     for (int x=0 ; x<W ; x++)
+        //     {
+        //         RGB color = img->get(x,y);
+        //         this->updateTextureColor(x,y, Vec3(color.R, color.G, color.B));
+        //     }
+        float ratio;
+        int width, height;
+        mat4x4 m, p, mvp;
+
+        // glfwGetFramebufferSize(window, &width, &height);
+        // ratio = width / (float)height;
+
+        // glViewport(0, 0, width, height);
+        // glClear(GL_COLOR_BUFFER_BIT);
+
+        glUseProgram(program);
+        // glUniformMatrix4fv(mvp_location, 1, GL_FALSE, (const GLfloat *)mvp);
+        glUniform2f(size_location, W, H);
+
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture);
+        glUniform1i(glGetUniformLocation(program, "colorTexture"), 0);
+
+        glDrawArrays(GL_TRIANGLES, 0, 6);
+
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+
+    glfwDestroyWindow(window);
+
+    glfwTerminate();
+    exit(EXIT_SUCCESS);
+}

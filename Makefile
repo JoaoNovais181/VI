@@ -1,10 +1,10 @@
-CXX      := g++ 
+CXX      := g++
 CXXFLAGS := -std=c++11 -O3 -g
-LDFLAGS  := 
+LDFLAGS  := -lglfw3 -lGL -lGLU -lGLEW -lm
 BUILD    := ./build
 OBJ_DIR  := $(BUILD)/objects
 APP_DIR  := $(BUILD)/apps
-SHELL	 := /bin/bash
+SHELL    := /bin/bash
 
 TARGET   := VI-RT
 
@@ -25,7 +25,7 @@ OBJECTS  := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 DEPENDENCIES \
          := $(OBJECTS:.o=.d)
 
-all:	build $(APP_DIR)/$(TARGET)
+all: build $(APP_DIR)/$(TARGET)
 
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(@D)
@@ -33,11 +33,11 @@ $(OBJ_DIR)/%.o: %.cpp
 
 $(APP_DIR)/$(TARGET): $(OBJECTS)
 	@mkdir -p $(@D)
-	$(CXX) $(CXXFLAGS) -o $(APP_DIR)/$(TARGET) $^ $(LDFLAGS) 
+	$(CXX) $(CXXFLAGS) -o $(APP_DIR)/$(TARGET) $^ $(LDFLAGS)
 
 -include $(DEPENDENCIES)
 
-.PHONY: all build clean 
+.PHONY: all build clean
 
 build:
 	@mkdir -p $(APP_DIR)
@@ -46,5 +46,3 @@ build:
 clean:
 	-@rm -rvf $(OBJ_DIR)/*
 	-@rm -rvf $(APP_DIR)/*
-
-
