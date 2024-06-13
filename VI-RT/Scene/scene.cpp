@@ -27,7 +27,8 @@ Scene::Scene () {
     this->numBRDFs = 0;
     this->numLights = 0;
     this->numPrimitives = 0;
-    this->accelStruct = new HierarchicalGrid(3);
+    // this->accelStruct = new HierarchicalGrid(3);
+    this->accelStruct = new BVH();
 }
 
 Scene::Scene (bool generateAccelStruct) {

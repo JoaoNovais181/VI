@@ -111,7 +111,7 @@ public:
     {
         float temp;
         float tmin_local = (min.X - ray.o.X) / ray.dir.X;
-        float tmax_local = (max.X -ray.o.X) /ray.dir.X;
+        float tmax_local = (max.X - ray.o.X) / ray.dir.X;
 
         if (tmin_local > tmax_local)
         {
@@ -120,8 +120,8 @@ public:
             tmax_local = temp;
         }
 
-        float tymin = (min.Y -ray.o.Y) /ray.dir.Y;
-        float tymax = (max.Y -ray.o.Y) /ray.dir.Y;
+        float tymin = (min.Y - ray.o.Y) / ray.dir.Y;
+        float tymax = (max.Y - ray.o.Y) / ray.dir.Y;
 
         if (tymin > tymax)
         {
@@ -138,8 +138,8 @@ public:
         if (tymax < tmax_local)
             tmax_local = tymax;
 
-        float tzmin = (min.Z -ray.o.Z) /ray.dir.Z;
-        float tzmax = (max.Z -ray.o.Z) /ray.dir.Z;
+        float tzmin = (min.Z - ray.o.Z) / ray.dir.Z;
+        float tzmax = (max.Z - ray.o.Z) / ray.dir.Z;
 
         if (tzmin > tzmax)
         {
@@ -162,7 +162,8 @@ public:
         return true;
     }
 
-    bool isInside(Point p1)
+    bool
+    isInside(Point p1)
     {
         return p1.X >= min.X - 0.0001 && p1.X <= max.X + 0.0001 &&
                p1.Y >= min.Y - 0.0001 && p1.Y <= max.Y + 0.0001 &&

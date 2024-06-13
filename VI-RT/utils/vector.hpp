@@ -104,7 +104,7 @@ public:
     Point ():X(0.),Y(0.),Z(0.){}
     Point (float x, float y, float z):X(x),Y(y),Z(z){}
     ~Point(){}
-    Point operator -(const Point &p) const { return {X-p.X, Y-p.Y, Z-p.Z};}
+    Vector operator -(const Point &p) const { return {X-p.X, Y-p.Y, Z-p.Z};}
     Point operator +(const Point &p) const { return {X+p.X, Y+p.Y, Z+p.Z};}
     Point operator *(const float f) const { return {f*X, f*Y, f*Z};}
     Point operator *(const double f) const { return {(float)(f*X), (float)(f*Y), (float)(f*Z)};}
@@ -127,6 +127,18 @@ public:
     Point Permute(int x, int y, int z) {
         const float XYZ[3]={X,Y,Z};
         return Point(XYZ[x], XYZ[y], XYZ[z]);
+    }
+
+    Vector cross(const Vector& other) const {
+        return Vector(
+            Y * other.Z - Z * other.Y,
+            Z * other.X - X * other.Z,
+            X * other.Y - Y * other.X
+        );
+    }
+
+    float dot(const Vector& other) const {
+        return X * other.X + Y * other.Y + Z * other.Z;
     }
 };
 

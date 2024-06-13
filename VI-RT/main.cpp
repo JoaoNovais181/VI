@@ -88,7 +88,7 @@ int main(int argc, const char * argv[]) {
     // shd = new DistributedShader(&scene, background);
     shd = new PathTracerShader(&scene, background); 
     // declare the renderer
-    int spp=1;     // samples per pixel
+    int spp=64;     // samples per pixel
     StandardRenderer myRender (cam, &scene, img, shd, spp);
     // render
     start = clock();

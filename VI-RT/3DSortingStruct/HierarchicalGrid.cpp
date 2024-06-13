@@ -128,7 +128,7 @@ void HierarchicalGrid::buildSubgrid(GridCell *cell, const std::vector<Primitive 
 
                     BB cellBB = sub->boundingBox;
 
-                    if (cellBB.isInside(geometry->v1) || cellBB.isInside(geometry->v2) || cellBB.isInside(geometry->v3))
+                    if (geometry->intersects(cellBB))
                         subgridPrimitives[x][y][z].push_back(prim);
                 }
             }
@@ -202,7 +202,8 @@ bool HierarchicalGrid::intersectSubgrid(GridCell *cell, Ray &ray, Intersection *
     // Compute the size of the subcells
     Point cellMin = cell->boundingBox.min;
     Point cellMax = cell->boundingBox.max;
-    Point cellSize = cellMax - cellMin;
+    Vector cellSizeV = cellMax - cellMin;
+    Point cellSize(cellSizeV.X, cellSizeV.Y, cellSizeV.Z);
     Point subcellSize = cellSize / 3.0f;
 
     // Compute the entry and exit points for the ray in the grid
@@ -213,7 +214,11 @@ bool HierarchicalGrid::intersectSubgrid(GridCell *cell, Ray &ray, Intersection *
     // printf("%f %f\n", tmin, tmax);
 
     Point entry = ray.o + tmin * ray.dir;
-    Point exit = ray.o + tmax * ray.dir;
+    Point exit = ray.o + tmax * ray.dir; 
+
+    // printf("\nCell\nEntry: %f %f %f; Exit: %f %f %f\n", entry.X, entry.Y, entry.Z, exit.X, exit.Y, exit.Z);
+
+    // printf("%f %f %f\n", subcellSize.X, (entry.X - cellMin.X) / subcellSize.X, (exit.X - cellMin.X) / subcellSize.X);
 
     // Compute the starting and ending subcell indices
     int startX = std::max(0, std::min(2, static_cast<int>((entry.X - cellMin.X) / subcellSize.X)));
@@ -222,6 +227,25 @@ bool HierarchicalGrid::intersectSubgrid(GridCell *cell, Ray &ray, Intersection *
     int endX = std::max(0, std::min(2, static_cast<int>((exit.X - cellMin.X) / subcellSize.X)));
     int endY = std::max(0, std::min(2, static_cast<int>((exit.Y - cellMin.Y) / subcellSize.Y)));
     int endZ = std::max(0, std::min(2, static_cast<int>((exit.Z - cellMin.Z) / subcellSize.Z)));
+
+    int temp;
+    if (startX > endX) {
+        temp = endX;
+        endX = startX;
+        startX = temp;
+    }
+
+    if (startY > endY) {
+        temp = endY;
+        endY = startY;
+        startY = temp;
+    }
+
+    if (startZ > endZ) {
+        temp = endZ;
+        endZ = startX;
+        startZ = temp;
+    }
 
     // Traverse the relevant subcells
     for (int x = startX; x <= endX; ++x)
