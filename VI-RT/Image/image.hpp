@@ -45,8 +45,8 @@ public:
     void copy(Image *other) {
         memcpy(imagePlane, other->imagePlane, W*H*sizeof(RGB));
     }
-    void normalize() {
-        
+    void reset() {
+        memset((void *)imagePlane, 0, W*H*sizeof(RGB));  // set image plane to 0
     }
 };
 

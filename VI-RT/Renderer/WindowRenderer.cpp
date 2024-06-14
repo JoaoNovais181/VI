@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 
 #include <thread>
+#include <mutex>
 
 #include "linmath.h"
 #include "ImagePPM.hpp"
@@ -11,10 +12,14 @@
 
 const bool jitter = true;
 
-Camera* global_cam;
+Perspective *global_cam;
+Image *global_img;
+bool moved = false;
+std::mutex textureMutex;
 
-float min (float a, float b) {
-    return (a<b) ?a :b;
+float min(float a, float b)
+{
+    return (a < b) ? a : b;
 }
 
 /**
@@ -24,10 +29,21 @@ float min (float a, float b) {
 void WindowRenderer::calculateBuffers()
 {
     printf("Thread comecou\n");
-    int W = 0, H = 0; // resolution
-    int x, y, ss;
+
+    // if (!glfwInit())
+    //     return;
 
     // glfwMakeContextCurrent(window);
+
+    // if (glewInit() != GLEW_OK)
+    // {
+    //     return;
+    // }
+
+    // while(!running);
+
+    int W = 0, H = 0; // resolution
+    int x, y, ss;
 
     cam->getResolution(&W, &H);
 
@@ -35,20 +51,20 @@ void WindowRenderer::calculateBuffers()
     RGB localAverage;
 
     // main rendering loop: get primary rays from the camera until done
-    for (ss = 1; running ; ss++)
+    for (ss = 1; running; ss++)
     {
-        localAverage = RGB(0,0,0);
+        localAverage = RGB(0, 0, 0);
         char buffer[128];
         snprintf(buffer, 128, "Ray Tracer - %d spp", ss);
         glfwSetWindowTitle(window, buffer);
-        for (y = 0; y < H; y++)
+        for (y = 0; y < H && !moved; y++)
         { // loop over rows
             Ray primary;
             Intersection isect;
             bool intersected;
             RGB color = RGB(0, 0, 0);
 
-            for (x = 0; x < W; x++)
+            for (x = 0; x < W && !moved; x++)
             { // loop over columns
                 // Generate Ray (camera)
                 if (jitter)
@@ -74,15 +90,25 @@ void WindowRenderer::calculateBuffers()
                 localAverage += color;
                 // RGB col = img->get(x, y);
                 // color = (col * ss + color) / (ss + 1);
-                localImg->add(x,y, color);
+                localImg->add(x, y, color);
                 // color.R = min(1, color.R);
                 // color.G = min(1, color.G);
                 // color.B = min(1, color.B);
-                img->set(x, y, localImg->get(x,y)/ss);
+                img->set(x, y, localImg->get(x, y) / ss);
+                // this->updateTextureColor(x, y);
                 // this->updateTextureColor(x,y);
             }
         } // loop over columns
-        average = (average*(ss-1) + (localAverage / (H*W)))/ss;
+        average = (average * (ss - 1) + (localAverage / (H * W))) / ss;
+        if (moved)
+        {
+            img->reset();
+            localImg->reset();
+            localAverage = RGB(0, 0, 0);
+            average = RGB(0, 0, 0);
+            ss = 1;
+        }
+        moved = false;
     } // loop over rows
 }
 
@@ -95,9 +121,9 @@ void WindowRenderer::initializeTexture()
     {
         for (int x = 0; x < W; x++)
         {
-            colorData[y*W+x+0] = 1;
-            colorData[y*W+x+1] = 1;
-            colorData[y*W+x+2] = 1;
+            colorData[y * W + x + 0] = 1;
+            colorData[y * W + x + 1] = 1;
+            colorData[y * W + x + 2] = 1;
         }
     }
 
@@ -118,7 +144,7 @@ void WindowRenderer::updateTextureColor(int x, int y)
         return;
     }
 
-    RGB color = img->get(x,y);
+    RGB color = img->get(x, y);
     Vec3 newColor = Vec3(color.R, color.G, color.B);
 
     glBindTexture(GL_TEXTURE_2D, texture);
@@ -126,46 +152,34 @@ void WindowRenderer::updateTextureColor(int x, int y)
     glBindTexture(GL_TEXTURE_2D, 0);
 }
 
-static const struct
-{
-    float x, y;
-} vertices[6] =
-{
-    {0.0f, 0.0f},
-    {1000.0f, 0.0f},
-    {0.0f, 1000.0f},
-    {0.0f, 1000.0f},
-    {1000.0f, 0.0f},
-    {1000.0f, 1000.0f}
-};
-
 static const char *vertex_shader_text =
     "#version 460\n"
     "uniform mat4 MVP;\n"
     "uniform vec2 size;\n"
+    "uniform vec2 imgSize;\n"
     "in vec2 vPos;\n"
     "out vec2 pos;\n"
     "void main()\n"
     "{\n"
     "    vec2 ndcPos = vec2(\n"
-    "        2.0 * (vPos.x / size.x) - 1.0,\n"
-    "        2.0 * (vPos.y / size.y) - 1.0\n"
+    "        2.0 * (vPos.x / imgSize.x) - 1.0,\n"
+    "        2.0 * (vPos.y / imgSize.y) - 1.0\n"
     "    );\n"
     "    pos = vPos;\n"
     "    gl_Position = vec4(ndcPos, 0.0, 1.0);\n"
     "}\n";
 
-
 static const char *fragment_shader_text =
     "#version 460\n"
     "uniform sampler2D colorTexture;\n"
     "uniform vec2 size;\n"
+    "uniform vec2 imgSize;\n"
     "uniform vec3 average;\n"
     "in vec2 pos;\n"
     "out vec4 color;\n"
     "void main()\n"
     "{\n"
-    "    vec2 texCoord = vec2(pos.x/size.x, 1 - pos.y/size.y);\n"
+    "    vec2 texCoord = vec2(pos.x/imgSize.x, 1 - pos.y/imgSize.y);\n"
     "    vec3 hdrColor = texture2D(colorTexture, texCoord).rgb;\n"
     // "    const float exposure = 1;\n"
     // "    const float gamma = 2;\n"
@@ -191,15 +205,109 @@ static void key_callback(GLFWwindow *window, int key, int scancode, int action, 
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GLFW_TRUE);
+
+    if (key == GLFW_KEY_D || key == GLFW_KEY_A || key == GLFW_KEY_S || key == GLFW_KEY_W)
+    {
+        Point eye = global_cam->getEye(), at = global_cam->getAt();
+        Vector Up = global_cam->getUp();
+        Vector lookDir = at - eye;
+        Vector right = lookDir.cross(Up);
+
+        Up.normalize();
+        lookDir.normalize();
+        right.normalize();
+
+        if (key == GLFW_KEY_D)
+        {
+            global_cam->moveFPS(right);
+            moved = true;
+        }
+        else if (key == GLFW_KEY_A)
+        {
+            global_cam->moveFPS(right * -1.0f);
+            moved = true;
+        }
+        else if (key == GLFW_KEY_W)
+        {
+            global_cam->moveFPS(lookDir);
+            moved = true;
+        }
+        else if (key == GLFW_KEY_S)
+        {
+            global_cam->moveFPS(lookDir * -1.0f);
+            moved = true;
+        }
+    }
+    else if (key == GLFW_KEY_UP || key == GLFW_KEY_DOWN || key == GLFW_KEY_LEFT || key == GLFW_KEY_RIGHT)
+    {
+        Point eye = global_cam->getEye();
+        Vector lookDir = global_cam->getAt() - eye;
+        Vector right = lookDir.cross(global_cam->getUp());
+        Vector Up = global_cam->getUp();
+
+        lookDir.normalize();
+        right.normalize();
+        Up.normalize();
+
+        float angle = 2.5f * (M_PI / 180.0f); // 2.5 degrees in radians
+
+        if (key == GLFW_KEY_UP && action == GLFW_PRESS)
+        {
+            Vector rotatedLookDir = lookDir;
+            rotatedLookDir.Y = lookDir.Y * cos(angle) - lookDir.Z * sin(angle);
+            rotatedLookDir.Z = lookDir.Y * sin(angle) + lookDir.Z * cos(angle);
+            global_cam->setAt(eye + rotatedLookDir);
+            moved = true;
+        }
+        else if (key == GLFW_KEY_DOWN && action == GLFW_PRESS)
+        {
+            angle *= -1;
+            Vector rotatedLookDir = lookDir;
+            rotatedLookDir.Y = lookDir.Y * cos(angle) - lookDir.Z * sin(angle);
+            rotatedLookDir.Z = lookDir.Y * sin(angle) + lookDir.Z * cos(angle);
+            global_cam->setAt(eye + rotatedLookDir);
+            moved = true;
+        }
+        else if (key == GLFW_KEY_LEFT && action == GLFW_PRESS)
+        {
+            Vector rotatedLookDir = lookDir;
+            rotatedLookDir.X = lookDir.X * cos(angle) + lookDir.Z * sin(angle);
+            rotatedLookDir.Z = -lookDir.X * sin(angle) + lookDir.Z * cos(angle);
+            global_cam->setAt(eye + rotatedLookDir);
+            moved = true;
+        }
+        else if (key == GLFW_KEY_RIGHT && action == GLFW_PRESS)
+        {
+            angle *= -1;
+            Vector rotatedLookDir = lookDir;
+            rotatedLookDir.X = lookDir.X * cos(angle) + lookDir.Z * sin(angle);
+            rotatedLookDir.Z = -lookDir.X * sin(angle) + lookDir.Z * cos(angle);
+            global_cam->setAt(eye + rotatedLookDir);
+            moved = true;
+        }
+    }
 }
 
 void WindowRenderer::Render()
 {
-    global_cam = cam;
+    global_cam = static_cast<Perspective *>(cam);
+    global_img = img;
     int x, y, ss;
 
     // get resolution from the camera
     cam->getResolution(&W, &H);
+
+    static const struct
+    {
+        float x, y;
+    } vertices[6] =
+        {
+            {0.0f, 0.0f},
+            {W, 0.0f},
+            {0.0f, H},
+            {0.0f, H},
+            {W, 0.0f},
+            {W, H}};
 
     GLuint vertex_buffer, vertex_shader, fragment_shader, program;
     GLint mvp_location, size_location, vpos_location;
@@ -229,23 +337,6 @@ void WindowRenderer::Render()
     {
         return;
     }
-
-    // NOTE: OpenGL error checks have been omitted for brevity
-
-    // Prepare color data
-    // std::vector<Vec3> colors(W * H);
-    // for (y = 0; y < H; y++)
-    // {
-    //     for (x = 0; x < W; x++)
-    //     {
-    //         colors[y * W + x] = Vec3{1, 1, 1};
-    //     }
-    // }
-
-    // glGenBuffers(1, &ssbo);
-    // glBindBuffer(GL_SHADER_STORAGE_BUFFER, ssbo);
-    // glBufferData(GL_SHADER_STORAGE_BUFFER, colors.size() * sizeof(Vec3), colors.data(), GL_STATIC_DRAW);
-    // glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 2, ssbo);
 
     initializeTexture();
 
@@ -306,11 +397,10 @@ void WindowRenderer::Render()
     size_location = glGetUniformLocation(program, "size");
     vpos_location = glGetAttribLocation(program, "vPos");
     GLint average_location = glGetUniformLocation(program, "average");
+    GLint imgSize_location = glGetUniformLocation(program, "imgSize");
     glEnableVertexAttribArray(vpos_location);
     glVertexAttribPointer(vpos_location, 2, GL_FLOAT, GL_FALSE,
                           sizeof(vertices[0]), (void *)0);
-
-    running = true;
 
     auto f = [](WindowRenderer *r)
     {
@@ -319,6 +409,11 @@ void WindowRenderer::Render()
 
     std::thread thread_object(f, this);
 
+    printf("%d %d\n", W, H);
+
+    glUniform2f(imgSize_location, W, H);
+
+    running = true;
     while (!glfwWindowShouldClose(window))
     {
         for (int y=0 ; y<H ; y++)
@@ -332,21 +427,23 @@ void WindowRenderer::Render()
         int width, height;
         mat4x4 m, p, mvp;
 
-        // glfwGetFramebufferSize(window, &width, &height);
-        // ratio = width / (float)height;
+        glfwGetFramebufferSize(window, &width, &height);
+        ratio = width / (float)height;
 
-        // glViewport(0, 0, width, height);
-        // glClear(GL_COLOR_BUFFER_BIT);
+        glViewport(0, 0, width, height);
+        glClear(GL_COLOR_BUFFER_BIT);
 
         glUseProgram(program);
         // glUniformMatrix4fv(mvp_location, 1, GL_FALSE, (const GLfloat *)mvp);
-        glUniform2f(size_location, W, H);
-
+        glUniform2f(imgSize_location, W, H);
+        glUniform2f(size_location, width, height);
         glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture);
-        glUniform1i(glGetUniformLocation(program, "colorTexture"), 0);
-
-        glDrawArrays(GL_TRIANGLES, 0, 6);
+        {
+            std::lock_guard<std::mutex> lock(textureMutex);
+            glBindTexture(GL_TEXTURE_2D, texture);
+            // Render your scene
+            glDrawArrays(GL_TRIANGLES, 0, 6);
+        }
 
         glfwSwapBuffers(window);
         glfwPollEvents();
@@ -355,6 +452,7 @@ void WindowRenderer::Render()
     running = false;
     thread_object.join();
 
+    glDeleteTextures(1, &texture);
     glfwDestroyWindow(window);
 
     glfwTerminate();
