@@ -7,8 +7,11 @@
 
 #include "linmath.h"
 #include "ImagePPM.hpp"
+#include "perspective.hpp"
 
 const bool jitter = true;
+
+Camera* global_cam;
 
 float min (float a, float b) {
     return (a<b) ?a :b;
@@ -24,15 +27,17 @@ void WindowRenderer::calculateBuffers()
     int W = 0, H = 0; // resolution
     int x, y, ss;
 
-    glfwMakeContextCurrent(window);
+    // glfwMakeContextCurrent(window);
 
     cam->getResolution(&W, &H);
 
     Image *localImg = new Image(W, H);
+    RGB localAverage;
 
     // main rendering loop: get primary rays from the camera until done
-    for (ss = 1; !glfwWindowShouldClose(window); ss++)
+    for (ss = 1; running ; ss++)
     {
+        localAverage = RGB(0,0,0);
         char buffer[128];
         snprintf(buffer, 128, "Ray Tracer - %d spp", ss);
         glfwSetWindowTitle(window, buffer);
@@ -66,6 +71,7 @@ void WindowRenderer::calculateBuffers()
 
                 // shade this intersection (shader) - remember: depth=0
                 color = shd->shade(intersected, isect, 0);
+                localAverage += color;
                 // RGB col = img->get(x, y);
                 // color = (col * ss + color) / (ss + 1);
                 localImg->add(x,y, color);
@@ -73,9 +79,10 @@ void WindowRenderer::calculateBuffers()
                 // color.G = min(1, color.G);
                 // color.B = min(1, color.B);
                 img->set(x, y, localImg->get(x,y)/ss);
-                this->updateTextureColor(x,y);
+                // this->updateTextureColor(x,y);
             }
         } // loop over columns
+        average = (average*(ss-1) + (localAverage / (H*W)))/ss;
     } // loop over rows
 }
 
@@ -153,22 +160,26 @@ static const char *fragment_shader_text =
     "#version 460\n"
     "uniform sampler2D colorTexture;\n"
     "uniform vec2 size;\n"
+    "uniform vec3 average;\n"
     "in vec2 pos;\n"
     "out vec4 color;\n"
     "void main()\n"
     "{\n"
     "    vec2 texCoord = vec2(pos.x/size.x, 1 - pos.y/size.y);\n"
     "    vec3 hdrColor = texture2D(colorTexture, texCoord).rgb;\n"
-    "    const float exposure = 0.1;\n"
-    "    const float gamma = 2.2;\n"
-    "    vec3 mapped = vec3(1.0) - exp(-hdrColor * exposure);"
-    "    // gamma correction \n"
-    "    mapped = pow(mapped, vec3(1.0 / gamma));"
-    "    color = vec4(mapped, 1);\n"
-    // "    hdrColor.r = min(1, hdrColor.r);\n"
-    // "    hdrColor.g = min(1, hdrColor.g);\n"
-    // "    hdrColor.b = min(1, hdrColor.b);\n"
-    // "    color = vec4(hdrColor, 1);\n"
+    // "    const float exposure = 1;\n"
+    // "    const float gamma = 2;\n"
+    // "    vec3 mapped = vec3(1.0) - exp(-hdrColor * exposure);"
+    // "    // gamma correction \n"
+    // "    mapped = pow(mapped, vec3(1.0 / gamma));"
+    // "    vec3 mapped = exposure * pow(hdrColor, vec3(1/gamma));\n"
+    // "    vec3 l1 = hdrColor / (9.6 * average);\n"
+    // "    vec3 mapped = (l1 * (vec3(1) + (l1 / pow(vec3(0.2), vec3(2))))) / (vec3(1) + l1);\n"
+    // "    color = vec4(mapped, 1);\n"
+    "    hdrColor.r = min(1, hdrColor.r);\n"
+    "    hdrColor.g = min(1, hdrColor.g);\n"
+    "    hdrColor.b = min(1, hdrColor.b);\n"
+    "    color = vec4(hdrColor, 1);\n"
     "}\n";
 
 static void error_callback(int error, const char *description)
@@ -184,7 +195,7 @@ static void key_callback(GLFWwindow *window, int key, int scancode, int action, 
 
 void WindowRenderer::Render()
 {
-
+    global_cam = cam;
     int x, y, ss;
 
     // get resolution from the camera
@@ -196,7 +207,7 @@ void WindowRenderer::Render()
     glfwSetErrorCallback(error_callback);
 
     if (!glfwInit())
-        exit(EXIT_FAILURE);
+        return;
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
@@ -205,7 +216,7 @@ void WindowRenderer::Render()
     if (!window)
     {
         glfwTerminate();
-        exit(EXIT_FAILURE);
+        return;
     }
 
     glfwSetKeyCallback(window, key_callback);
@@ -294,9 +305,12 @@ void WindowRenderer::Render()
     mvp_location = glGetUniformLocation(program, "MVP");
     size_location = glGetUniformLocation(program, "size");
     vpos_location = glGetAttribLocation(program, "vPos");
+    GLint average_location = glGetUniformLocation(program, "average");
     glEnableVertexAttribArray(vpos_location);
     glVertexAttribPointer(vpos_location, 2, GL_FLOAT, GL_FALSE,
                           sizeof(vertices[0]), (void *)0);
+
+    running = true;
 
     auto f = [](WindowRenderer *r)
     {
@@ -307,12 +321,13 @@ void WindowRenderer::Render()
 
     while (!glfwWindowShouldClose(window))
     {
-        // for (int y=0 ; y<H ; y++)
-        //     for (int x=0 ; x<W ; x++)
-        //     {
-        //         RGB color = img->get(x,y);
-        //         this->updateTextureColor(x,y, Vec3(color.R, color.G, color.B));
-        //     }
+        for (int y=0 ; y<H ; y++)
+            for (int x=0 ; x<W ; x++)
+            {
+                RGB color = img->get(x,y);
+                this->updateTextureColor(x,y);
+            }
+        glUniform3f(average_location, average.R, average.G, average.B);
         float ratio;
         int width, height;
         mat4x4 m, p, mvp;
@@ -337,8 +352,10 @@ void WindowRenderer::Render()
         glfwPollEvents();
     }
 
+    running = false;
+    thread_object.join();
+
     glfwDestroyWindow(window);
 
     glfwTerminate();
-    exit(EXIT_SUCCESS);
 }

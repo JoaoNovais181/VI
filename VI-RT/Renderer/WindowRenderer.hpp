@@ -44,9 +44,11 @@ class GLFWwindow;
 class WindowRenderer: public Renderer {
 private:
     int spp;
-    unsigned int ssbo, texture;
+    unsigned int texture, program;
     GLFWwindow *window;
     int W,H;
+    bool running;
+    RGB average;
     void initializeTexture();
     void updateTextureColor(int x, int y);
 

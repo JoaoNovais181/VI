@@ -40,6 +40,7 @@ public:
     }
     bool GenerateRay(const int x, const int y, Ray *r, const float *cam_jitter=NULL);
     void getResolution (int *_W, int *_H) {*_W=W; *_H=H;}
+    void addEye(Vector vec) {Eye= Eye + vec;}
 };
 
 #endif /* perspective_hpp */

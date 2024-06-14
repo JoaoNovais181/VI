@@ -45,6 +45,9 @@ public:
     void copy(Image *other) {
         memcpy(imagePlane, other->imagePlane, W*H*sizeof(RGB));
     }
+    void normalize() {
+        
+    }
 };
 
 #endif /* image_hpp */

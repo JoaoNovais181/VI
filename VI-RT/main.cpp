@@ -31,8 +31,8 @@ int main(int argc, const char * argv[]) {
     clock_t start, end;
     double cpu_time_used;
     
-    success = scene.Load("VI-RT/Scene/tinyobjloader/models/cornell_box_VI.obj");
-    // success = scene.Load("/home/tbag/Downloads/004_Backetball_court_.obj");
+    // success = scene.Load("VI-RT/Scene/tinyobjloader/models/cornell_box_VI.obj");
+    success = scene.Load("/home/tbag/Downloads/multiCornellBox.obj");
     
     if (!success) {
         std::cout << "ERROR!! :o\n";
@@ -47,35 +47,95 @@ int main(int argc, const char * argv[]) {
     // PointLight *pl1 = new PointLight(RGB(1,1,1), Point(0,18,0));
     // scene.lights.push_back(pl1);
     // scene.numLights++;
-    AreaLight *al1 = new AreaLight(RGB(1, 1, 1), 
-                                    Point(343.0, 548.0, 227.0),
-                                    Point(343.0, 548.0, 332.0),
-                                    Point(213.0, 548.0, 332.0),
+    // AreaLight *al1 = new AreaLight(RGB(1, 1, 1), 
+    //                                 Point(343.0, 548.0, 227.0),
+    //                                 Point(343.0, 548.0, 332.0),
+    //                                 Point(213.0, 548.0, 332.0),
+    //                                 Vector(0, -1, 0));
+    // scene.lights.push_back(al1);
+    // scene.numLights++;
+    // AreaLight *al2 = new AreaLight(RGB(1, 1, 1), 
+    //                                 Point(343.0, 548.0, 227.0),
+    //                                 Point(213.0, 548.0, 332.0),
+    //                                 Point(213.0, 548.0, 227.0),
+    //                                 Vector(0, -1, 0));
+    // scene.lights.push_back(al2);
+    // scene.numLights++;
+
+    AreaLight *al1 = new AreaLight(RGB(0.7, 0.7, .7), 
+                                    Point(18, 27.9, 10),
+                                    Point(18, 27.9, 18),
+                                    Point(10, 27.9, 18),
                                     Vector(0, -1, 0));
     scene.lights.push_back(al1);
     scene.numLights++;
-    AreaLight *al2 = new AreaLight(RGB(1, 1, 1), 
-                                    Point(343.0, 548.0, 227.0),
-                                    Point(213.0, 548.0, 332.0),
-                                    Point(213.0, 548.0, 227.0),
+    AreaLight *al2 = new AreaLight(RGB(0.7, 0.7, .7), 
+                                    Point(18, 27.9, 10),
+                                    Point(10, 27.9, 18),
+                                    Point(10, 27.9, 10),
                                     Vector(0, -1, 0));
     scene.lights.push_back(al2);
     scene.numLights++;
+
+    AreaLight *al3 = new AreaLight(RGB(0.7, 0.7, .7), 
+                                    Point(18, 55.8, 10),
+                                    Point(18, 55.8, 18),
+                                    Point(10, 55.8, 18),
+                                    Vector(0, -1, 0));
+    scene.lights.push_back(al3);
+    scene.numLights++;
+    AreaLight *al4 = new AreaLight(RGB(0.7, 0.7, 0.7), 
+                                    Point(18, 55.8, 10),
+                                    Point(10, 55.8, 18),
+                                    Point(10, 55.8, 10),
+                                    Vector(0, -1, 0));
+    scene.lights.push_back(al4);
+    scene.numLights++;
     
+    AreaLight *al5 = new AreaLight(RGB(1, 1, 1), 
+                                    Point(-18, 55.8, 10),
+                                    Point(-18, 55.8, 18),
+                                    Point(-10, 55.8, 18),
+                                    Vector(0, -1, 0));
+    scene.lights.push_back(al5);
+    scene.numLights++;
+    AreaLight *al6 = new AreaLight(RGB(1, 1, 1), 
+                                    Point(-18, 55.8, 10),
+                                    Point(-10, 55.8, 18),
+                                    Point(-10, 55.8, 10),
+                                    Vector(0, -1, 0));
+    scene.lights.push_back(al6);
+    scene.numLights++;
+
+    AreaLight *al7 = new AreaLight(RGB(1, 1, 1), 
+                                    Point(-18, 27.9, 10),
+                                    Point(-18, 27.9, 18),
+                                    Point(-10, 27.9, 18),
+                                    Vector(0, -1, 0));
+    scene.lights.push_back(al7);
+    scene.numLights++;
+    AreaLight *al8 = new AreaLight(RGB(1, 1, 1), 
+                                    Point(-18, 27.9, 10),
+                                    Point(-10, 27.9, 18),
+                                    Point(-10, 27.9, 10),
+                                    Vector(0, -1, 0));
+    scene.lights.push_back(al8);
+    scene.numLights++;
 
     scene.printSummary();
     std::cout << std::endl;
     // scene.printScene();
 
     // Image resolution
-    const int W= 1024;
-    const int H= 1024;
+    const int W= 512;
+    const int H= 512;
     
     img = new ImagePPM(W,H);
     
     // Camera parameters
-    const Point Eye ={280,275,-330}, At={280,265,0};
+    // const Point Eye ={280,275,-330}, At={280,265,0};
     // const Point Eye ={25, 20, 0}, At={0,0,0};
+    const Point Eye ={0, 25, -25}, At={0,25,0};
     const Vector Up={0,1,0};
     // const float fovW = 60.f;
     const float fovW = 90.f;
