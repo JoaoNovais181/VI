@@ -13,6 +13,7 @@ public:
     float R, G, B;
     RGB ():R(0.),G(0.),B(0.) {}
     RGB (float r, float g, float b):R(r),G(g),B(b) {}
+    RGB (float c): R(c), G(c), B(c) {}
     RGB (float *rgb):R(rgb[0]),G(rgb[1]),B(rgb[2]) {}
     ~RGB () {}
     RGB& operator+=(const RGB& rhs){
@@ -27,6 +28,14 @@ public:
         res.R = R + obj.R;
         res.G = G + obj.G;
         res.B = B + obj.B;
+        return res;
+    }
+    RGB operator-(RGB const& obj)
+    {
+        RGB res;
+        res.R = R - obj.R;
+        res.G = G - obj.G;
+        res.B = B - obj.B;
         return res;
     }
     RGB operator*(RGB const& obj)
@@ -51,6 +60,13 @@ public:
         res.R = R / f;
         res.G = G / f;
         res.B = B / f;
+        return res;
+    }RGB operator/(RGB const& c)
+    {
+        RGB res;
+        res.R = R / c.R;
+        res.G = G / c.G;
+        res.B = B / c.B;
         return res;
     }
     float Y() {

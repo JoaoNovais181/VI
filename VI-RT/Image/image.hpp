@@ -27,15 +27,15 @@ public:
     }
     bool set (int x, int y, const RGB &rgb) {
         if (x>W or y>H) return false;
-        imagePlane[y*W+x] = rgb;
+        imagePlane[y*W+x] = RGB(rgb);
         return true;
     }
     bool add (int x, int y, const RGB &rgb) {
         if (x>W or y>H) return false;
-        imagePlane[y*W+x] += rgb;
+        imagePlane[y*W+x] = imagePlane[y*W+x] + rgb;
         return true;
     }
-    bool divide (int x, int y, int value) {
+    bool divide (int x, int y, float value) {
         if (x>W or y>H) return false;
         imagePlane[y*W+x] = imagePlane[y*W+x] / value;
         return true;

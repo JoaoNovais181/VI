@@ -43,18 +43,18 @@ class GLFWwindow;
 
 class WindowRenderer: public Renderer {
 private:
-    int spp;
     unsigned int texture, program;
     GLFWwindow *window;
     int W,H;
     bool running;
     RGB average;
     void initializeTexture();
-    void updateTextureColor(int x, int y);
-
+    void updateTexture();
+    std::vector<float> colorData;
     
 
 public:
+    int spp;
     WindowRenderer (Camera *cam, Scene * scene, Image * img, Shader *shd, int _spp): Renderer(cam, scene, img, shd) {
         spp = _spp;
     }

@@ -4,13 +4,10 @@
 
 
 void BVH::build(Scene* scene) {
-    printf("Building Accel Struct..\n");
     this->scene = scene;
     auto prims = scene->getPrims();
-    root = buildBVH(prims, 0);
-    printf("Building Accel Struct Tris..\n");
+    // root = buildBVH(prims, 0);
     rootGeo = buildBVHGeo(prims, 0);
-    printf("End\n");
 }
 
 bool BVH::traverseBVH(BVHNode* node, Ray& r, Intersection* isect) {
@@ -151,7 +148,7 @@ BVHNodeGeo *BVH::buildBVHGeoAux(std::vector<Triangle*>& triangles, int materialI
         node->boundingBox.update(tri->bb);
     }
 
-    if (triangles.size() <= 10)
+    if (triangles.size() <= 20)
     {
         node->triangles = triangles;
         // node->geometry = triangles[0];
@@ -273,4 +270,9 @@ void BVH::deleteBVH(BVHNode* node) {
 }
 
 
-void deleteBVHGeo(BVHNodeGeo* node);
+void BVH::deleteBVHGeo(BVHNodeGeo* node) {
+    if (!node) return;
+    deleteBVHGeo(node->left);
+    deleteBVHGeo(node->right);
+    delete node;
+}

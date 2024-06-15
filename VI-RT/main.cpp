@@ -142,7 +142,7 @@ int main(int argc, const char *argv[])
     // Camera parameters
     // const Point Eye ={280,275,-330}, At={280,265,0};
     // const Point Eye ={25, 20, 0}, At={0,0,0};
-    const Point Eye = {0, 25, -25}, At = {0, 25, 0};
+    const Point Eye = {0, 25, -35}, At = {0, 25, 0};
     const Vector Up = {0, 1, 0};
     // const float fovW = 60.f;
     const float fovW = 90.f;
@@ -156,19 +156,32 @@ int main(int argc, const char *argv[])
     // shd = new DistributedShader(&scene, background);
     shd = new PathTracerShader(&scene, background);
     // declare the renderer
-    int spp = 8; // samples per pixel
-    // StandardRenderer myRender (cam, &scene, img, shd, spp);
-    WindowRenderer myRender(cam, &scene, img, shd, spp);
-    // render
-    start = clock();
-    myRender.Render();
-    end = clock();
-    cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+    int spp = 16; // samples per pixel
 
-    // save the image
-    img->Save("MyImage.ppm");
+    // for (int ss = 1 ; ss<=spp ; ss++) {
+        // StandardRenderer myRender = StandardRenderer(cam, &scene, img, shd, ss);
+        WindowRenderer myRender(cam, &scene, img, shd, spp);
 
-    fprintf(stdout, "Rendering time = %.3lf secs\n\n", cpu_time_used);
+        if (dynamic_cast<WindowRenderer*>(&myRender)) 
+            spp = ((WindowRenderer*)&myRender)->spp;
+        
+        // render
+        
+        start = clock();
+        myRender.Render();
+        end = clock();
+        cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+        
+        char name[64];
+
+        sprintf(name, "Teste%d.ppm", spp);
+        // save the image
+        img->Save(name);
+
+        fprintf(stdout, "Rendering time = %.3lf secs\n\n", cpu_time_used);
+    // }
+
+
 
     std::cout << "That's all, folks!" << std::endl;
     return 0;

@@ -13,7 +13,7 @@ void HierarchicalGrid::build(Scene *scene)
     this->scene = scene;
 
     std::vector<Primitive *> primitives = scene->getPrims();
-    std::vector<Primitive *> triangles = scene->getPrims();
+    std::vector<Primitive *> triangles;
 
     // build vector with every triangle in the mesh and their respective material_ndx
 

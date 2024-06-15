@@ -36,7 +36,7 @@ public:
 
 private:
     GridCell* rootCell;
-    int maxDepth = 3;
+    int maxDepth = 1;
     void buildSubgrid(GridCell* cell, const std::vector<Primitive*>& primitives, int level);
     bool intersectSubgrid(GridCell* cell, Ray& ray, Intersection* isect);
 };

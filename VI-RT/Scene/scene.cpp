@@ -36,8 +36,8 @@ Scene::Scene (bool generateAccelStruct) {
     this->numLights = 0;
     this->numPrimitives = 0;
     if (generateAccelStruct) {
-        // this->accelStruct = new HierarchicalGrid(3);
-        this->accelStruct = new BVH();
+        this->accelStruct = new HierarchicalGrid(3);
+        // this->accelStruct = new BVH();
     }
     else {
         this->accelStruct = nullptr;
@@ -208,8 +208,17 @@ bool Scene::Load(const std::string &fname)
         numPrimitives++;
     } // end iterate over shapes
 
-    if (this->accelStruct) 
+    if (this->accelStruct) {
+        clock_t start, end;
+        double cpu_time_used;
+
+        printf("Starting Acceleration Structure Building..\n");
+        start = clock();
         this->accelStruct->build(this);
+        end = clock();
+        cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+        printf("Finished Building Acceleration Structure in %.5lf secs\n", cpu_time_used);
+    }
 
     return true;
 }

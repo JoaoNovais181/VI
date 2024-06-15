@@ -18,6 +18,7 @@ public:
     ImagePPM(const int W, const int H):Image(W, H) {}
     bool Save (std::string filename);
     void ToneMap ();
+    void Uncharted2ToneMap();
 };
 
 #endif /* ImagePPM_hpp */

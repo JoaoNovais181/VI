@@ -23,10 +23,9 @@ struct BVHNodeGeo {
     BB boundingBox;
     BVHNodeGeo *left, *right;
     std::vector<Triangle*> triangles;
-    Triangle *geometry;
     int materialIndex;
 
-    BVHNodeGeo() : left(nullptr), right(nullptr), geometry(nullptr), materialIndex(-1) {}
+    BVHNodeGeo() : left(nullptr), right(nullptr), materialIndex(-1) {}
 };
 
 class BVH : public AccelStruct {

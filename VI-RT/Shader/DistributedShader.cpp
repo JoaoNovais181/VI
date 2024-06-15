@@ -19,7 +19,9 @@ RGB DistributedShader::directLighting(Intersection isect, Phong *f)
     RGB color(0., 0., 0.);
     Light *l;
 
-    int l_idx = (int)((float)rand()/RAND_MAX * scene->numLights);
+    int l_idx = (int)(((float)rand())/RAND_MAX * scene->numLights);
+    if (l_idx >= scene->numLights)
+        l_idx = scene->numLights-1;
 
     l = scene->lights.at(l_idx);
 
