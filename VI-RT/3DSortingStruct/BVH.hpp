@@ -30,6 +30,7 @@ struct BVHNodeGeo {
 
 class BVH : public AccelStruct {
 private:
+    int type;
     BVHNode *root;
     BVHNodeGeo *rootGeo;
     BVHNode *buildBVH(std::vector<Primitive*>& primitives, int depth);
@@ -42,7 +43,7 @@ private:
 
 public:
 
-    BVH(){}
+    BVH(int _type=0): type(_type){}
     ~BVH(){deleteBVH(root); deleteBVHGeo(rootGeo);}
     void build(Scene *scene);
     bool trace (Ray r, Intersection *isect);

@@ -24,7 +24,7 @@ bool Perspective::GenerateRay(const int x, const int y, Ray *r, const float *cam
     Vector dir;
     dir.X = this->c2w[0][0] * xc + this->c2w[0][1] * yc + this->c2w[0][2];
     dir.Y = this->c2w[1][0] * xc + this->c2w[1][1] * yc + this->c2w[1][2];
-    dir.Z = this->c2w[2][0] * xc + this->c2w[2][1] * yc + this->c2w[2][2];
+    dir.Z = this->c2w[2][0] * xc     + this->c2w[2][1] * yc + this->c2w[2][2];
     dir.normalize();
     r->dir = dir;
     r->o = this->Eye;

@@ -248,6 +248,8 @@ static void key_callback(GLFWwindow *window, int key, int scancode, int action, 
     else if (key == GLFW_KEY_UP || key == GLFW_KEY_DOWN || key == GLFW_KEY_LEFT || key == GLFW_KEY_RIGHT)
     {
         Point eye = global_cam->getEye();
+        Point at = global_cam->getAt();
+
         Vector lookDir = global_cam->getAt() - eye;
         Vector right = lookDir.cross(global_cam->getUp());
         Vector Up = global_cam->getUp();
@@ -263,20 +265,17 @@ static void key_callback(GLFWwindow *window, int key, int scancode, int action, 
         {
             rotatedLookDir.Y = lookDir.Y * cos(angle) - lookDir.Z * sin(angle);
             rotatedLookDir.Z = lookDir.Y * sin(angle) + lookDir.Z * cos(angle);
-            global_cam->setAt(eye + rotatedLookDir);
         }
         else if (key == GLFW_KEY_DOWN && action == GLFW_PRESS)
         {
             angle *= -1;
             rotatedLookDir.Y = lookDir.Y * cos(angle) - lookDir.Z * sin(angle);
             rotatedLookDir.Z = lookDir.Y * sin(angle) + lookDir.Z * cos(angle);
-            global_cam->setAt(eye + rotatedLookDir);
         }
         else if (key == GLFW_KEY_LEFT && action == GLFW_PRESS)
         {
             rotatedLookDir.X = lookDir.X * cos(angle) + lookDir.Z * sin(angle);
             rotatedLookDir.Z = -lookDir.X * sin(angle) + lookDir.Z * cos(angle);
-            global_cam->setAt(eye + rotatedLookDir);
         }
         else if (key == GLFW_KEY_RIGHT && action == GLFW_PRESS)
         {

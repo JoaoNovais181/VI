@@ -34,6 +34,7 @@ int main(int argc, const char *argv[])
 
     // success = scene.Load("VI-RT/Scene/tinyobjloader/models/cornell_box_VI.obj");
     success = scene.Load("models/multiCornellBox.obj");
+    // success = scene.Load("models/multiCornellBox_4x4.obj");
     // success = scene.Load("models/multiCornellBoxGround.obj");
 
     if (!success)
@@ -69,80 +70,46 @@ int main(int argc, const char *argv[])
     // scene.lights.push_back(pl1);
     // scene.numLights++;
 
-    AreaLight *al1 = new AreaLight(RGB(0.7, 0.7, .7),
-                                   Point(18, 27.9, 10),
-                                   Point(18, 27.9, 18),
-                                   Point(10, 27.9, 18),
-                                   Vector(0, -1, 0));
-    scene.lights.push_back(al1);
-    scene.numLights++;
-    AreaLight *al2 = new AreaLight(RGB(0.7, 0.7, .7),
-                                   Point(18, 27.9, 10),
-                                   Point(10, 27.9, 18),
-                                   Point(10, 27.9, 10),
-                                   Vector(0, -1, 0));
-    scene.lights.push_back(al2);
-    scene.numLights++;
+    int numRooms = 2; // rooms in a line -> scene is numRooms x numRooms grid
+    float x = (numRooms/2)*-24-18.0f;
+    float y = 27.9f;
+    float z = 10.0f;
+    for (int i=0 ; i<numRooms ; i++, y+= 27.9f) {
+        x = (numRooms/2)*-28 + 10.0f;
+        for (int j=0 ; j<numRooms ; j++, x+=28.0f) {
+            AreaLight *al = new AreaLight(RGB(0.7, 0.7, 0.7),
+                                            Point(x, y, z),
+                                            Point(x, y, z+8),
+                                            Point(x+8, y, z+8),
+                                            Vector(0, -1, 0));
+            scene.lights.push_back(al);
+            scene.numLights++;
 
-    AreaLight *al3 = new AreaLight(RGB(0.7, 0.7, .7),
-                                   Point(18, 55.8, 10),
-                                   Point(18, 55.8, 18),
-                                   Point(10, 55.8, 18),
-                                   Vector(0, -1, 0));
-    scene.lights.push_back(al3);
-    scene.numLights++;
-    AreaLight *al4 = new AreaLight(RGB(0.7, 0.7, 0.7),
-                                   Point(18, 55.8, 10),
-                                   Point(10, 55.8, 18),
-                                   Point(10, 55.8, 10),
-                                   Vector(0, -1, 0));
-    scene.lights.push_back(al4);
-    scene.numLights++;
-
-    AreaLight *al5 = new AreaLight(RGB(0.7, 0.7, 0.7),
-                                   Point(-18, 55.8, 10),
-                                   Point(-18, 55.8, 18),
-                                   Point(-10, 55.8, 18),
-                                   Vector(0, -1, 0));
-    scene.lights.push_back(al5);
-    scene.numLights++;
-    AreaLight *al6 = new AreaLight(RGB(0.7, 0.7, 0.7),
-                                   Point(-18, 55.8, 10),
-                                   Point(-10, 55.8, 18),
-                                   Point(-10, 55.8, 10),
-                                   Vector(0, -1, 0));
-    scene.lights.push_back(al6);
-    scene.numLights++;
-
-    AreaLight *al7 = new AreaLight(RGB(0.7, 0.7, 0.7),
-                                   Point(-18, 27.9, 10),
-                                   Point(-18, 27.9, 18),
-                                   Point(-10, 27.9, 18),
-                                   Vector(0, -1, 0));
-    scene.lights.push_back(al7);
-    scene.numLights++;
-    AreaLight *al8 = new AreaLight(RGB(0.7, 0.7, 0.7),
-                                   Point(-18, 27.9, 10),
-                                   Point(-10, 27.9, 18),
-                                   Point(-10, 27.9, 10),
-                                   Vector(0, -1, 0));
-    scene.lights.push_back(al8);
-    scene.numLights++;
+            AreaLight *al2 = new AreaLight(RGB(0.7, 0.7, 0.7),
+                                            Point(x, y, z),
+                                            Point(x+8, y, z+8),
+                                            Point(x+8, y, z),
+                                            Vector(0, -1, 0));
+            scene.lights.push_back(al2);
+            scene.numLights++;
+        }
+    }
 
     scene.printSummary();
     std::cout << std::endl;
     // scene.printScene();
 
     // Image resolution
-    const int W = 1024;
-    const int H = 1024;
+    const int W = 512;
+    const int H = 512;
 
     img = new ImagePPM(W, H);
 
     // Camera parameters
     // const Point Eye ={280,275,-330}, At={280,265,0};
     // const Point Eye ={25, 20, 0}, At={0,0,0};
-    const Point Eye = {0, 25, -35}, At = {0, 25, 0};
+    // const Point Eye = {0, 30, -30}, At = {0, 30, 0};
+    const Point Eye = {0, 56, -50}, At = {0, 56, 0};
     const Vector Up = {0, 1, 0};
     // const float fovW = 60.f;
     const float fovW = 90.f;
@@ -158,28 +125,27 @@ int main(int argc, const char *argv[])
     // declare the renderer
     int spp = 16; // samples per pixel
 
-    // for (int ss = 1 ; ss<=spp ; ss++) {
-        // StandardRenderer myRender = StandardRenderer(cam, &scene, img, shd, ss);
-        WindowRenderer myRender(cam, &scene, img, shd, spp);
+    WindowRenderer myRender(cam, &scene, img, shd, spp);
 
         if (dynamic_cast<WindowRenderer*>(&myRender)) 
             spp = ((WindowRenderer*)&myRender)->spp;
-        
-        // render
-        
-        start = clock();
-        myRender.Render();
-        end = clock();
-        cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
-        
-        char name[64];
+    
+    // render
+    
+    start = clock();
+    myRender.Render();
+    end = clock();
+    cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+    
+    fprintf(stdout, "Rendering time = %.3lf secs\n\n", cpu_time_used);
 
-        sprintf(name, "Teste%d.ppm", spp);
-        // save the image
-        img->Save(name);
+    char name[64];
 
-        fprintf(stdout, "Rendering time = %.3lf secs\n\n", cpu_time_used);
-    // }
+    sprintf(name, "MyImage_%d.ppm", spp);
+
+    // save the image
+    img->Save(name);
+
 
 
 

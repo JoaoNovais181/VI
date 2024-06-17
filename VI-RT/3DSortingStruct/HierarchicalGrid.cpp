@@ -247,6 +247,8 @@ bool HierarchicalGrid::intersectSubgrid(GridCell *cell, Ray &ray, Intersection *
         startZ = temp;
     }
 
+    std::vector<GridCell*> subcells;
+
     // Traverse the relevant subcells
     for (int x = startX; x <= endX; ++x)
     {
@@ -254,6 +256,8 @@ bool HierarchicalGrid::intersectSubgrid(GridCell *cell, Ray &ray, Intersection *
         {
             for (int z = startZ; z <= endZ; ++z)
             {
+                // if (cell->subgrid[x][y][z])
+                // subcells.push_back(cell->subgrid[x][y][z]);
                 if (intersectSubgrid(cell->subgrid[x][y][z], ray, &curr_isect))
                 {
                     if (!hit)
@@ -269,6 +273,26 @@ bool HierarchicalGrid::intersectSubgrid(GridCell *cell, Ray &ray, Intersection *
             }
         }
     }
+
+    // TODO: solve code below to visit cells by order -> less visits = more performance
+
+    // auto comparator = [entry](GridCell *c1, GridCell *c2) {
+    //     float d1 = c1->boundingBox.center().vec2point(entry).norm();      
+    //     float d2 = c2->boundingBox.center().vec2point(entry).norm();      
+    //     return d1 < d2;
+    // };
+
+    // std::sort(subcells.begin(), subcells.end(), comparator);
+
+    // for (auto subcell : subcells) {
+    //     if (intersectSubgrid(subcell, ray, &curr_isect))
+    //     {
+    //         hit = true;
+    //         *isect = curr_isect;
+    //         break;
+    //     }
+    // }
+
     // Compute the next cell in the subgrid
 
     // for (int x = 0; x < 3; x++)

@@ -6,8 +6,10 @@
 void BVH::build(Scene* scene) {
     this->scene = scene;
     auto prims = scene->getPrims();
-    // root = buildBVH(prims, 0);
-    rootGeo = buildBVHGeo(prims, 0);
+    if (type == 0)
+        root = buildBVH(prims, 0);
+    else
+        rootGeo = buildBVHGeo(prims, 0);
 }
 
 bool BVH::traverseBVH(BVHNode* node, Ray& r, Intersection* isect) {
@@ -78,7 +80,10 @@ bool BVH::traverseBVHGeo(BVHNodeGeo* node, Ray& r, Intersection* isect) {
 
 bool BVH::trace (Ray r, Intersection *isect) 
 {
-    return traverseBVHGeo(this->rootGeo, r, isect);
+    if (type == 0)
+        return traverseBVH(this->root, r, isect);
+    else
+        return traverseBVHGeo(this->rootGeo, r, isect);
 }
 
 
